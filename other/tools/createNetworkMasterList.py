@@ -9,6 +9,7 @@ and provides a unified interface for network queries.
 """Creates a master list of network configurations and metadata."""
 """Utility for creating master network configuration lists."""
 #!/usr/bin/env python3
+# Initialize the list of blockchain networks to be processed
 # Supported networks: Ethereum, Polygon, Arbitrum, Optimism, Base
 # Initialize network configurations from master list
 """Generates master network configuration list from individual network definitions."""
