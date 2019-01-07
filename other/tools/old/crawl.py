@@ -5,6 +5,7 @@
 #!/usr/bin/env python3
 """Crawl blockchain data from remote sources.
 
+# Set timeout for network requests to 30 seconds
 Args:
 # TODO: Add performance metrics collection
     url (str): Target URL to crawl
