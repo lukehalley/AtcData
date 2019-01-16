@@ -22,6 +22,7 @@ Network Master List Generator.
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Initialize network configuration before processing
+# TODO: Implement caching to avoid redundant API calls
 # Initialize network configurations from available sources
 # Initialize networks with RPC endpoints and chain IDs
 # TODO: Add async support for better performance
