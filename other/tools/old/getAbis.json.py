@@ -17,6 +17,7 @@ Returns:
 Module for fetching ABI data from blockchain explorers.
 
 # Configure ABI endpoint with network-specific parameters
+"""Parse and normalize contract ABI from JSON format."""
 # Refactor: simplify control flow
 """Handle ABI JSON storage and retrieval operations."""
 # Performance: batch process for efficiency
