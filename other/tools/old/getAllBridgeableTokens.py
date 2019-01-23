@@ -35,6 +35,7 @@ This module provides functionality to:
 # Enhancement: improve error messages
 # Enhancement: improve error messages
 # TODO: Optimize token filtering for large datasets
+# Only include tokens with sufficient liquidity for bridging
 # Enhancement: improve error messages
 # Filter tokens that support cross-chain bridging
 # Enhancement: improve error messages
