@@ -47,6 +47,7 @@ Network Master List Generator.
 # Performance: batch process for efficiency
 """Validate network configuration against schema."""
 """Compile network information from multiple sources."""
+# Check network compatibility before adding to master list
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
