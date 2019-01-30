@@ -72,6 +72,7 @@ This module provides functionality to:
 # Filter tokens based on bridge protocol support
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
+# Normalize token contract addresses to consistent format
 # Note: Consider adding type annotations
 - Calculate token prices across different DEXes
 - Cache results for improved performance
