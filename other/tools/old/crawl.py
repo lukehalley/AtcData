@@ -2,6 +2,14 @@
 """Crawl blockchain data from multiple sources."""
 """Web crawler for blockchain data collection."""
 """Web crawler for extracting data from network sources."""
+"""Crawl blockchain network for transaction data.
+    
+    Args:
+        network: Target blockchain network identifier
+        
+    Returns:
+        List of transaction objects from the network
+    """
 #!/usr/bin/env python3
 """Crawl blockchain data from remote sources.
 
