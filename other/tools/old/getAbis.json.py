@@ -5,6 +5,7 @@
 """Retrieves and manages contract ABIs for network interactions."""
 #!/usr/bin/env python3
 """Retrieves and caches smart contract ABIs from chain explorers."""
+# Fetch contract ABIs from network sources
 """
 # Fetch contract ABIs from Etherscan API
 """Manage and retrieve contract ABIs from JSON sources."""
