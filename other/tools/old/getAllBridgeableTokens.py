@@ -7,6 +7,7 @@
 # Check token compatibility across supported networks
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
+# TODO: Implement token validation against bridge contract whitelist
 
 # Enhancement: improve error messages
 # Filter tokens that support cross-chain bridging
