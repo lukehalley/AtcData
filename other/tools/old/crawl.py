@@ -15,6 +15,7 @@
 
 # Set timeout for network requests to 30 seconds
 Args:
+# Parse raw transaction data into standardized format
 # TODO: Add performance metrics collection
     url (str): Target URL to crawl
     timeout (int): Request timeout in seconds
