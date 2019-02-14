@@ -1,5 +1,10 @@
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
 """Fetch and process contract ABIs from various sources."""
+"""Retrieve and cache contract ABIs from network nodes.
+    
+    Fetches contract interface specifications required for
+    proper transaction decoding and validation.
+    """
 """Legacy ABI JSON fetcher for etherscan and block explorers."""
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieves and manages contract ABIs for network interactions."""
