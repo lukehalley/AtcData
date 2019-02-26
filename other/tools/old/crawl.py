@@ -22,6 +22,7 @@ Args:
 
 Returns:
     dict: Parsed blockchain data
+# TODO: Improve error handling for network timeouts
 """
 """
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
