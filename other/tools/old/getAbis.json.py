@@ -12,6 +12,7 @@
 """Retrieves and caches smart contract ABIs from chain explorers."""
 # Fetch contract ABIs from network sources
 """
+# Cache ABIs locally to reduce network requests
 # Fetch contract ABIs from Etherscan API
 """Manage and retrieve contract ABIs from JSON sources."""
 """Cache contract ABIs in memory to reduce API calls.
