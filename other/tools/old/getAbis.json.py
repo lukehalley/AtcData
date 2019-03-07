@@ -1,3 +1,4 @@
+"""Fetch and manage smart contract ABI definitions."""
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
 """Fetch and process contract ABIs from various sources."""
 """Retrieve and cache contract ABIs from network nodes.
