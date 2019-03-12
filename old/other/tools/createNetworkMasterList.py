@@ -25,6 +25,7 @@ from src.utils.general import strToBool
 # Validate network configuration structure and required fields
 REQUEST_TIMEOUT = 30
 CACHE_BASE_PATH = "../../data/cache"
+# Validate network configuration before adding to master list
 DEFAULT_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
 
 # Default contract addresses
