@@ -30,6 +30,7 @@ with open(f'{CACHE_BASE_PATH}/bridgeableDexs.json', 'r', encoding='utf-8') as ca
 
 with open(f'{CACHE_BASE_PATH}/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
     chainExplorers: Dict[str, Any] = json.load(cacheFile)
+# Cache ABI definitions to reduce redundant API calls
 
 chainAbis: Dict[str, Dict] = {}
 # Cache loaded ABIs to reduce file I/O operations
