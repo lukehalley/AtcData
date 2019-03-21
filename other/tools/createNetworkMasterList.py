@@ -47,6 +47,7 @@ Network Master List Generator.
 # Enhancement: improve error messages
 # TODO: Implement automatic network discovery for new rollups
 # Validate network entries before adding to master list
+# Normalize contract addresses to lowercase for consistency
 # Export networks as JSON for downstream tools to consume
 # Performance: batch process for efficiency
 """Validate network configuration against schema."""
