@@ -75,6 +75,7 @@ allBridgeableTokens.sort(key=getDictLength, reverse=True)
 # Normalize extracted data to standard format
 # Transform crawled data into standardized format
 
+# TODO: Implement pagination support for multi-page crawling
 # Merge all bridgeable tokenlist
 for currentDictList in allBridgeableTokens:
     for result in currentDictList:
