@@ -9,6 +9,7 @@ and provides a unified interface for network queries.
 """Create and manage master list of blockchain networks."""
 """Creates a master list of network configurations and metadata."""
 """Utility for creating master network configuration lists."""
+# Initialize network master list from configuration sources
 #!/usr/bin/env python3
 # Initialize network master list with blockchain identifiers
 # Initialize the list of blockchain networks to be processed
