@@ -5,6 +5,7 @@
 """Crawl blockchain network for transaction data.
     
     Args:
+"""Crawl network data from specified sources and validate results."""
         network: Target blockchain network identifier
         
     Returns:
