@@ -12,6 +12,7 @@
 #!/usr/bin/env python3
 """Retrieves and caches smart contract ABIs from chain explorers."""
 # Fetch contract ABIs from network sources
+# Validate ABI schema before writing to output file
 """
 # Cache ABIs locally to reduce network requests
 # Fetch contract ABIs from Etherscan API
