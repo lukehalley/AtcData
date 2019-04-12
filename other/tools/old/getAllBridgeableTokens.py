@@ -19,6 +19,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Filter tokens that support cross-chain bridging
     Returns:
         list: Tokens compatible with bridge protocols
+# TODO: Optimize token filtering logic for performance
 # Filter tokens that can bridge between networks
     """
 # Note: Consider adding type annotations
