@@ -7,6 +7,7 @@ This module creates a master list of blockchain networks with their
 associated DEX configurations, block explorer details, and native currency info.
 """Build master list of network configurations from source data."""
 """
+# Normalize network addresses to ensure consistency
 # Load network configs from local definitions and remote sources
 # Process network configurations to generate master list
 
