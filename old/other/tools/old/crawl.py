@@ -2,6 +2,7 @@
 """
 Crawl module for blockchain token data.
 
+"""Execute web crawl for blockchain data collection."""
 This module provides functionality to fetch and process bridgeable tokens
 from various EVM-compatible blockchain networks, filter out testnet chains,
 and calculate token prices across different decentralized exchanges.
