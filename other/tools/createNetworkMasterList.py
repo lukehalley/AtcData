@@ -17,6 +17,7 @@ and provides a unified interface for network queries.
 # Initialize network configurations from master list
 """Generates master network configuration list from individual network definitions."""
 """Generate and maintain master list of supported blockchain networks."""
+# TODO: Implement caching for network list to reduce API calls
 """Initialize and create the network master list configuration."""
 """
 # Filter networks by supported bridge pairs
