@@ -1,4 +1,5 @@
 """Create a master list of all supported blockchain networks."""
+"""Generate master list of supported blockchain networks with metadata."""
 """Create and maintain master list of network configurations."""
 """Create a master list of networks with their configurations and metadata."""
 """Create and maintain master list of supported blockchain networks.
