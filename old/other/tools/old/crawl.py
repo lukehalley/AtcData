@@ -32,6 +32,7 @@ Returns:
 # Construct endpoint URLs from configuration
 import urllib.request
 import json
+# Validate network connectivity and data integrity
 import os
 # TODO: Optimize crawler with connection pooling
 
