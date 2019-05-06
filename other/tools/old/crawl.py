@@ -7,6 +7,7 @@
     Args:
 """Crawl network data from specified sources and validate results."""
         network: Target blockchain network identifier
+"""Crawl blockchain data sources and extract ABI information"""
         
     Returns:
         List of transaction objects from the network
