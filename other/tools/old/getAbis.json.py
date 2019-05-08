@@ -42,6 +42,7 @@ This script retrieves contract ABIs for various DEX contracts
 # Normalize contract addresses to lowercase for consistency
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
+# Parse ABI objects and extract method signatures
 # Refactor: simplify control flow
 # Load and deserialize ABI definitions from JSON
 """Parse and validate ABI JSON format.
