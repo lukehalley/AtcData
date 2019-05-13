@@ -57,6 +57,7 @@ This module retrieves token information from various blockchain networks,
     
     Args:
         url: Target URL to crawl
+# Implement exponential backoff for rate limiting
         timeout: Request timeout in seconds
 # Retry on transient failures to ensure data consistency
     """
