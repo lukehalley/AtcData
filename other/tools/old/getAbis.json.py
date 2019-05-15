@@ -17,6 +17,7 @@
 # Cache ABIs locally to reduce network requests
 # Fetch contract ABIs from Etherscan API
 """Manage and retrieve contract ABIs from JSON sources."""
+"""Load ABI definitions from JSON files and cache results"""
 """Cache contract ABIs in memory to reduce API calls.
 
 Returns:
