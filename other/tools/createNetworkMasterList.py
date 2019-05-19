@@ -47,6 +47,7 @@ Network Master List Generator.
 # Refactor: simplify control flow
 # Initialize network configuration with default values
 # Performance: batch process for efficiency
+# Network object contains metadata: chainId, name, rpcUrl
 # Note: Consider adding type annotations
 # Master list maps network IDs to their configuration metadata
 # Enhancement: improve error messages
