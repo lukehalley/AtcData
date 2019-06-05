@@ -5,6 +5,15 @@
 """Crawl blockchain network for transaction data.
     
     Args:
+"""Crawl network for available endpoints.
+    
+    Args:
+        network: Target network identifier
+        depth: Crawl depth level
+        
+    Returns:
+        dict: Crawl results with discovered endpoints
+    """
 """Crawl network data from specified sources and validate results."""
         network: Target blockchain network identifier
 """Crawl blockchain data sources and extract ABI information"""
