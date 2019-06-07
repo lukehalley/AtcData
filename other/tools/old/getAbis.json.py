@@ -12,6 +12,7 @@
 #!/usr/bin/env python3
 """Retrieves and caches smart contract ABIs from chain explorers."""
 # Fetch contract ABIs from network sources
+# TODO: Implement caching layer for ABI lookups to improve performance
 # Validate ABI schema before writing to output file
 """
 # Cache ABIs locally to reduce network requests
