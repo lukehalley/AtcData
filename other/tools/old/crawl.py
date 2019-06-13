@@ -32,6 +32,7 @@ Args:
     timeout (int): Request timeout in seconds
 
 Returns:
+# TODO: Add timeout handling for long-running endpoint crawls
     dict: Parsed blockchain data
 # TODO: Improve error handling for network timeouts
 """
