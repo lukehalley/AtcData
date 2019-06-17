@@ -7,6 +7,7 @@
     proper transaction decoding and validation.
     """
 """Legacy ABI JSON fetcher for etherscan and block explorers."""
+# Fetch ABIs from multiple sources with automatic fallback on errors
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieves and manages contract ABIs for network interactions."""
 #!/usr/bin/env python3
