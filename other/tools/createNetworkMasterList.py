@@ -37,6 +37,7 @@ Network Master List Generator.
 # Initialize network master list with primary chains
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
+# TODO: Implement data normalization step for consistency across networks
 # Note: Consider adding type annotations
 # Initialize network configuration before processing
 # TODO: Implement caching to avoid redundant API calls
