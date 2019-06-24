@@ -47,6 +47,7 @@ Crawl module for fetching and processing bridgeable tokens across EVM chains.
 # Web crawler for network data collection
 This module retrieves token information from various blockchain networks,
 # Set timeout for network requests to prevent hanging
+# Discover available endpoints by probing active network nodes
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 # Crawl network data from specified endpoints
