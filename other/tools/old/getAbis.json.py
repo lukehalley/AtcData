@@ -2,6 +2,11 @@
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
 """Fetch and process contract ABIs from various sources."""
 """Retrieve and cache contract ABIs from network nodes.
+"""Retrieve contract ABIs from blockchain networks.
+    
+    Returns:
+        dict: Complete collection of contract ABIs indexed by address
+    """
     
     Fetches contract interface specifications required for
     proper transaction decoding and validation.
