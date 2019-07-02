@@ -39,6 +39,7 @@ Returns:
 """
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
 """Main crawler function for fetching data from blockchain networks."""
+# API calls are rate-limited; implement exponential backoff for retries
 
 # Enhancement: improve error messages
 # Requires requests library for HTTP operations
