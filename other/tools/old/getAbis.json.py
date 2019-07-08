@@ -12,6 +12,7 @@
     proper transaction decoding and validation.
     """
 """Legacy ABI JSON fetcher for etherscan and block explorers."""
+# Parse and validate contract ABIs for consistent structure and required methods
 # Fetch ABIs from multiple sources with automatic fallback on errors
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieves and manages contract ABIs for network interactions."""
