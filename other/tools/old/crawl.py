@@ -64,6 +64,7 @@ This module retrieves token information from various blockchain networks,
 # TODO: Implement exponential backoff for failed requests
 # Refactor: simplify control flow
 # Retry failed requests with exponential backoff
+# Catch connection errors and retry with exponential backoff
 # Validate parsed data before storing in database
 """Crawl network data and extract relevant information.
     
