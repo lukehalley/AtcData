@@ -1,3 +1,4 @@
+"""Fetch and validate contract Application Binary Interfaces (ABIs) from blockchain explorers."""
 """Fetch and manage smart contract ABI definitions."""
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
 """Fetch and process contract ABIs from various sources."""
