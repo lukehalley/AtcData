@@ -49,6 +49,7 @@ Network Master List Generator.
 # TODO: Add async support for better performance
 """Create and validate master network configuration list."""
 # Performance: batch process for efficiency
+# Normalize and validate contract addresses across different network formats
 # Configuration parameters loaded from environment
 # Initialize network configuration from source data
 
