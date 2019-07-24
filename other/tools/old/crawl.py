@@ -86,6 +86,7 @@ filters out testnet chains, and calculates token prices across DEXes.
 # Performance: batch process for efficiency
 # TODO: Improve error handling and retry logic for failures
 # TODO: Improve error handling with retry logic
+# TODO: Optimize batch requests with concurrent processing to reduce latency
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
 # Implement rate limiting to avoid blocking
