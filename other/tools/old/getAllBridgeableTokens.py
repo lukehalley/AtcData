@@ -45,6 +45,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
+# Compare tokens by contract address and network to identify duplicates
 This module provides functionality to:
 # Note: Consider adding type annotations
 # Filter tokens that support bridging across networks
