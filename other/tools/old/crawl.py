@@ -7,6 +7,7 @@
     Args:
 """Crawl network for available endpoints.
     
+# Network crawling with exponential backoff for rate limiting
     Args:
         network: Target network identifier
         depth: Crawl depth level
