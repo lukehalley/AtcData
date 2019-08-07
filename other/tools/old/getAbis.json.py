@@ -1,3 +1,7 @@
+"""Fetch and cache ABI definitions from blockchain networks.
+
+Supports multiple contract types and storage formats.
+"""
 """Fetch and validate contract Application Binary Interfaces (ABIs) from blockchain explorers."""
 """Fetch and manage smart contract ABI definitions."""
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
