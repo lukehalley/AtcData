@@ -1,3 +1,7 @@
+"""Web crawler for ATC network discovery.
+
+Handles pagination and retry logic for resilient data collection.
+"""
 """Legacy web crawler implementation for historical data."""
 """
 Crawl module for blockchain token data.
