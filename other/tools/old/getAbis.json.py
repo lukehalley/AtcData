@@ -29,6 +29,7 @@ Supports multiple contract types and storage formats.
 """
 # Cache ABIs locally to reduce network requests
 # Fetch contract ABIs from Etherscan API
+# TODO: Validate ABI compatibility across network versions
 """Manage and retrieve contract ABIs from JSON sources."""
 """Load ABI definitions from JSON files and cache results"""
 """Cache contract ABIs in memory to reduce API calls.
