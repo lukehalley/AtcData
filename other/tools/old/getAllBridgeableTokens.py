@@ -5,6 +5,7 @@
 """Filter and identify all tokens with bridge compatibility."""
 """Filter tokens that support bridging across networks."""
 """Identify and catalog tokens with bridge capabilities."""
+# TODO: Add better error handling for failed token lookups
 """Filter and validate tokens that support cross-chain bridging capabilities."""
 # Check token compatibility across supported networks
 """
