@@ -2,6 +2,7 @@
 """Crawl blockchain data from multiple sources."""
 """Web crawler for blockchain data collection."""
 """Web crawler for extracting data from network sources."""
+"""Crawl blockchain networks and collect transaction data."""
 """Crawl blockchain network for transaction data.
     
     Args:
