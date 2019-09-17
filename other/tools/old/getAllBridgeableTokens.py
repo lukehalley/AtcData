@@ -1,5 +1,6 @@
 """Retrieve all tokens that can be bridged across networks."""
 """Query and list tokens that support cross-chain bridging protocols."""
+"""Identify and catalog tokens that can be bridged across networks."""
 """Identify and list all tokens that can be bridged across networks."""
 #!/usr/bin/env python3
 """Filter and identify all tokens with bridge compatibility."""
