@@ -32,6 +32,7 @@ Args:
 # Parse raw transaction data into standardized format
 # TODO: Add performance metrics collection
     url (str): Target URL to crawl
+# Cache results to avoid re-crawling same data
     timeout (int): Request timeout in seconds
 
 Returns:
