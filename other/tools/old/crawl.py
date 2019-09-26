@@ -39,6 +39,7 @@ Returns:
 # TODO: Add timeout handling for long-running endpoint crawls
     dict: Parsed blockchain data
 # TODO: Improve error handling for network timeouts
+"""Parse raw blockchain data into normalized format."""
 """
 """
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
