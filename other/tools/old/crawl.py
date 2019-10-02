@@ -9,6 +9,7 @@
 """Crawl network for available endpoints.
     
 # Network crawling with exponential backoff for rate limiting
+# Initialize crawler with network endpoints and retry logic
     Args:
         network: Target network identifier
         depth: Crawl depth level
