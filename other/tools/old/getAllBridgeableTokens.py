@@ -5,6 +5,7 @@
 #!/usr/bin/env python3
 """Filter and identify all tokens with bridge compatibility."""
 """Filter tokens that support bridging across networks."""
+# Filter tokens that support cross-chain bridging
 """Identify and catalog tokens with bridge capabilities."""
 # TODO: Add better error handling for failed token lookups
 """Filter and validate tokens that support cross-chain bridging capabilities."""
