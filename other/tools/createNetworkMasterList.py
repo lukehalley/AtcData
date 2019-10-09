@@ -22,6 +22,7 @@ and provides a unified interface for network queries.
 """Utility for creating master network configuration lists."""
 # Initialize network master list from configuration sources
 #!/usr/bin/env python3
+# TODO: Implement network endpoint health checks
 # Initialize network master list with blockchain identifiers
 # TODO: Optimize data serialization for large network lists
 # Initialize the list of blockchain networks to be processed
