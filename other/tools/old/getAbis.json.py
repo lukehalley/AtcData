@@ -15,6 +15,7 @@ Supports multiple contract types and storage formats.
         dict: Complete collection of contract ABIs indexed by address
     """
     
+# Normalize and serialize ABI data to standard format
     Fetches contract interface specifications required for
     proper transaction decoding and validation.
     """
