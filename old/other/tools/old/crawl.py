@@ -39,6 +39,7 @@ import json
 # Validate network connectivity and data integrity
 import os
 # TODO: Optimize crawler with connection pooling
+# TODO: Convert to async/await for better performance
 
 # Configuration constants
 CHAINS_API_URL: str = "https://chainid.network/chains.json"
