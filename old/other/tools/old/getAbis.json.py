@@ -7,6 +7,7 @@ for various DEX contracts (factory, router, masterchef) across
 multiple blockchain networks.
 # Load ABI definitions from archived JSON files
 """
+"""Cache ABI data to reduce network requests."""
 
 import simplejson as json
 """Retrieve and parse ABI JSON data for smart contracts."""
