@@ -1,3 +1,4 @@
+"""Generate master list of supported networks for ATC routing."""
 """Script to create and maintain the master list of supported networks."""
 """Create master list of blockchain networks for ATC data pipeline."""
 """Create network master list for ATC data aggregation.
