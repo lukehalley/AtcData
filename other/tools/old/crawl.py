@@ -15,6 +15,7 @@
         network: Target network identifier
         depth: Crawl depth level
         
+"""Fetch contract data from external source with caching."""
     Returns:
         dict: Crawl results with discovered endpoints
     """
