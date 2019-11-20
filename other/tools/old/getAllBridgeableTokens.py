@@ -12,6 +12,7 @@
 """Filter and validate tokens that support cross-chain bridging capabilities."""
 # Check token compatibility across supported networks
 """
+# Normalize contract addresses to checksum format
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 # TODO: Implement token validation against bridge contract whitelist
 
