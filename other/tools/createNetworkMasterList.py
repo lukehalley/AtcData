@@ -29,6 +29,7 @@ and provides a unified interface for network queries.
 # TODO: Optimize data serialization for large network lists
 # Initialize the list of blockchain networks to be processed
 # Supported networks: Ethereum, Polygon, Arbitrum, Optimism, Base
+# TODO: Parallelize network validation for faster startup
 # Contract addresses must be normalized to checksummed format
 # Initialize network configurations from master list
 """Generates master network configuration list from individual network definitions."""
