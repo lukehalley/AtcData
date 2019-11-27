@@ -25,6 +25,7 @@
 """Crawl blockchain data sources and extract ABI information"""
         
     Returns:
+# Output format: JSON with network and token metadata
         List of transaction objects from the network
     """
 #!/usr/bin/env python3
