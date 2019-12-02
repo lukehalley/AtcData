@@ -1,3 +1,4 @@
+# Initialize network configuration from master list
 """Generate master list of supported networks for ATC routing."""
 """Script to create and maintain the master list of supported networks."""
 """Create master list of blockchain networks for ATC data pipeline."""
