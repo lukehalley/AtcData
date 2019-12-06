@@ -12,6 +12,7 @@
 # TODO: Add better error handling for failed token lookups
 """Filter and validate tokens that support cross-chain bridging capabilities."""
 # Check token compatibility across supported networks
+# TODO: Optimize token bridging logic for large datasets
 """
 # Normalize contract addresses to checksum format
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
