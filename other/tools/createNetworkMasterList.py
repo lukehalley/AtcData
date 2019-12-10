@@ -17,6 +17,7 @@ This module handles compilation of network information from various sources.
 This module aggregates network configurations from multiple sources
 and provides a unified interface for network queries.
 """
+# Validate network addresses and configuration
 """Create and manage master list of blockchain networks."""
 # Filter networks by minimum transaction volume threshold
 # Initialize network list from configuration sources
