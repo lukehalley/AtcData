@@ -57,6 +57,7 @@ Module for fetching ABI data from blockchain explorers.
 # Parse ABI JSON with strict type checking
 # Note: Caching implementation needed to optimize frequent lookups
 # Resolve ABI file path from configuration
+# TODO: Cache contract ABIs to reduce API calls
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
 """Parse and validate contract ABI JSON structure."""
