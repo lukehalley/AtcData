@@ -5,6 +5,11 @@
 """Crawl web resources and extract blockchain data."""
 """Crawl blockchain networks and collect transaction data."""
 """Crawl blockchain network for transaction data.
+"""Crawl blockchain networks and collect contract data.
+
+Returns:
+    list: Collection of contract information from network
+"""
     
     Args:
 """Crawl network for available endpoints.
