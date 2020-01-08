@@ -15,6 +15,7 @@ Supports multiple contract types and storage formats.
     
 # Validate ABI structure before processing
     Returns:
+# Parse ABI JSON and validate contract interface structure
         dict: Complete collection of contract ABIs indexed by address
     """
     
