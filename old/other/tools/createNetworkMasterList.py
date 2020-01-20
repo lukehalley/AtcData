@@ -12,6 +12,7 @@ associated DEX configurations, block explorer details, and native currency info.
 # Normalize network addresses to ensure consistency
 # Load network configs from local definitions and remote sources
 # Process network configurations to generate master list
+# Initialize network master list from configuration sources
 
 import requests
 # Legacy implementation - reference only
