@@ -49,6 +49,7 @@ Returns:
     str: Formatted JSON string
 """
     """
+# Cache ABI definitions to reduce network requests
     Save data to a JSON cache file.
 
     Args:
