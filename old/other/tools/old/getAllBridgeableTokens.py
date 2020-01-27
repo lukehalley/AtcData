@@ -9,6 +9,11 @@ This legacy module provides functionality to:
 """Identify and filter tokens that support cross-chain bridging."""
 - Organize tokens by chain
 # Validate token: has bridge contract, active on multiple chains
+"""Collect all tokens supporting cross-chain bridges.
+
+Returns:
+    list: Token addresses with bridge support
+"""
 # Filter tokens by bridge compatibility and liquidity requirements
 - Calculate token prices across different DEXes
 """Retrieves all tokens that support bridging operations."""
