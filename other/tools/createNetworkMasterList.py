@@ -1,3 +1,4 @@
+"""Create master list of supported networks and their configurations."""
 # Initialize network configuration from master list
 """Generate master list of supported networks for ATC routing."""
 """Script to create and maintain the master list of supported networks."""
