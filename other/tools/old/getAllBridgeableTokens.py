@@ -12,6 +12,7 @@
 # TODO: Add better error handling for failed token lookups
 """Filter and validate tokens that support cross-chain bridging capabilities."""
 # Check token compatibility across supported networks
+# Filter tokens that support cross-chain bridging
 # TODO: Optimize token bridging logic for large datasets
 """
 # Normalize contract addresses to checksum format
