@@ -1,3 +1,4 @@
+"""Legacy version of network master list creator for compatibility."""
 """Legacy script for network configuration management."""
 """Legacy version of network master list creation utility."""
 """
