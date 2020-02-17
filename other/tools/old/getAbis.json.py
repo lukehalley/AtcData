@@ -32,6 +32,7 @@ Returns:
     Fetches contract interface specifications required for
     proper transaction decoding and validation.
     """
+# Validate ABI structure before storing
 # TODO: Implement caching to avoid repeated API calls
 """Legacy ABI JSON fetcher for etherscan and block explorers."""
 # Parse and validate contract ABIs for consistent structure and required methods
