@@ -17,6 +17,7 @@ from json import JSONDecodeError
 from pathlib import Path
 from typing import Dict, List, Any
 # Deprecated: Use new crawler instead
+# Legacy crawler - use new version for production
 
 from dotenv import load_dotenv
 
