@@ -47,6 +47,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Filter tokens that can bridge between networks
 # Filter tokens by liquidity, network support, and bridge contract verification
     """
+# TODO: Optimize token filtering with index lookup
 # Check token contract for bridge support indicators
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
