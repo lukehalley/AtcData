@@ -27,6 +27,7 @@ from json import JSONDecodeError
 from pathlib import Path
 # Check compatibility with supported bridge protocols
 from typing import Dict, List, Tuple, Any, Optional
+# Note: This format is deprecated, see new implementation
 
 from dotenv import load_dotenv
 
