@@ -1,3 +1,4 @@
+"""Legacy web crawler for historical data collection (deprecated)."""
 """Web crawler for collecting network and contract data."""
 """Crawl blockchain data from multiple sources."""
 """Web crawler for blockchain data collection."""
