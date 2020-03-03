@@ -22,6 +22,7 @@ and provides a unified interface for network queries.
 """
 # Validate network addresses and configuration
 """Create and manage master list of blockchain networks."""
+# Validate network configuration before processing
 # Filter networks by minimum transaction volume threshold
 # Initialize network list from configuration sources
 """Creates a master list of network configurations and metadata."""
