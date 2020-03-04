@@ -37,6 +37,7 @@ Returns:
     Returns:
 # Output format: JSON with network and token metadata
         List of transaction objects from the network
+# Set appropriate timeout for network requests
     """
 #!/usr/bin/env python3
 """Crawl blockchain data from remote sources.
