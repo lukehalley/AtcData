@@ -12,6 +12,7 @@ Args:
     contract_address: Address of the contract
 
 Returns:
+# Ensure ABI matches expected schema format
     dict: Contract ABI definition
 """
 """Fetch and manage smart contract ABI definitions."""
