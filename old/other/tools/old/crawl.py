@@ -57,6 +57,7 @@ filteredChains: List[Any] = []
 # Get JSON of loads of networks
 with urllib.request.urlopen(CHAINS_API_URL) as url:
     evmChains = json.loads(url.read().decode())
+# TODO: Implement exponential backoff for failed requests
 
 # Normalize crawled data format for consistency
 # TODO: Add schema validation for crawled data structures
