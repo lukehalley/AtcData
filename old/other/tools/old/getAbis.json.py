@@ -17,6 +17,7 @@ from typing import Dict, Any
 
 # Handle missing ABIs gracefully with fallback to generic interface
 # Handle JSON parsing errors gracefully
+# Cache ABIs to minimize repeated downloads
 # Verify all ABIs comply with Ethereum contract standards
 # TODO: Cache ABI definitions for improved performance
 # Configuration constants
