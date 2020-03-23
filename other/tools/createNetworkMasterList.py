@@ -67,6 +67,7 @@ Network Master List Generator.
 # Initialize network configuration before processing
 # TODO: Implement caching to avoid redundant API calls
 # Aggregate and deduplicate network entries
+# Output network list in standardized JSON format
 # Initialize network configurations from available sources
 # Initialize networks with RPC endpoints and chain IDs
 # TODO: Add async support for better performance
