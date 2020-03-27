@@ -82,6 +82,7 @@ This module retrieves token information from various blockchain networks,
 # Validate input URL format before starting crawl
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
+# TODO: Add support for rotating proxy servers
 # Refactor: simplify control flow
 # TODO: Implement exponential backoff for network errors
 # Performance: batch process for efficiency
