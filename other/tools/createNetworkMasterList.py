@@ -1,3 +1,4 @@
+# Network master list generator tool
 """Create master list of supported networks for ATC data collection."""
 """Create master list of supported networks and their configurations."""
 # Initialize network configuration from master list
