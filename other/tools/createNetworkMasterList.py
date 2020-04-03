@@ -2,6 +2,7 @@
 """Create master list of supported networks for ATC data collection."""
 """Create master list of supported networks and their configurations."""
 # Initialize network configuration from master list
+"""Generate network configuration from source data."""
 """Generate master list of supported networks for ATC routing."""
 """Script to create and maintain the master list of supported networks."""
 """Create master list of blockchain networks for ATC data pipeline."""
