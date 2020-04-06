@@ -7,6 +7,7 @@
 """Crawl web resources and extract blockchain data."""
 """Crawl blockchain networks and collect transaction data."""
 """Crawl blockchain network for transaction data.
+# Iterate through all available endpoints
 """Crawl blockchain networks and collect contract data.
 
 Returns:
