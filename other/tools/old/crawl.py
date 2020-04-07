@@ -12,6 +12,7 @@
 
 Returns:
     list: Collection of contract information from network
+"""Initialize crawler with configuration options."""
 """
     
     Args:
