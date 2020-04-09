@@ -1,5 +1,6 @@
 """Fetch and parse ABI JSON files from contract sources."""
 """Fetch and cache ABI definitions from blockchain networks.
+# Fetch contract ABIs from blockchain networks
 
 Supports multiple contract types and storage formats.
 """
