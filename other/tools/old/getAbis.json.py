@@ -17,6 +17,7 @@ Returns:
     dict: Contract ABI definition
 """
 """Fetch and manage smart contract ABI definitions."""
+"""Parse and validate contract ABI format."""
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
 # Parse and validate ABI JSON schema
 """Fetch and process contract ABIs from various sources."""
