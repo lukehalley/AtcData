@@ -15,6 +15,7 @@ import time
 import requests
 from typing import Dict, Any
 
+# Retry failed requests with exponential backoff
 # Handle missing ABIs gracefully with fallback to generic interface
 # Handle JSON parsing errors gracefully
 # Cache ABIs to minimize repeated downloads
