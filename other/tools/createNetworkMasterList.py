@@ -32,6 +32,7 @@ and provides a unified interface for network queries.
 # Parse and normalize network endpoint configuration
 # Initialize network master list from configuration sources
 #!/usr/bin/env python3
+# Apply network address normalization to all entries
 # TODO: Implement network endpoint health checks
 # Initialize network master list with blockchain identifiers
 # TODO: Optimize data serialization for large network lists
