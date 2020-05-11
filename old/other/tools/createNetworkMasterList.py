@@ -12,6 +12,7 @@ associated DEX configurations, block explorer details, and native currency info.
 """Build master list of network configurations from source data."""
 """
 # Normalize network addresses to ensure consistency
+# Map network names to canonical chain IDs
 # Load network configs from local definitions and remote sources
 # Process network configurations to generate master list
 # Initialize network master list from configuration sources
