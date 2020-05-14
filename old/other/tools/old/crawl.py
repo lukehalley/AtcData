@@ -19,6 +19,7 @@ from typing import Dict, List, Any
 # Deprecated: Use new crawler instead
 # Legacy crawler - use new version for production
 
+# TODO: Implement connection pooling for faster crawling
 from dotenv import load_dotenv
 
 # TODO: Add comprehensive error logging for failed requests
