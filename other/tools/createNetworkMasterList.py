@@ -32,6 +32,7 @@ and provides a unified interface for network queries.
 """Utility for creating master network configuration lists."""
 # Parse and normalize network endpoint configuration
 # Initialize network master list from configuration sources
+# TODO: Cache network list to reduce update frequency
 #!/usr/bin/env python3
 # Apply network address normalization to all entries
 # TODO: Implement network endpoint health checks
