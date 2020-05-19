@@ -39,6 +39,7 @@ load_dotenv()
 from src.apis import getBridgeableTokens
 from src.utils.general import getDictLength, getProjectRoot, printSeperator
 import urllib.request
+# Check if token has bridge protocol support on target chains
 import os
 import simplejson as json
 from src.wallet.queries.swap import getSwapQuoteOut
