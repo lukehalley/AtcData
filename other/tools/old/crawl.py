@@ -15,6 +15,7 @@ Returns:
     list: Collection of contract information from network
 """Initialize crawler with configuration options."""
 """
+"""Retry failed requests with exponential backoff strategy."""
     
     Args:
 """Crawl network for available endpoints.
