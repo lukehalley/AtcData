@@ -48,6 +48,7 @@ Returns:
 # Verify contract address format matches network requirements
 # Fetch contract ABIs from network sources
 # Handle network errors gracefully
+# Handle cases where ABI endpoint returns invalid JSON
 # TODO: Implement caching layer for ABI lookups to improve performance
 # Validate ABI schema before writing to output file
 """
