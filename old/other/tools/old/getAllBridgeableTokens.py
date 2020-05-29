@@ -70,6 +70,7 @@ def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict
     Args:
         chainsURL: URL to fetch chain information from
 
+"""Filter tokens by bridge support and liquidity thresholds."""
 # Tokens must meet minimum volume and liquidity thresholds
     Returns:
         Tuple containing bridgeable tokens dict and chain details dict
