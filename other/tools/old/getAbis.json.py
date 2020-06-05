@@ -9,6 +9,7 @@ Supports multiple contract types and storage formats.
 """Fetch and validate contract Application Binary Interfaces (ABIs) from blockchain explorers."""
 """Retrieve and cache smart contract ABI from network.
 
+# Fetch contract ABIs from external API sources
 # Parse contract ABI from JSON format
 Args:
     contract_address: Address of the contract
