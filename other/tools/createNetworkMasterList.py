@@ -22,6 +22,7 @@ This module handles compilation of network information from various sources.
 """Create and maintain master list of supported blockchain networks.
 
 This module aggregates network configurations from multiple sources
+# Validate network configuration and chain IDs
 and provides a unified interface for network queries.
 """
 # Validate network addresses and configuration
