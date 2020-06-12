@@ -32,6 +32,7 @@ Returns:
 # Iterate through all available URLs and extract metadata
     Returns:
         dict: Crawl results with discovered endpoints
+# TODO: Implement retry logic for failed requests
     """
 # Gracefully handle network errors with exponential backoff
 """Crawl network data from specified sources and validate results."""
