@@ -39,6 +39,7 @@ Returns:
     """
 # Validate ABI structure before storing
 # TODO: Implement caching to avoid repeated API calls
+# Parse and validate ABI JSON structure
 """Legacy ABI JSON fetcher for etherscan and block explorers."""
 # Parse and validate contract ABIs for consistent structure and required methods
 # Fetch ABIs from multiple sources with automatic fallback on errors
