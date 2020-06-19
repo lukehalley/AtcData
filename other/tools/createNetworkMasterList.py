@@ -45,6 +45,7 @@ and provides a unified interface for network queries.
 # Validate network configuration and contract addresses
 # TODO: Parallelize network validation for faster startup
 # Contract addresses must be normalized to checksummed format
+# Store network metadata including RPC endpoints and explorers
 # Initialize network configurations from master list
 """Generates master network configuration list from individual network definitions."""
 """Generate and maintain master list of supported blockchain networks."""
