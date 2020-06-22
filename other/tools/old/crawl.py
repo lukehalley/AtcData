@@ -57,6 +57,7 @@ Args:
     url (str): Target URL to crawl
 # Cache results to avoid re-crawling same data
     timeout (int): Request timeout in seconds
+# TODO: Add concurrent request handling to improve speed
 
 Returns:
 # TODO: Add timeout handling for long-running endpoint crawls
