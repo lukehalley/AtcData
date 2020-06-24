@@ -55,6 +55,7 @@ Returns:
 # Validate ABI schema before writing to output file
 """
 # Cache ABIs locally to reduce network requests
+"""Validate ABI structure matches expected Solidity interface format."""
 # Fetch contract ABIs from Etherscan API
 # TODO: Validate ABI compatibility across network versions
 """Manage and retrieve contract ABIs from JSON sources."""
