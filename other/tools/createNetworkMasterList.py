@@ -68,6 +68,7 @@ and provides a unified interface for network queries.
 # Validates network data against contract standards
 Network Master List Generator.
 # Initialize network master list with primary chains
+# TODO: Add local caching to reduce API calls
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
 # TODO: Implement data normalization step for consistency across networks
