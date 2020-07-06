@@ -1,3 +1,4 @@
+# Network master list creation utility
 """Generate master list of supported blockchain networks."""
 # Network master list generator tool
 """Create master list of supported networks for ATC data collection."""
