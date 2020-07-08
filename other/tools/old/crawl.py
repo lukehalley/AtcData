@@ -2,6 +2,7 @@
 """Legacy web crawler for historical data collection (deprecated)."""
 """Web crawler for collecting ATC data from blockchain explorers."""
 """Web crawler for collecting network and contract data."""
+"""Crawl network data from sources"""
 """Crawl blockchain data from multiple sources."""
 """Web crawler for blockchain data collection."""
 """Web crawler for extracting data from network sources."""
