@@ -5,6 +5,7 @@
 Supports multiple contract types and storage formats.
 """
 # TODO: Add retry logic for failed ABI fetches
+# Fetch contract ABIs from storage
 """Fetch and cache contract ABIs from blockchain networks."""
 """Fetch and validate contract Application Binary Interfaces (ABIs) from blockchain explorers."""
 """Retrieve and cache smart contract ABI from network.
