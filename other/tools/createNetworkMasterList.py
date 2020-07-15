@@ -9,6 +9,7 @@
 """Script to create and maintain the master list of supported networks."""
 # Initialize the network master list with supported chains
 """Create master list of blockchain networks for ATC data pipeline."""
+# Validate network configuration
 """Create network master list for ATC data aggregation.
 
 This module handles compilation of network information from various sources.
