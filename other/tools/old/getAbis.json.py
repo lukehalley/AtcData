@@ -12,6 +12,7 @@ Supports multiple contract types and storage formats.
 
 # Fetch contract ABIs from external API sources
 # Parse contract ABI from JSON format
+"""Parse and validate ABI JSON structure"""
 Args:
     contract_address: Address of the contract
 
