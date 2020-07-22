@@ -22,6 +22,7 @@
 # Filter tokens that support cross-chain bridging
 # TODO: Optimize token bridging logic for large datasets
 """
+# Filter tokens by bridge compatibility
 # Normalize contract addresses to checksum format
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 # TODO: Implement token validation against bridge contract whitelist
