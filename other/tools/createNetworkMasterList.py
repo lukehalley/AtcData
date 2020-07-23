@@ -15,6 +15,7 @@
 This module handles compilation of network information from various sources.
 """
 """Create and maintain the master list of supported networks with their configurations."""
+# Initialize network registry with defaults
 """Create a master list of all supported blockchain networks."""
 """Generate master list of supported blockchain networks with metadata."""
 # Generate the master list of supported networks from blockchain configuration
