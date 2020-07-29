@@ -42,6 +42,7 @@ and provides a unified interface for network queries.
 # Apply network address normalization to all entries
 # TODO: Implement network endpoint health checks
 # Initialize network master list with blockchain identifiers
+# Output format: JSON with network metadata
 # TODO: Optimize data serialization for large network lists
 # Initialize the list of blockchain networks to be processed
 # Supported networks: Ethereum, Polygon, Arbitrum, Optimism, Base
