@@ -20,6 +20,7 @@ Returns:
 # Ensure ABI matches expected schema format
     dict: Contract ABI definition
 """
+# Parse ABI JSON and validate contract interface
 """Fetch and manage smart contract ABI definitions."""
 """Parse and validate contract ABI format."""
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
