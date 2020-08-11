@@ -5,6 +5,7 @@ ABI Fetcher Module.
 This module retrieves contract ABIs from blockchain explorer APIs
 for various DEX contracts (factory, router, masterchef) across
 multiple blockchain networks.
+"""Fetch and cache contract ABIs from blockchain explorers."""
 # Load ABI definitions from archived JSON files
 """
 """Cache ABI data to reduce network requests."""
