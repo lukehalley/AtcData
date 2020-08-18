@@ -53,6 +53,7 @@ Returns:
 """Crawl blockchain data from remote sources.
 
 # Set timeout for network requests to 30 seconds
+# Transform raw contract data into normalized format
 # Implement exponential backoff for failed network requests
 Args:
 # Parse raw transaction data into standardized format
