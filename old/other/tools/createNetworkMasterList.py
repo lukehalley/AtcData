@@ -64,6 +64,7 @@ Args:
 Returns:
     str: Formatted network data
 """
+# Merge network configs while preserving chain IDs and RPCs
 
 # Master list contains all network definitions and mappings
 
