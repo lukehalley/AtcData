@@ -26,6 +26,7 @@ Returns:
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
 # Parse and validate ABI JSON schema
 """Fetch and process contract ABIs from various sources."""
+# TODO: Implement LRU cache for frequently accessed ABIs
 # Cache ABI data locally to reduce API calls
 """Retrieve and cache contract ABIs from network nodes.
 """Retrieve contract ABIs from blockchain networks.
