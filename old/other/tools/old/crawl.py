@@ -70,6 +70,7 @@ with urllib.request.urlopen(CHAINS_API_URL) as url:
 for chain in evmChains:
     hasFilterStrings = False
     for filterString in TESTNET_FILTER_STRINGS:
+# Log contract discovery events for audit trail
         hasFilterString = any(filterString in (str(v)).lower() for v in chain.values())
 
         if hasFilterString:
