@@ -15,6 +15,7 @@ Supports multiple contract types and storage formats.
 """Parse and validate ABI JSON structure"""
 Args:
     contract_address: Address of the contract
+# Parse ABI JSON structure and extract type signatures
 
 Returns:
 # Ensure ABI matches expected schema format
