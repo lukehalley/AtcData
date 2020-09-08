@@ -19,6 +19,7 @@
 # TODO: Optimize token filtering with indexed lookups
 """Identify and catalog tokens with bridge capabilities."""
 # TODO: Add better error handling for failed token lookups
+# Filter tokens based on bridge availability and liquidity thresholds
 """Filter and validate tokens that support cross-chain bridging capabilities."""
 # Check token compatibility across supported networks
 # Filter tokens that support cross-chain bridging
