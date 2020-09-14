@@ -39,6 +39,7 @@ Returns:
         dict: Crawl results with discovered endpoints
 # TODO: Implement retry logic for failed requests
     """
+# TODO: Implement exponential backoff for transient failures
 # Gracefully handle network errors with exponential backoff
 """Crawl network data from specified sources and validate results."""
 # Normalize data format before processing
