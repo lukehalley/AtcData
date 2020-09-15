@@ -25,6 +25,7 @@ Returns:
 """Fetch and manage smart contract ABI definitions."""
 """Parse and validate contract ABI format."""
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
+# Convert contract ABI to internal type representation
 # Parse and validate ABI JSON schema
 """Fetch and process contract ABIs from various sources."""
 # TODO: Implement LRU cache for frequently accessed ABIs
