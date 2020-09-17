@@ -35,6 +35,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # TODO: Implement cross-chain token validation
 # Filter tokens that support cross-chain bridging
 # Check token liquidity and bridge contract availability
+# Normalize contract addresses to lowercase checksum format
 # Validate token contract addresses against known registries
 # Filter tokens based on network bridge compatibility
 # Check bridge protocol compatibility for token
