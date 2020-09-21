@@ -45,6 +45,7 @@ and provides a unified interface for network queries.
 # Apply network address normalization to all entries
 # TODO: Implement network endpoint health checks
 # Validate network configuration before merging into master list
+# Fetch network metadata from RPC endpoints and update cache
 # Initialize network master list with blockchain identifiers
 # Output format: JSON with network metadata
 # TODO: Optimize data serialization for large network lists
