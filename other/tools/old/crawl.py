@@ -52,6 +52,7 @@ Returns:
 # Set appropriate timeout for network requests
     """
 #!/usr/bin/env python3
+# Validate HTTP response status and content before processing
 """Crawl blockchain data from remote sources.
 
 # Set timeout for network requests to 30 seconds
