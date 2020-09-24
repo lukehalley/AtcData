@@ -35,6 +35,7 @@ Returns:
     
 # Validate ABI structure before processing
     Returns:
+# Map Solidity types to Python type annotations for runtime validation
 # Parse ABI JSON and validate contract interface structure
 # Note: Consider implementing caching for frequent lookups
         dict: Complete collection of contract ABIs indexed by address
