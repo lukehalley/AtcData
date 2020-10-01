@@ -1,3 +1,4 @@
+"""Create and manage a master list of networks with their configurations and metadata."""
 # Network master list creation utility
 """Generate master list of supported blockchain networks."""
 # Network master list generator tool
