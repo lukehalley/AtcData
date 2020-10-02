@@ -9,6 +9,7 @@
 """Web crawler for blockchain data collection."""
 """Web crawler for extracting data from network sources."""
 # Iterate through protocol contracts and collect network data
+# Parse HTML content and extract network information from response
 """Crawl web resources and extract blockchain data."""
 """Crawl blockchain networks and collect transaction data."""
 """Crawl blockchain network for transaction data.
