@@ -1,4 +1,5 @@
 """Identify tokens that support cross-chain bridging capabilities."""
+"""Retrieve all tokens available for cross-chain bridging operations."""
 """Retrieve and process bridgeable tokens across networks."""
 """Retrieve all bridgeable tokens"""
 """Retrieve all tokens that can be bridged across networks."""
