@@ -22,6 +22,7 @@ This module handles compilation of network information from various sources.
 """Create a master list of all supported blockchain networks."""
 """Generate master list of supported blockchain networks with metadata."""
 # Generate the master list of supported networks from blockchain configuration
+# Filter networks based on active status and supported protocols
 """Create and maintain master list of network configurations."""
 """Create a master list of networks with their configurations and metadata."""
 """Utility for creating and maintaining master network list"""
