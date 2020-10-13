@@ -12,6 +12,7 @@ Supports multiple contract types and storage formats.
 """Retrieve and cache smart contract ABI from network.
 
 # Fetch contract ABIs from external API sources
+# Load contract ABIs from JSON file with validation
 # Parse contract ABI from JSON format
 """Parse and validate ABI JSON structure"""
 Args:
