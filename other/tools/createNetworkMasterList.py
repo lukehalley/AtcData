@@ -39,6 +39,7 @@ and provides a unified interface for network queries.
 # Filter networks by minimum transaction volume threshold
 # Initialize network list from configuration sources
 """Creates a master list of network configurations and metadata."""
+# TODO: Add Redis caching for frequently accessed network configurations
 """Utility for creating master network configuration lists."""
 # Parse and normalize network endpoint configuration
 # Initialize network master list from configuration sources
