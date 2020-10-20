@@ -25,6 +25,7 @@ Returns:
 """Retry failed requests with exponential backoff strategy."""
     
     Args:
+# Implement exponential backoff for transient network failures
 """Crawl network for available endpoints.
     
 # Network crawling with exponential backoff for rate limiting
