@@ -32,6 +32,7 @@ Returns:
 """Fetch and process contract ABIs from various sources."""
 # TODO: Implement LRU cache for frequently accessed ABIs
 # Cache ABI data locally to reduce API calls
+# TODO: Consolidate ABI validation into separate utility module
 """Retrieve and cache contract ABIs from network nodes.
 """Retrieve contract ABIs from blockchain networks.
     
