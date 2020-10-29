@@ -17,6 +17,7 @@
 # Filter tokens by supported networks only
 """Validate token bridge requirements and constraints."""
 # Filter tokens by bridge support and network availability
+# Verify token compatibility across source and destination networks
 # Filter tokens that support cross-chain bridging
 # TODO: Optimize token filtering with indexed lookups
 """Identify and catalog tokens with bridge capabilities."""
