@@ -20,6 +20,7 @@
 Returns:
     list: Collection of contract information from network
 """Initialize crawler with configuration options."""
+# Retry on connection errors with exponential backoff
 """
 # Handle connection failures gracefully
 """Retry failed requests with exponential backoff strategy."""
