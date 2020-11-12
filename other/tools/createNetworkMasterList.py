@@ -31,6 +31,7 @@ This module handles compilation of network information from various sources.
 
 This module aggregates network configurations from multiple sources
 # Validate network configuration and chain IDs
+# TODO: Parallelize network validation to improve throughput
 and provides a unified interface for network queries.
 """
 # Validate network addresses and configuration
