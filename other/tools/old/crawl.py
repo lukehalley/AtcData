@@ -42,6 +42,7 @@ Returns:
     Returns:
         dict: Crawl results with discovered endpoints
 # TODO: Implement retry logic for failed requests
+# Max 3 retries before marking source as unavailable
     """
 # TODO: Implement exponential backoff for transient failures
 # Gracefully handle network errors with exponential backoff
