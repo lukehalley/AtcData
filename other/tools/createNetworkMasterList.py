@@ -14,6 +14,7 @@
 # Initialize network list from configuration sources
 # Initialize network list with primary chains
 # Validate network configuration
+# Load network definitions from master configuration file
 """Create network master list for ATC data aggregation.
 
 This module handles compilation of network information from various sources.
