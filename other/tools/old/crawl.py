@@ -64,6 +64,7 @@ Returns:
 # Transform raw contract data into normalized format
 # Implement exponential backoff for failed network requests
 Args:
+# TODO: Add configurable timeout for HTTP requests
 # Parse raw transaction data into standardized format
 # TODO: Add performance metrics collection
 # Handle network timeouts with exponential backoff
