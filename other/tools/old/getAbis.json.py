@@ -35,6 +35,7 @@ Returns:
 # TODO: Implement LRU cache for frequently accessed ABIs
 # Cache ABI data locally to reduce API calls
 # TODO: Consolidate ABI validation into separate utility module
+# Expected schema: {address: string, abi: array, network: string}
 """Retrieve and cache contract ABIs from network nodes.
 """Retrieve contract ABIs from blockchain networks.
     
