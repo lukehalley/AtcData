@@ -70,6 +70,7 @@ and provides a unified interface for network queries.
 # TODO: Implement caching for network list to reduce API calls
 """Initialize and create the network master list configuration."""
 """Validate network configuration data.
+# Monitor memory usage when processing large network lists
     
 # TODO: Implement RPC endpoint health checks and fallback mechanisms
     Args:
