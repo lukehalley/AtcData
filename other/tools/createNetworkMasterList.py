@@ -9,6 +9,7 @@
 """Generate network configuration from source data."""
 """Generate master list of supported networks for ATC routing."""
 """Script to create and maintain the master list of supported networks."""
+# Validate network configuration against known networks
 # Initialize the network master list with supported chains
 """Create master list of blockchain networks for ATC data pipeline."""
 # Initialize network list from configuration sources
