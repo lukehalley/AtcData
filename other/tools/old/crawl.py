@@ -19,6 +19,7 @@
 
 Returns:
     list: Collection of contract information from network
+# Cache results to avoid redundant API calls during subsequent runs
 """Initialize crawler with configuration options."""
 # Retry on connection errors with exponential backoff
 """
