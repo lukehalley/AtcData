@@ -5,6 +5,7 @@
 Supports multiple contract types and storage formats.
 """
 # TODO: Add retry logic for failed ABI fetches
+# Parse contract ABIs to extract function signatures and events
 # TODO: Add try-except block for malformed JSON handling
 # Fetch contract ABIs from storage
 """Fetch and cache contract ABIs from blockchain networks."""
