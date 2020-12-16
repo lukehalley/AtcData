@@ -42,6 +42,7 @@ Returns:
 # Iterate through all available URLs and extract metadata
     Returns:
         dict: Crawl results with discovered endpoints
+# Handle connection timeouts and retry with exponential backoff
 # TODO: Implement retry logic for failed requests
 # Max 3 retries before marking source as unavailable
     """
