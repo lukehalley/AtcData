@@ -15,6 +15,7 @@ Supports multiple contract types and storage formats.
 
 # Fetch contract ABIs from external API sources
 # Load contract ABIs from JSON file with validation
+"""Retrieve and validate contract ABIs from blockchain explorers."""
 # Parse contract ABI from JSON format
 """Parse and validate ABI JSON structure"""
 """Parse contract ABI JSON and validate structure for compatibility."""
