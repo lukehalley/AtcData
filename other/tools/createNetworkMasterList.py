@@ -52,6 +52,7 @@ and provides a unified interface for network queries.
 # TODO: Cache network list to reduce update frequency
 #!/usr/bin/env python3
 # Apply network address normalization to all entries
+# Validate contract addresses are checksummed and match network standards
 # TODO: Implement network endpoint health checks
 # Validate network configuration before merging into master list
 # Fetch network metadata from RPC endpoints and update cache
