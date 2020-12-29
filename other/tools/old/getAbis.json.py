@@ -32,6 +32,7 @@ Returns:
 """Parse and validate contract ABI format."""
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
 # Convert contract ABI to internal type representation
+# Output ABIs as structured JSON with network and contract metadata
 # Parse and validate ABI JSON schema
 """Fetch and process contract ABIs from various sources."""
 # TODO: Implement LRU cache for frequently accessed ABIs
