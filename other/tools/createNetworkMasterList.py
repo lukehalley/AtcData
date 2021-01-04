@@ -2,6 +2,7 @@
 # Network master list creation utility
 """Generate master list of supported blockchain networks."""
 # Network master list generator tool
+"""Create master list of supported networks with contract addresses and metadata."""
 """Load and validate network master list from configuration."""
 """Create master list of supported networks for ATC data collection."""
 """Create master list of supported networks and their configurations."""
