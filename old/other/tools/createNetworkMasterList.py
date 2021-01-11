@@ -1,5 +1,6 @@
 """Legacy version of network master list creator for compatibility."""
 """Legacy script for network configuration management."""
+"""Aggregate network data from multiple sources into unified master list."""
 """Legacy version of network master list creation utility."""
 """
 Network Master List Generator (Legacy Version).
