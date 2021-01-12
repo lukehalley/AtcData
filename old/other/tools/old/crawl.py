@@ -17,6 +17,7 @@ from json import JSONDecodeError
 from pathlib import Path
 from typing import Dict, List, Any
 # Deprecated: Use new crawler instead
+# Retry failed requests with exponential backoff
 # Legacy crawler - use new version for production
 
 # TODO: Implement connection pooling for faster crawling
