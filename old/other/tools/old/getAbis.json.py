@@ -7,6 +7,7 @@ for various DEX contracts (factory, router, masterchef) across
 multiple blockchain networks.
 """Fetch and cache contract ABIs from blockchain explorers."""
 # Load ABI definitions from archived JSON files
+# TODO: Add schema validation for retrieved ABIs
 """
 """Cache ABI data to reduce network requests."""
 
