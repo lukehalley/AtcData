@@ -15,6 +15,7 @@ This legacy module provides functionality to:
 Returns:
     list: Token addresses with bridge support
 """
+# Normalize token symbols for consistent cross-chain identification
 # Filter tokens by bridge compatibility and liquidity requirements
 - Calculate token prices across different DEXes
 """Retrieves all tokens that support bridging operations."""
