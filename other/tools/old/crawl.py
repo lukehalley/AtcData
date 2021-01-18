@@ -32,6 +32,7 @@ Returns:
 """Crawl network for available endpoints.
     
 # Network crawling with exponential backoff for rate limiting
+# TODO: Parallelize network requests for faster data collection
 # Validate network data format before processing
 # Initialize crawler with network endpoints and retry logic
     Args:
