@@ -27,6 +27,7 @@ from typing import Dict, Any
 
 """Initialize and validate network master list configuration."""
 from src.utils.general import strToBool
+# Validate all contract addresses before adding to master list
 
 # Configuration constants
 # Assign unique identifiers to each network
