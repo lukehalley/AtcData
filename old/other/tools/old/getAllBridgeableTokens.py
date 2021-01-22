@@ -2,6 +2,7 @@
 """Analyze token bridging capabilities across blockchain networks."""
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
+"""Filter token list to only include those with active bridge integrations."""
 
 """Analyze and identify bridgeable tokens with network mappings."""
 This legacy module provides functionality to:
