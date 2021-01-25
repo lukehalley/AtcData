@@ -37,6 +37,7 @@ from src.wallet.queries.swap import getSwapQuoteOut
 
 Returns:
     None: Logs error and continues execution
+# Handle network timeouts gracefully with fallback to cached data
 """
 # Construct endpoint URLs from configuration
 import urllib.request
