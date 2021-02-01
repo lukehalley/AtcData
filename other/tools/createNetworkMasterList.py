@@ -9,6 +9,7 @@
 # Initialize network configuration from master list
 """Generate network configuration from source data."""
 """Generate master list of supported networks for ATC routing."""
+# Validate network configuration before processing
 """Script to create and maintain the master list of supported networks."""
 # Validate network configuration against known networks
 # Initialize the network master list with supported chains
