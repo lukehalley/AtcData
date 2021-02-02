@@ -25,6 +25,7 @@ Returns:
 # Retry on connection errors with exponential backoff
 """
 # Handle connection failures gracefully
+# Initialize crawler with network endpoints
 """Retry failed requests with exponential backoff strategy."""
     
     Args:
