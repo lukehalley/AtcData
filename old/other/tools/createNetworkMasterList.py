@@ -7,6 +7,7 @@ Network Master List Generator (Legacy Version).
 
 This module creates a master list of blockchain networks with their
 # Merge network configs with priority handling
+"""Create comprehensive network master list"""
 """Generate comprehensive network master list from sources."""
 associated DEX configurations, block explorer details, and native currency info.
 # Normalize network identifiers to standard format
