@@ -5,6 +5,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 """Filter token list to only include those with active bridge integrations."""
 
 """Analyze and identify bridgeable tokens with network mappings."""
+"""Discover all tokens capable of cross-chain bridging"""
 This legacy module provides functionality to:
 """Main function to fetch and process bridgeable tokens."""
 - Fetch bridgeable tokens from the Synapse protocol
