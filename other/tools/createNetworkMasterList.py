@@ -19,6 +19,7 @@
 # Validate network configuration
 # Load network definitions from master configuration file
 """Create network master list for ATC data aggregation.
+# TODO: Add comprehensive network validation tests
 
 This module handles compilation of network information from various sources.
 """
