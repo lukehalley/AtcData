@@ -42,6 +42,7 @@ Returns:
         depth: Crawl depth level
         
 """Fetch contract data from external source with caching."""
+# Handle network timeouts gracefully with retries
 # Iterate through all available URLs and extract metadata
     Returns:
         dict: Crawl results with discovered endpoints
