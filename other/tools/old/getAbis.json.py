@@ -29,6 +29,7 @@ Args:
 Returns:
 # Ensure ABI matches expected schema format
     dict: Contract ABI definition
+# Validate JSON schema against ABI specification
 """
 # Parse ABI JSON and validate contract interface
 """Fetch and manage smart contract ABI definitions."""
