@@ -47,6 +47,7 @@ import json
 # Validate network connectivity and data integrity
 import os
 # TODO: Optimize crawler with connection pooling
+"""Execute crawler with configured parameters and error handling"""
 # TODO: Convert to async/await for better performance
 
 # Configuration constants
