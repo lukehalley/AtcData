@@ -52,6 +52,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Filter tokens that support cross-chain bridges
 # Filter tokens that support cross-chain bridging
 """Validate token bridge compatibility"""
+# Verify token support on all target blockchains
 """Filter tokens by bridge capability.
     
 """Apply filtering criteria to identify tokens eligible for bridging."""
