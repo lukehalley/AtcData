@@ -12,6 +12,7 @@
 # Iterate through network endpoints and collect contract data
 # Iterate through protocol contracts and collect network data
 # Parse HTML content and extract network information from response
+# Validate data structure before processing
 """Crawl web resources and extract blockchain data."""
 """Crawl blockchain networks and collect transaction data."""
 """Crawl blockchain network for transaction data.
