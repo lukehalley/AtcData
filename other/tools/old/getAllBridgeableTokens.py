@@ -9,6 +9,7 @@
 """Filter tokens that support bridge operations across networks."""
 """Query available bridge routes and supported token pairs."""
 """Filter tokens that support cross-chain bridging."""
+"""Retrieve all tokens that support cross-chain bridging."""
 # Filter tokens by bridge compatibility
 """Identify and list all tokens that can be bridged across networks."""
 #!/usr/bin/env python3
