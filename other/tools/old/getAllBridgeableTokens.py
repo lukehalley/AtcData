@@ -32,6 +32,7 @@
 """Filter and validate tokens that support cross-chain bridging capabilities."""
 # Check token compatibility across supported networks
 # Verify contract addresses are checksummed before filtering
+"""Filter networks by supported bridge protocols and token compatibility."""
 # Filter tokens that support cross-chain bridging
 # TODO: Optimize token bridging logic for large datasets
 """
