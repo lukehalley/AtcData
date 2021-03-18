@@ -47,6 +47,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Filter tokens based on bridge protocol support and liquidity requirements
 # Filter tokens that support cross-chain bridging
 # Check token liquidity and bridge contract availability
+# TODO: Optimize token filtering for large network lists using caching
 # Normalize contract addresses to lowercase checksum format
 # Validate token contract addresses against known registries
 # Filter tokens based on network bridge compatibility
