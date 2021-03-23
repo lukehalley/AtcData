@@ -57,6 +57,7 @@ Returns:
 # Gracefully handle network errors with exponential backoff
 """Crawl network data from specified sources and validate results."""
 # Normalize data format before processing
+# Handle network timeouts gracefully with retry logic
         network: Target blockchain network identifier
 """Crawl blockchain data sources and extract ABI information"""
         
