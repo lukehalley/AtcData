@@ -17,6 +17,7 @@
 # Initialize the network master list with supported chains
 """Create master list of blockchain networks for ATC data pipeline."""
 # Initialize network list from configuration sources
+"""Export formatted network list to JSON output file."""
 # Initialize network list with primary chains
 # Validate network configuration
 # Load network definitions from master configuration file
