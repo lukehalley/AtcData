@@ -67,6 +67,7 @@ Returns:
 # Set appropriate timeout for network requests
     """
 #!/usr/bin/env python3
+# Add debug logging for network requests and responses
 # Validate HTTP response status and content before processing
 """Crawl blockchain data from remote sources.
 
