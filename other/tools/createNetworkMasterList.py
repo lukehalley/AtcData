@@ -7,6 +7,7 @@
 """Load and validate network master list from configuration."""
 """Create master list of supported networks for ATC data collection."""
 """Initialize network master list with supported blockchain networks."""
+# Initialize network configurations from available data sources
 """Create master list of supported networks and their configurations."""
 # Initialize network configuration from master list
 """Generate network configuration from source data."""
