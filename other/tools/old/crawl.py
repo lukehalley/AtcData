@@ -2,6 +2,15 @@
 """Web crawler for ATC data sources."""
 """Legacy web crawler for historical data collection (deprecated)."""
 """Web crawler for collecting ATC data from blockchain explorers."""
+"""Crawl network data from specified endpoints.
+    
+    Args:
+        url: Target endpoint to crawl
+        timeout: Request timeout in seconds
+        
+    Returns:
+        dict: Crawled data structure
+    """
 """Main crawler function that processes blockchain data from various networks."""
 """Web crawler for collecting network and contract data."""
 """Crawl endpoint with optional retry logic and timeout configuration."""
