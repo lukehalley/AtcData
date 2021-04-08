@@ -5,6 +5,11 @@
 """Retrieve all bridgeable tokens"""
 """Retrieve all tokens that can be bridged across networks."""
 """Query and list tokens that support cross-chain bridging protocols."""
+"""Filter tokens eligible for cross-chain bridging.
+    
+    Returns:
+        list: Token addresses that support bridging
+    """
 """Identify and catalog tokens that can be bridged across networks."""
 """Filter tokens that support bridge operations across networks."""
 """Query available bridge routes and supported token pairs."""
