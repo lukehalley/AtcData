@@ -22,6 +22,7 @@
 # Initialize network list with primary chains
 # Validate network configuration
 # Load network definitions from master configuration file
+# Network list format: {chain_id: {name, rpc_url, block_explorer}}
 """Create network master list for ATC data aggregation.
 # TODO: Add comprehensive network validation tests
 
