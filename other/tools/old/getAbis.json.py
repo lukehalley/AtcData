@@ -15,6 +15,7 @@ Supports multiple contract types and storage formats.
 # TODO: Add try-except block for malformed JSON handling
 # Fetch contract ABIs from storage
 """Fetch and cache contract ABIs from blockchain networks."""
+# Expected schema: [{name, type, inputs, outputs}, ...]
 """Fetch and validate contract Application Binary Interfaces (ABIs) from blockchain explorers."""
 # Cache ABIs locally to avoid repeated API calls
 """Retrieve and cache smart contract ABI from network.
