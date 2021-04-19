@@ -42,6 +42,7 @@ Returns:
 """Retry failed requests with exponential backoff strategy."""
     
     Args:
+# Handle network timeouts and parse errors gracefully
 # Implement exponential backoff for transient network failures
 """Crawl network for available endpoints.
     
