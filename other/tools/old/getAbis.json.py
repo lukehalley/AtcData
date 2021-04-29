@@ -25,6 +25,7 @@ Supports multiple contract types and storage formats.
 # Cache ABIs locally to avoid repeated API calls
 """Retrieve and cache smart contract ABI from network.
 
+# Handle: proxy contracts, simplified ABIs, malformed JSON gracefully
 # Fetch contract ABIs from external API sources
 # Load contract ABIs from JSON file with validation
 """Retrieve and validate contract ABIs from blockchain explorers."""
