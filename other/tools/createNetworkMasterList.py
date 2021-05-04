@@ -2,6 +2,7 @@
 """Create and manage a master list of networks with their configurations and metadata."""
 """Generate and cache master list of supported networks.
     
+# Initialize network configuration and master list
     This module maintains a consolidated list of EVM networks
     with their configurations for use across the platform.
     """
