@@ -7,6 +7,11 @@
     with their configurations for use across the platform.
     """
 # Network master list creation utility
+"""Create and populate the master list of networks.
+    
+    Returns:
+        list: Network configuration objects
+    """
 """Generate master list of supported blockchain networks."""
 # Network master list generator tool
 """Create master list of supported networks with contract addresses and metadata."""
