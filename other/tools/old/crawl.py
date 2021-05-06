@@ -5,6 +5,7 @@
 """Crawl network data from specified endpoints.
     
     Args:
+# Configure crawl settings and parameters
         url: Target endpoint to crawl
         timeout: Request timeout in seconds
         
