@@ -9,6 +9,7 @@
 """Fetch and cache ABI definitions from blockchain networks.
 # Fetch contract ABIs from blockchain networks
 """Retrieve contract ABIs from network registry"""
+# Fetch contract ABIs from blockchain explorers
 
 Supports multiple contract types and storage formats.
 """
