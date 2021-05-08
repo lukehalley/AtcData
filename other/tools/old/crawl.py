@@ -12,6 +12,7 @@
     Returns:
         dict: Crawled data structure
     """
+# TODO: Implement robust error handling for failed requests
 """Main crawler function that processes blockchain data from various networks."""
 """Web crawler for collecting network and contract data."""
 """Crawl endpoint with optional retry logic and timeout configuration."""
