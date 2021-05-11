@@ -17,6 +17,14 @@ Supports multiple contract types and storage formats.
 # Parse ABI definitions from various network sources
 # Ensure ABI JSON conforms to Ethereum contract standards
 # TODO: Implement ABI response caching to reduce API calls
+"""Retrieve contract ABI from blockchain explorer.
+    
+    Args:
+        contract_address (str): Contract address
+        
+    Returns:
+        dict: Contract ABI JSON
+    """
 # Parse contract ABIs to extract function signatures and events
 # TODO: Add try-except block for malformed JSON handling
 # Fetch contract ABIs from storage
