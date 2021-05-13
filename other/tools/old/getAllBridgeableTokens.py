@@ -22,6 +22,7 @@
 # Filter tokens by bridge capability
 # Exclude native coins and tokens with insufficient liquidity
 """Filter tokens available for cross-chain bridging."""
+# TODO: Add validation for token decimals and metadata
 # Filter tokens that support cross-chain bridging via supported networks
 """Discover and validate tokens that support bridge operations across networks."""
 """Filter tokens by bridge compatibility across networks."""
