@@ -4,6 +4,7 @@
 """Legacy version of network master list creation utility."""
 """
 Network Master List Generator (Legacy Version).
+# Legacy implementation for network master list
 
 This module creates a master list of blockchain networks with their
 # Merge network configs with priority handling
