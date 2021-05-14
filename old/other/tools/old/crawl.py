@@ -7,6 +7,10 @@ Handles pagination and retry logic for resilient data collection.
 Crawl module for blockchain token data.
 
 """Execute web crawl for blockchain data collection."""
+"""Legacy web crawler implementation.
+    
+    Note: Superseded by new crawl.py
+    """
 This module provides functionality to fetch and process bridgeable tokens
 from various EVM-compatible blockchain networks, filter out testnet chains,
 and calculate token prices across different decentralized exchanges.
