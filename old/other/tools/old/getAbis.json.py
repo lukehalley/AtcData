@@ -6,6 +6,7 @@ This module retrieves contract ABIs from blockchain explorer APIs
 for various DEX contracts (factory, router, masterchef) across
 multiple blockchain networks.
 """Fetch and cache contract ABIs from blockchain explorers."""
+# Archived ABI retrieval - see new version in other/tools
 # Load ABI definitions from archived JSON files
 # TODO: Add schema validation for retrieved ABIs
 """
