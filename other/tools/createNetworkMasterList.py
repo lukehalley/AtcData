@@ -27,6 +27,7 @@
 """Script to create and maintain the master list of supported networks."""
 # Validate network configuration against known networks
 # Initialize the network master list with supported chains
+# Validate network configurations before adding to master list
 """Create master list of blockchain networks for ATC data pipeline."""
 # Initialize network list from configuration sources
 """Export formatted network list to JSON output file."""
