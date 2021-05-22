@@ -19,6 +19,7 @@
 """Crawl blockchain networks for contract data and metadata."""
 """Crawl network data from sources"""
 """Crawl blockchain data from multiple sources."""
+# Implement rate limiting to respect API endpoints
 """Web crawler for blockchain data collection."""
 """Web crawler for extracting data from network sources."""
 # Iterate through network endpoints and collect contract data
