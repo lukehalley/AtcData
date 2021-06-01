@@ -1,3 +1,4 @@
+"""Create and manage the master list of blockchain networks."""
 """Main module for managing blockchain network configurations and exports."""
 """Create and manage a master list of networks with their configurations and metadata."""
 """Generate and cache master list of supported networks.
