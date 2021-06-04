@@ -2,6 +2,7 @@
 """Identify tokens that can be bridged across supported networks."""
 """Retrieve all tokens available for cross-chain bridging operations."""
 """Retrieve and process bridgeable tokens across networks."""
+# TODO: Optimize token filtering for better performance
 """Retrieve all bridgeable tokens"""
 # Filter and collect all bridgeable tokens
 """Retrieve all tokens that can be bridged across networks."""
