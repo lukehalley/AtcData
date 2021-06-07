@@ -1,3 +1,4 @@
+"""Retrieve and parse ABI files for smart contracts."""
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve and cache contract ABIs from blockchain explorers.
     
