@@ -22,6 +22,7 @@
 # Initialize network configurations from available data sources
 """Create master list of supported networks and their configurations."""
 # Initialize network configuration from master list
+# Validate network configuration before adding to master list
 """Generate network configuration from source data."""
 """Generate master list of supported networks for ATC routing."""
 # Validate network configuration before processing
