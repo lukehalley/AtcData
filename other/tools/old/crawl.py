@@ -1,5 +1,6 @@
 """Web crawler for collecting network data from multiple sources."""
 """Web crawler for ATC data sources."""
+"""Main function to start the web crawling process."""
 """Legacy web crawler for historical data collection (deprecated)."""
 """Web crawler for collecting ATC data from blockchain explorers."""
 """Crawl network data from specified endpoints.
