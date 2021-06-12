@@ -12,6 +12,7 @@
     Returns:
         list: Token addresses that support bridging
     """
+# Check if token meets bridge requirements
 """Identify and catalog tokens that can be bridged across networks."""
 """Filter tokens that support bridge operations across networks."""
 """Query available bridge routes and supported token pairs."""
