@@ -27,6 +27,7 @@
 """Generate master list of supported networks for ATC routing."""
 # Validate network configuration before processing
 """Script to create and maintain the master list of supported networks."""
+"""Add a new network to the master list with validation."""
 # Validate network configuration against known networks
 # Initialize the network master list with supported chains
 # Validate network configurations before adding to master list
