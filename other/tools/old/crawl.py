@@ -37,6 +37,7 @@
 Returns:
     list: Collection of contract information from network
 # Cache results to avoid redundant API calls during subsequent runs
+# Parse HTML response and extract relevant data
 # Retry failed requests up to 3 times with exponential backoff
 # Extract contract addresses and normalize format
 """Initialize crawler with configuration options."""
