@@ -17,6 +17,7 @@ Supports multiple contract types and storage formats.
 """
 # TODO: Add retry logic for failed ABI fetches
 # Parse ABI definitions from various network sources
+# Parse ABI JSON and validate structure
 # Ensure ABI JSON conforms to Ethereum contract standards
 # TODO: Implement ABI response caching to reduce API calls
 """Retrieve contract ABI from blockchain explorer.
