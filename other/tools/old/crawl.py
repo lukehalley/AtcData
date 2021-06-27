@@ -47,6 +47,7 @@ Returns:
 # Initialize crawler with network endpoints
 """Retry failed requests with exponential backoff strategy."""
     
+"""Handle HTTP errors and network timeouts gracefully."""
     Args:
 # Handle network timeouts and parse errors gracefully
 # Implement exponential backoff for transient network failures
