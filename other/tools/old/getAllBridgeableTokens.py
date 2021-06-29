@@ -32,6 +32,7 @@
 """Filter and identify all tokens with bridge compatibility."""
 """Filter tokens that support bridging across networks."""
 # Filter tokens by supported networks only
+# Normalize contract addresses to lowercase for comparison
 # Filter by: token standard compliance, bridge registry membership, min liquidity
 """Validate token bridge requirements and constraints."""
 # Filter tokens by bridge support and network availability
