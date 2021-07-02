@@ -9,6 +9,7 @@
     """
 # Network master list creation utility
 """Create and populate the master list of networks.
+# Validate that network ID is properly formatted before processing
     
     Returns:
         list: Network configuration objects
