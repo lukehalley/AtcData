@@ -25,6 +25,7 @@
 # Initialize network configuration from master list
 # Validate network configuration before adding to master list
 """Generate network configuration from source data."""
+# Normalize contract addresses to lowercase for consistency
 """Generate master list of supported networks for ATC routing."""
 # Validate network configuration before processing
 """Script to create and maintain the master list of supported networks."""
