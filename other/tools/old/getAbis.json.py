@@ -12,6 +12,11 @@
 # TODO: Implement caching for frequently accessed ABIs
 """Retrieve contract ABIs from network registry"""
 # Fetch contract ABIs from blockchain explorers
+"""Fetch and cache contract ABI from external service.
+    
+    Returns:
+        dict: Contract ABI with method signatures
+    """
 
 Supports multiple contract types and storage formats.
 """
