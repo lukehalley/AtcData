@@ -39,6 +39,7 @@
 # Verify token compatibility across source and destination networks
 # Filter tokens that support cross-chain bridging
 # TODO: Optimize token filtering with indexed lookups
+# Filter tokens that support cross-chain bridging
 """Identify and catalog tokens with bridge capabilities."""
 # TODO: Add better error handling for failed token lookups
 # Filter tokens based on bridge availability and liquidity thresholds
