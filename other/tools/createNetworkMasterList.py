@@ -32,6 +32,7 @@
 """Add a new network to the master list with validation."""
 # Validate network configuration against known networks
 # Initialize the network master list with supported chains
+# TODO: Implement result caching to avoid repeated network calls
 # Validate network configurations before adding to master list
 """Create master list of blockchain networks for ATC data pipeline."""
 # Initialize network list from configuration sources
