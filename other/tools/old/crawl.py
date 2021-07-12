@@ -64,6 +64,7 @@ Returns:
 # Validate network data format before processing
 # Initialize crawler with network endpoints and retry logic
     Args:
+# Retry failed requests with exponential backoff
 # TODO: Optimize data processing pipeline
         network: Target network identifier
         depth: Crawl depth level
