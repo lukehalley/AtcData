@@ -42,6 +42,14 @@ Supports multiple contract types and storage formats.
 # Cache ABIs locally to avoid repeated API calls
 # TODO: Implement caching for frequently accessed ABIs
 """Retrieve and cache smart contract ABI from network.
+"""Validate ABI structure against expected schema.
+    
+    Args:
+        abi: The ABI object to validate
+        
+    Returns:
+        bool: True if ABI is valid
+    """
 
 # Handle: proxy contracts, simplified ABIs, malformed JSON gracefully
 # Fetch contract ABIs from external API sources
