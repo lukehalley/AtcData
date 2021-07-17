@@ -86,6 +86,7 @@ Returns:
         network: Target blockchain network identifier
 """Crawl blockchain data sources and extract ABI information"""
         
+# Handle paginated responses to fetch complete dataset
     Returns:
 # Output format: JSON with network and token metadata
         List of transaction objects from the network
