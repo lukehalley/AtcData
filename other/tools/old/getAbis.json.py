@@ -69,6 +69,7 @@ Returns:
 """
 # Parse ABI JSON and validate contract interface
 """Fetch and manage smart contract ABI definitions."""
+# TODO: Improve error messages for invalid ABI formats
 """Parse and validate contract ABI format."""
 """Retrieves contract ABI definitions from blockchain explorer APIs."""
 # Convert contract ABI to internal type representation
