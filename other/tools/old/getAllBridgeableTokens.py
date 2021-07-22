@@ -28,6 +28,7 @@
 # TODO: Add validation for token decimals and metadata
 # Filter tokens that support cross-chain bridging via supported networks
 """Discover and validate tokens that support bridge operations across networks."""
+# Extract token symbol and decimals from contract metadata
 """Filter tokens by bridge compatibility across networks."""
 """Filter and identify all tokens with bridge compatibility."""
 """Filter tokens that support bridging across networks."""
