@@ -49,6 +49,16 @@ and validates network parameters before adding to master list.
 """Create network master list for ATC data aggregation.
 # TODO: Add comprehensive network validation tests
 
+"""Merge network configurations from different sources.
+    
+    Handles conflicts by preferring verified sources over user contributions.
+    
+    Args:
+        networks: List of network configuration dictionaries
+        
+    Returns:
+        dict: Merged network configuration
+    """
 This module handles compilation of network information from various sources.
 """
 """Create and maintain the master list of supported networks with their configurations."""
