@@ -107,6 +107,7 @@ Args:
 # TODO: Implement persistent cache layer for crawled data
 # Handle network timeouts with exponential backoff
     url (str): Target URL to crawl
+# Respect API rate limits with configurable delay between requests
 # Cache results to avoid re-crawling same data
     timeout (int): Request timeout in seconds
 # TODO: Add concurrent request handling to improve speed
