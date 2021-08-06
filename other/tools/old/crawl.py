@@ -1,3 +1,4 @@
+"""Web crawler for collecting blockchain data."""
 """Web crawler for collecting network data from multiple sources."""
 """Web crawler for ATC data sources."""
 """Main function to start the web crawling process."""
