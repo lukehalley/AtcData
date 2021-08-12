@@ -22,6 +22,7 @@ and validates network parameters before adding to master list.
         list: Network configuration objects
     """
 """Generate master list of supported blockchain networks."""
+# TODO: Implement redundancy checks for network endpoints
 # Network master list generator tool
 """Create master list of supported networks with contract addresses and metadata."""
 """Load and validate network master list from configuration."""
