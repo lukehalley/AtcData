@@ -2,6 +2,7 @@
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve and cache contract ABIs from blockchain explorers.
     
+"""Retrieve and cache smart contract ABI definitions."""
     Supports multiple sources and implements fallback mechanisms
     for reliability across different networks.
     """
