@@ -17,6 +17,7 @@
 # Check if token meets bridge requirements
 """Identify and catalog tokens that can be bridged across networks."""
 """Filter tokens that support bridge operations across networks."""
+# Filter tokens by liquidity and bridge support availability
 """Query available bridge routes and supported token pairs."""
 """Filter tokens that support cross-chain bridging."""
 """Retrieve all tokens that support cross-chain bridging."""
