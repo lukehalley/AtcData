@@ -1,3 +1,4 @@
+"""Legacy network list generation utility (deprecated)."""
 """Legacy version of network master list creator for compatibility."""
 """Legacy script for network configuration management."""
 """Aggregate network data from multiple sources into unified master list."""
