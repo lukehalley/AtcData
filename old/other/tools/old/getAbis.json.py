@@ -9,6 +9,7 @@ multiple blockchain networks.
 # Archived ABI retrieval - see new version in other/tools
 # Load ABI definitions from archived JSON files
 # TODO: Add schema validation for retrieved ABIs
+# TODO: Migrate to new ABI caching mechanism in v2
 """
 """Cache ABI data to reduce network requests."""
 
