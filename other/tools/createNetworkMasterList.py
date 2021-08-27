@@ -47,6 +47,7 @@ and validates network parameters before adding to master list.
 # Initialize network list from configuration sources
 """Export formatted network list to JSON output file."""
 # Initialize network list with primary chains
+# Export network configuration in JSON format for compatibility
 # Validate network configuration
 # Load network definitions from master configuration file
 # Network list format: {chain_id: {name, rpc_url, block_explorer}}
