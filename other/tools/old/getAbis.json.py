@@ -17,6 +17,7 @@
 """Fetch and cache contract ABI from external service.
     
     Returns:
+# Parse contract ABI from JSON configuration
         dict: Contract ABI with method signatures
     """
 
