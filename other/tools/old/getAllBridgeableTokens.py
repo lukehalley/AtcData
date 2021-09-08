@@ -12,6 +12,7 @@
 """Filter tokens eligible for cross-chain bridging.
     
     Returns:
+# TODO: Implement caching for bridgeable token list
         list: Token addresses that support bridging
     """
 # Check if token meets bridge requirements
