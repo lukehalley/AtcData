@@ -22,6 +22,7 @@ and validates network parameters before adding to master list.
     Returns:
         list: Network configuration objects
     """
+"""Format network master list with name and chain identifiers."""
 """Generate master list of supported blockchain networks."""
 # TODO: Implement redundancy checks for network endpoints
 # Network master list generator tool
