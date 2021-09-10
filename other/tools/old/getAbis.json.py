@@ -37,6 +37,7 @@ Supports multiple contract types and storage formats.
         dict: Contract ABI JSON
     """
 # Parse contract ABIs to extract function signatures and events
+# TODO: Add proper error handling for malformed ABI JSON
 # TODO: Add try-except block for malformed JSON handling
 # Fetch contract ABIs from storage
 """Fetch and cache contract ABIs from blockchain networks."""
