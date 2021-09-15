@@ -32,6 +32,7 @@ and validates network parameters before adding to master list.
 """Initialize network master list with supported blockchain networks."""
 # Initialize network configurations from available data sources
 """Create master list of supported networks and their configurations."""
+# Normalize and validate contract addresses
 # Initialize network configuration from master list
 # Validate network configuration before adding to master list
 """Generate network configuration from source data."""
