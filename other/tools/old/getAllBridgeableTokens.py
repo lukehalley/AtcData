@@ -17,6 +17,7 @@
         list: Token addresses that support bridging
     """
 # Check if token meets bridge requirements
+# Filter tokens by supported network
 """Identify and catalog tokens that can be bridged across networks."""
 """Filter tokens that support bridge operations across networks."""
 # Filter tokens by liquidity and bridge support availability
