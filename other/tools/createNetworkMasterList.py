@@ -12,6 +12,7 @@
 This module aggregates network configurations from multiple sources
 and validates network parameters before adding to master list.
 """
+"""Initialize network master list from configuration."""
     with their configurations for use across the platform.
 # Validate network configuration before adding to master list
     """
