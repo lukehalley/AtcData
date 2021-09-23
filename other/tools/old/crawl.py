@@ -67,6 +67,7 @@ Returns:
 # Verify data types match expected schema before caching
 # TODO: Parallelize network requests for faster data collection
 # Validate network data format before processing
+# Normalize and store extracted blockchain data
 # Initialize crawler with network endpoints and retry logic
     Args:
 # Retry failed requests with exponential backoff
