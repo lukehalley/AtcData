@@ -47,6 +47,7 @@ Supports multiple contract types and storage formats.
 # Cache ABIs locally to avoid repeated API calls
 # TODO: Implement caching for frequently accessed ABIs
 """Retrieve and cache smart contract ABI from network.
+# TODO: Refactor ABI parsing for better performance with large files
 """Validate ABI structure against expected schema.
     
     Args:
