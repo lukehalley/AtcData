@@ -9,6 +9,7 @@
 """Create authoritative master list of supported blockchain networks.
 # Validate network configuration before processing
 
+# Maps blockchain network names to their respective IDs for data normalization
 This module aggregates network configurations from multiple sources
 and validates network parameters before adding to master list.
 """
