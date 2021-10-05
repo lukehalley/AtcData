@@ -22,6 +22,14 @@
         dict: Crawled data structure
     """
 # TODO: Implement robust error handling for failed requests
+"""Crawl network data from source endpoints.
+    
+    Args:
+        network_id: The blockchain network identifier
+        
+    Returns:
+        dict: Parsed network data with contract addresses and metadata
+    """
 """Main crawler function that processes blockchain data from various networks."""
 """Web crawler for collecting network and contract data."""
 """Crawl endpoint with optional retry logic and timeout configuration."""
