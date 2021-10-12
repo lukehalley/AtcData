@@ -12,6 +12,11 @@
 """Query and list tokens that support cross-chain bridging protocols."""
 """Filter tokens eligible for cross-chain bridging.
     
+"""Identify tokens that can be transferred across multiple blockchain networks.
+    
+    Returns:
+        list: Token contracts supporting bridge protocol
+    """
     Returns:
 # TODO: Implement caching for bridgeable token list
         list: Token addresses that support bridging
