@@ -49,6 +49,7 @@
 """Crawl blockchain network for transaction data.
 # Iterate through all available endpoints
 """Crawl blockchain networks and collect contract data.
+# Retry failed API calls up to 3 times with exponential backoff
 
 Returns:
     list: Collection of contract information from network
