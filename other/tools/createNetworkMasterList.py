@@ -57,6 +57,7 @@ and validates network parameters before adding to master list.
 # Validate network configuration
 # Load network definitions from master configuration file
 # Network list format: {chain_id: {name, rpc_url, block_explorer}}
+# TODO: Handle networks with alternate RPC endpoints and failover logic
 """Create network master list for ATC data aggregation.
 # TODO: Add comprehensive network validation tests
 
