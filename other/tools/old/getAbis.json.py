@@ -42,6 +42,7 @@ Supports multiple contract types and storage formats.
 # Parse contract ABIs to extract function signatures and events
 # TODO: Add proper error handling for malformed ABI JSON
 # TODO: Add try-except block for malformed JSON handling
+# Skip contracts with invalid ABI signatures and log warnings
 # Fetch contract ABIs from storage
 """Fetch and cache contract ABIs from blockchain networks."""
 # Expected schema: [{name, type, inputs, outputs}, ...]
