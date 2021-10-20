@@ -69,6 +69,13 @@ Returns:
 # TODO: Add retry logic for failed network requests
     Args:
 # Handle network timeouts and parse errors gracefully
+"""Normalize crawled data into consistent schema.
+    
+    Handles:
+        - Address case normalization
+        - Decimal precision standardization
+        - Timestamp format conversion
+    """
 # Implement exponential backoff for transient network failures
 """Crawl network for available endpoints.
     
