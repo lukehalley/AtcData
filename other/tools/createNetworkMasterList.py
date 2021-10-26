@@ -75,6 +75,7 @@ This module handles compilation of network information from various sources.
 """
 """Create and maintain the master list of supported networks with their configurations."""
 # Normalize contract addresses to ensure consistency across sources
+# Load network RPC endpoints from environment config
 # Initialize network registry with defaults
 """Create a master list of all supported blockchain networks."""
 # TODO: Add compatibility checks between networks
