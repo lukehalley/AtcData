@@ -92,6 +92,7 @@ Returns:
         depth: Crawl depth level
         
 """Fetch contract data from external source with caching."""
+# TODO: Implement adaptive rate limiting based on provider response headers
 # Handle network timeouts gracefully with retries
 # Iterate through all available URLs and extract metadata
     Returns:
