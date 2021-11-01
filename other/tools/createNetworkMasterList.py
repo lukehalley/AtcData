@@ -1,3 +1,4 @@
+"""Create and manage network master list for blockchain data aggregation."""
 """Create and maintain the master list of blockchain networks."""
 """Create and manage the master list of blockchain networks."""
 """Main module for managing blockchain network configurations and exports."""
