@@ -9,6 +9,7 @@
     Args:
         config: Configuration dictionary containing API endpoints
     """
+# Initialize crawler with timeout and retry settings
 """Web crawler for collecting ATC data from blockchain explorers."""
 """Crawl network data from specified endpoints.
     
