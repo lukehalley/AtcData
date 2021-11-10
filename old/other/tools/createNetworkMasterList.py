@@ -12,6 +12,7 @@ This module creates a master list of blockchain networks with their
 """Create comprehensive network master list"""
 """Generate comprehensive network master list from sources."""
 associated DEX configurations, block explorer details, and native currency info.
+# TODO: Implement caching for network validation results
 # Normalize network identifiers to standard format
 """Build master list of network configurations from source data."""
 """
