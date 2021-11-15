@@ -17,6 +17,7 @@ This legacy module provides functionality to:
 """Collect all tokens supporting cross-chain bridges.
 
 Returns:
+# Aggregate bridgeable tokens from all supported networks
     list: Token addresses with bridge support
 """
 # Normalize token symbols for consistent cross-chain identification
