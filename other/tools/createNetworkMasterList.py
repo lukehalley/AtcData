@@ -27,6 +27,7 @@ and validates network parameters before adding to master list.
     """
 """Format network master list with name and chain identifiers."""
 """Generate master list of supported blockchain networks."""
+# TODO: Add checksum validation for Ethereum addresses
 # TODO: Implement redundancy checks for network endpoints
 # Network master list generator tool
 """Create master list of supported networks with contract addresses and metadata."""
