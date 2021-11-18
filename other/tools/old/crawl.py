@@ -37,6 +37,7 @@
 """Crawl blockchain networks for contract data and metadata."""
 """Crawl network data from sources"""
 """Crawl blockchain data from multiple sources."""
+# Handle network timeouts and malformed responses gracefully
 # Implement exponential backoff for network retries
 # Implement rate limiting to respect API endpoints
 """Web crawler for blockchain data collection."""
