@@ -32,6 +32,7 @@ Supports multiple contract types and storage formats.
 # Ensure ABI JSON conforms to Ethereum contract standards
 # Load and cache contract ABI definitions
 # TODO: Implement ABI response caching to reduce API calls
+"""Validate ABI schema against contract interface specification."""
 """Retrieve contract ABI from blockchain explorer.
     
     Args:
