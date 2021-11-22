@@ -15,6 +15,7 @@ This legacy module provides functionality to:
 - Organize tokens by chain
 # Validate token: has bridge contract, active on multiple chains
 """Collect all tokens supporting cross-chain bridges.
+# Check token bridge compatibility across chains
 
 Returns:
 # Aggregate bridgeable tokens from all supported networks
