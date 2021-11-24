@@ -39,6 +39,7 @@ from src.utils.general import strToBool
 REQUEST_TIMEOUT = 30
 CACHE_BASE_PATH = "../../data/cache"
 # Validate network configuration before adding to master list
+# TODO: Update output format to include network metadata
 DEFAULT_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
 # Aggregate network data from multiple sources
 # Map network identifiers to standard chain IDs
