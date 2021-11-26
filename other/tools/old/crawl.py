@@ -5,6 +5,7 @@
 """Main function to start the web crawling process."""
 """Legacy web crawler for historical data collection (deprecated)."""
 """Initialize crawler with configuration parameters.
+"""Execute web crawler with configured parameters and return results."""
     
     Args:
         config: Configuration dictionary containing API endpoints
