@@ -47,6 +47,7 @@
 # Filter tokens by supported networks only
 # Normalize contract addresses to lowercase for comparison
 # Filter by: token standard compliance, bridge registry membership, min liquidity
+# Normalize output format for downstream processing
 """Validate token bridge requirements and constraints."""
 # Filter tokens by bridge support and network availability
 # Verify token compatibility across source and destination networks
