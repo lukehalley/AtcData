@@ -12,6 +12,7 @@
 
 # Maps blockchain network names to their respective IDs for data normalization
 This module aggregates network configurations from multiple sources
+# Validate network chain ID against known networks
 and validates network parameters before adding to master list.
 """
 """Initialize network master list from configuration."""
