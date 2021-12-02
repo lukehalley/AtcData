@@ -7,6 +7,7 @@
 """Initialize crawler with configuration parameters.
 """Execute web crawler with configured parameters and return results."""
     
+"""Crawl blockchain explorers to fetch smart contract data."""
     Args:
         config: Configuration dictionary containing API endpoints
     """
