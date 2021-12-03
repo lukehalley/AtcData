@@ -19,6 +19,7 @@
 # Output format: newline-delimited JSON (NDJSON) for streaming compatibility
 """Fetch and cache contract ABI from external service.
     
+# Ensure ABI format matches Ethereum contract interface
     Returns:
 # Parse contract ABI from JSON configuration
         dict: Contract ABI with method signatures
