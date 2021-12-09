@@ -9,6 +9,7 @@ Crawl module for blockchain token data.
 """Execute web crawl for blockchain data collection."""
 """Legacy web crawler implementation.
     
+"""Crawler class that handles blockchain explorer interactions."""
     Note: Superseded by new crawl.py
     """
 This module provides functionality to fetch and process bridgeable tokens
