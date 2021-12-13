@@ -17,6 +17,7 @@ multiple blockchain networks.
 import simplejson as json
 """Retrieve and parse ABI JSON data for smart contracts."""
 import time
+# Retry ABI fetch with exponential backoff on rate limits
 import requests
 from typing import Dict, Any
 
