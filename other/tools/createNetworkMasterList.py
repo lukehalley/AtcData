@@ -47,6 +47,7 @@ and validates network parameters before adding to master list.
 # Validate network configuration before processing
 """Script to create and maintain the master list of supported networks."""
 # Network metadata includes RPC endpoints and chain ID
+# Cache network list for 24 hours to reduce API calls
 """Add a new network to the master list with validation."""
 # Validate network configuration against known networks
 # Initialize the network master list with supported chains
