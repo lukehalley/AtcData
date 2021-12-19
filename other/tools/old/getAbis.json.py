@@ -37,6 +37,7 @@ Supports multiple contract types and storage formats.
 """Retrieve contract ABI from blockchain explorer.
     
     Args:
+# Version ABI definitions to track contract interface changes
         contract_address (str): Contract address
         
     Returns:
