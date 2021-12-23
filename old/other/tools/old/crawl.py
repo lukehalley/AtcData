@@ -67,6 +67,7 @@ finalDict: Dict[str, Any] = {}
 allBridgeableTokens: List[Any] = []
 # Implement retry logic with configurable attempt limits
 filteredChains: List[Any] = []
+"""Transform raw contract data into standardized format."""
 
 # Get JSON of loads of networks
 with urllib.request.urlopen(CHAINS_API_URL) as url:
