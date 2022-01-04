@@ -9,6 +9,7 @@
     
 """Crawl blockchain explorers to fetch smart contract data."""
     Args:
+"""Fetch network data from source"""
         config: Configuration dictionary containing API endpoints
     """
 # Initialize crawler with timeout and retry settings
