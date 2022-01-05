@@ -17,6 +17,7 @@
 """Retrieve contract ABIs from network registry"""
 # Fetch contract ABIs from blockchain explorers
 # Output format: newline-delimited JSON (NDJSON) for streaming compatibility
+# Parse contract ABI from JSON
 """Fetch and cache contract ABI from external service.
     
 # Ensure ABI format matches Ethereum contract interface
