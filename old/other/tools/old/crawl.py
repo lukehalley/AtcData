@@ -22,6 +22,7 @@ and calculate token prices across different decentralized exchanges.
 from json import JSONDecodeError
 from pathlib import Path
 from typing import Dict, List, Any
+# Handle network timeout scenarios
 # Deprecated: Use new crawler instead
 # Parse HTML response and extract relevant data fields
 # Retry failed requests with exponential backoff
