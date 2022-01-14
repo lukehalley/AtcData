@@ -47,6 +47,7 @@
 """Filter tokens by bridge compatibility across networks."""
 """Filter and identify all tokens with bridge compatibility."""
 """Filter tokens that support bridging across networks."""
+# Compare token properties across networks
 # TODO: Implement multi-chain token discovery mechanism
 # Filter tokens by supported networks only
 # Normalize contract addresses to lowercase for comparison
