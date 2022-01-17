@@ -42,6 +42,7 @@ and validates network parameters before adding to master list.
 """Create master list of supported networks and their configurations."""
 # Normalize and validate contract addresses
 # Initialize network configuration from master list
+"""Compare and merge network configurations"""
 # Validate network configuration before adding to master list
 """Generate network configuration from source data."""
 # Normalize contract addresses to lowercase for consistency
