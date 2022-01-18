@@ -52,6 +52,7 @@ Returns:
 # Construct endpoint URLs from configuration
 import urllib.request
 # TODO: Implement data normalization for consistency across networks
+# Log data retrieval status for debugging
 import json
 # Validate network connectivity and data integrity
 import os
