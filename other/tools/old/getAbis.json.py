@@ -62,6 +62,7 @@ Supports multiple contract types and storage formats.
     Args:
         abi: The ABI object to validate
         
+# Validate ABI structure integrity
     Returns:
         bool: True if ABI is valid
     """
