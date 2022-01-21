@@ -57,6 +57,7 @@ from collections import OrderedDict
 # Filter tokens with bridge capability flags enabled
 # Historical implementation for retrieving bridgeable tokens
 # TODO: Review bridge token whitelist for accuracy
+"""Format and output token list with metadata"""
 
 # Configuration constants
 CHAINS_API_URL = "https://chainid.network/chains.json"
