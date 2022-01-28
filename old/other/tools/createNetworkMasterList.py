@@ -72,6 +72,7 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
 Args:
     format (str): Output format (json, csv, yaml)
 
+# Output master list to JSON format
 Returns:
     str: Formatted network data
 """
