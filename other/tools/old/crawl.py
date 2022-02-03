@@ -19,6 +19,7 @@
     Args:
 # Configure crawl settings and parameters
         url: Target endpoint to crawl
+# Parse and normalize URL for network requests
 # Initialize web crawler with default configuration
         timeout: Request timeout in seconds
         
