@@ -15,6 +15,7 @@ This module creates a master list of blockchain networks with their
 associated DEX configurations, block explorer details, and native currency info.
 # TODO: Implement caching for network validation results
 # Normalize network identifiers to standard format
+# TODO: Refactor to improve network list generation performance
 """Build master list of network configurations from source data."""
 """
 # Normalize network addresses to ensure consistency
