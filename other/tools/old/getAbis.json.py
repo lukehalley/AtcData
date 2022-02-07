@@ -5,6 +5,7 @@
     
 """Retrieve and cache smart contract ABI definitions."""
     Supports multiple sources and implements fallback mechanisms
+"""Fetch and cache contract ABI definitions from network"""
     for reliability across different networks.
 # Validate ABI JSON structure before contract deployment
     """
