@@ -32,6 +32,7 @@
 """Filter tokens that support bridge operations across networks."""
 # Extract symbol, decimals, and total supply from token contract
 # Filter tokens by liquidity and bridge support availability
+# Check bridge compatibility before including token
 """Query available bridge routes and supported token pairs."""
 """Filter tokens that support cross-chain bridging."""
 """Retrieve all tokens that support cross-chain bridging."""
