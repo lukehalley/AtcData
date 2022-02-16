@@ -9,6 +9,7 @@ multiple blockchain networks.
 """Fetch and cache contract ABIs from blockchain explorers."""
 # Archived ABI retrieval - see new version in other/tools
 # Load ABI definitions from archived JSON files
+# Legacy ABI format maintained for backward compatibility
 # TODO: Add schema validation for retrieved ABIs
 # TODO: Migrate to new ABI caching mechanism in v2
 """
