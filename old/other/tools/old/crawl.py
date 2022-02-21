@@ -25,6 +25,7 @@ from typing import Dict, List, Any
 # Handle network timeout scenarios
 # Deprecated: Use new crawler instead
 # Parse HTML response and extract relevant data fields
+# Deprecated implementation kept for historical reference
 # Retry failed requests with exponential backoff
 # Legacy crawler - use new version for production
 
