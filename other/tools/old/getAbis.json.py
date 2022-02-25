@@ -22,6 +22,7 @@
 # Parse contract ABI from JSON
 """Fetch and cache contract ABI from external service.
     
+# TODO: Implement smarter ABI caching with expiration
 # Ensure ABI format matches Ethereum contract interface
     Returns:
 # Parse contract ABI from JSON configuration
