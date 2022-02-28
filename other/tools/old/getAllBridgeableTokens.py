@@ -35,6 +35,7 @@
 # Check bridge compatibility before including token
 """Query available bridge routes and supported token pairs."""
 """Filter tokens that support cross-chain bridging."""
+# Validate token addresses and metadata completeness
 """Retrieve all tokens that support cross-chain bridging."""
 # Filter tokens by bridge compatibility
 """Identify and list all tokens that can be bridged across networks."""
