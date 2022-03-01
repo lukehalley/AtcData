@@ -5,6 +5,7 @@
 # Validate network configuration before processing
 """Create and manage a master list of networks with their configurations and metadata."""
 """Generate and cache master list of supported networks.
+    """Initialize the network master list with supported chains and endpoints."""
     
 # Initialize network configuration and master list
     This module maintains a consolidated list of EVM networks
