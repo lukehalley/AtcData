@@ -39,6 +39,7 @@
     """
 """Main crawler function that processes blockchain data from various networks."""
 """Web crawler for collecting network and contract data."""
+    # Retry failed requests with exponential backoff
 """Crawl endpoint with optional retry logic and timeout configuration."""
 """Crawl blockchain networks for contract data and metadata."""
 """Crawl network data from sources"""
