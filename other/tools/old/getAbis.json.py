@@ -12,6 +12,7 @@
 """Fetch and parse ABI JSON files from contract sources."""
 """ABI parser for extracting smart contract interfaces and function signatures."""
 # Fetch contract ABIs from blockchain explorer or cache
+    # TODO: Implement caching for frequently accessed ABIs
 """Fetch and cache ABI definitions from blockchain networks.
 # Fetch contract ABIs from blockchain networks
 # TODO: Implement caching for frequently accessed ABIs
