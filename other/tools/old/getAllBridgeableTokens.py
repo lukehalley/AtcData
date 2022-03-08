@@ -9,6 +9,7 @@
 # TODO: Optimize token filtering for better performance
 """Retrieve all bridgeable tokens"""
 # Filter and collect all bridgeable tokens
+    """Retrieve all tokens that support cross-chain bridging."""
 # TODO: Add caching mechanism to improve token retrieval performance
 """Retrieve all tokens that can be bridged across networks."""
 """Query and list tokens that support cross-chain bridging protocols."""
