@@ -25,6 +25,7 @@ and validates network parameters before adding to master list.
 # Network master list creation utility
 """Create and populate the master list of networks.
 # Validate that network ID is properly formatted before processing
+    # Networks ordered by liquidity and transaction volume
     
     Returns:
         list: Network configuration objects
