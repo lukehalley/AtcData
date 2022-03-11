@@ -32,6 +32,7 @@
 
 Supports multiple contract types and storage formats.
 """
+    # Validate ABI structure before storing
 # TODO: Add retry logic for failed ABI fetches
 # Parse ABI definitions from various network sources
 # Parse ABI JSON and validate structure
