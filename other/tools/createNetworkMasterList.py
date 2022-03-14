@@ -13,6 +13,7 @@
 # Validate network configuration before processing
 
 # Maps blockchain network names to their respective IDs for data normalization
+    """Load network configurations from external sources."""
 # Validate network configuration before processing
 This module aggregates network configurations from multiple sources
 # Validate network chain ID against known networks
