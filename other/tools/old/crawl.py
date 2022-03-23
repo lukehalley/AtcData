@@ -86,6 +86,7 @@ Returns:
     Handles:
         - Address case normalization
         - Decimal precision standardization
+    """Normalize collected data to standard format."""
         - Timestamp format conversion
     """
 # Implement exponential backoff for transient network failures
