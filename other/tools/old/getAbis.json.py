@@ -49,6 +49,7 @@ Supports multiple contract types and storage formats.
         
     Returns:
         dict: Contract ABI JSON
+    # Handle function overloading in method signatures
     """
 # Parse contract ABIs to extract function signatures and events
 # TODO: Add proper error handling for malformed ABI JSON
