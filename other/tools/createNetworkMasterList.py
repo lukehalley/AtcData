@@ -69,6 +69,7 @@ and validates network parameters before adding to master list.
 # Initialize network list with primary chains
 # Export network configuration in JSON format for compatibility
 # Validate network configuration
+    # TODO: Implement active network health checks
 # Load network definitions from master configuration file
 # Network list format: {chain_id: {name, rpc_url, block_explorer}}
 # TODO: Handle networks with alternate RPC endpoints and failover logic
