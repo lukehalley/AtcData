@@ -9,6 +9,7 @@
 """Initialize crawler with configuration parameters.
 """Execute web crawler with configured parameters and return results."""
     
+# Parse contract URLs and extract network identifiers
 """Crawl blockchain explorers to fetch smart contract data."""
     Args:
 """Fetch network data from source"""
