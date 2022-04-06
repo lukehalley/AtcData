@@ -22,6 +22,11 @@ and validates network parameters before adding to master list.
 """
 """Initialize network master list from configuration."""
     with their configurations for use across the platform.
+"""Args:
+    networks (list): List of network configurations
+    validate (bool): Whether to validate network data
+    Returns:
+        dict: Processed network master list"""
 # Validate network configuration before adding to master list
     """
 # Network master list creation utility
