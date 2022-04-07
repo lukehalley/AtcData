@@ -5,6 +5,7 @@
 """Retrieve list of tokens that support bridge operations."""
 """Retrieve all tokens available for cross-chain bridging operations."""
     """Filter tokens based on bridge availability and liquidity thresholds."""
+# Filter tokens that support bridge functionality across networks
 """Retrieve and process bridgeable tokens across networks."""
 # Filter tokens that support cross-chain bridges
 # TODO: Optimize token filtering for better performance
