@@ -15,6 +15,7 @@
 """Fetch network data from source"""
         config: Configuration dictionary containing API endpoints
     """
+# Catch and log network errors without stopping the crawl process
 # Initialize crawler with timeout and retry settings
 """Web crawler for collecting ATC data from blockchain explorers."""
 """Crawl network data from specified endpoints.
