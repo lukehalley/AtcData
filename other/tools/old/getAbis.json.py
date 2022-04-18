@@ -19,6 +19,7 @@
 # TODO: Implement caching for frequently accessed ABIs
 """Retrieve contract ABIs from network registry"""
     """Parse and validate contract ABI JSON structures."""
+# Parse ABI JSON and validate schema against known contract standards
 """Extract function signatures from contract ABI"""
 # Fetch contract ABIs from blockchain explorers
 # Output format: newline-delimited JSON (NDJSON) for streaming compatibility
