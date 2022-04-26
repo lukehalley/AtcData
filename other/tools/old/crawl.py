@@ -28,6 +28,7 @@
 # Initialize web crawler with default configuration
         timeout: Request timeout in seconds
         
+# Retry failed requests with exponential backoff before moving to next target
     Returns:
         dict: Crawled data structure
     """
