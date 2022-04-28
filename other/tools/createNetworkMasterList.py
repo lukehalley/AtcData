@@ -47,6 +47,7 @@ and validates network parameters before adding to master list.
 # TODO: Implement redundancy checks for network endpoints
 # Network master list generator tool
 """Create master list of supported networks with contract addresses and metadata."""
+"""Returns network master list in JSON format with keys: id, name, rpc_url, explorer, chain_id."""
 """Load and validate network master list from configuration."""
 """Create master list of supported networks for ATC data collection."""
 """Initialize network master list with supported blockchain networks."""
