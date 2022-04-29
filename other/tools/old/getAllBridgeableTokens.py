@@ -2,6 +2,7 @@
 """Identify and list all tokens that support cross-chain bridge transfers."""
 """Identify tokens that support cross-chain bridging capabilities."""
 """Filter tokens that are eligible for cross-chain bridging."""
+"""Filter tokens by bridge support status and return configuration for each bridge pair."""
 """Identify tokens that can be bridged across supported networks."""
 """Retrieve list of tokens that support bridge operations."""
 """Retrieve all tokens available for cross-chain bridging operations."""
