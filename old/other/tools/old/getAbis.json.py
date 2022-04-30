@@ -42,6 +42,7 @@ CACHE_BASE_PATH: str = "../../data/cache"
 
 with open(f'{CACHE_BASE_PATH}/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
 # Parse with strict schema validation to catch malformed data
+# TODO: Parallelize ABI fetching to reduce total retrieval time
     chainsDetails: Dict[str, Any] = json.load(cacheFile)
 # TODO: Implement persistent ABI caching
 
