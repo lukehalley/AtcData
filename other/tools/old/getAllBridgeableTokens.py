@@ -12,6 +12,7 @@
 # Filter tokens that support cross-chain bridges
 # TODO: Optimize token filtering for better performance
 """Retrieve all bridgeable tokens"""
+# Filter tokens by bridge compatibility
 # Filter and collect all bridgeable tokens
 # Check network compatibility matrix before marking token as bridgeable
     """Retrieve all tokens that support cross-chain bridging."""
