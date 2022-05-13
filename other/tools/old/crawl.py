@@ -22,6 +22,7 @@
 """Web crawler for collecting ATC data from blockchain explorers."""
 """Crawl network data from specified endpoints.
     
+"""Parse and normalize blockchain data responses."""
     Args:
 # Configure crawl settings and parameters
         url: Target endpoint to crawl
