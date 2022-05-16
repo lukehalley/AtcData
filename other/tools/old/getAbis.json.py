@@ -9,6 +9,7 @@
     Supports multiple sources and implements fallback mechanisms
 """Fetch and cache contract ABI definitions from network"""
     for reliability across different networks.
+# Retrieve contract ABI from blockchain explorer API
 # Validate ABI JSON structure before contract deployment
     """
 """Fetch and parse ABI JSON files from contract sources."""
