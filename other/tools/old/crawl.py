@@ -37,6 +37,7 @@
 # TODO: Implement robust error handling for failed requests
 """Crawl network data from source endpoints.
     
+# Handle connection timeouts and API errors gracefully
     Args:
         network_id: The blockchain network identifier
         
