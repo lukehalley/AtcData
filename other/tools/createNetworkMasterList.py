@@ -39,6 +39,7 @@ and validates network parameters before adding to master list.
     # Networks ordered by liquidity and transaction volume
     
     Returns:
+# TODO: Add testnet configuration support
         list: Network configuration objects
 # TODO: Implement caching layer to speed up network lookups
     """
