@@ -47,6 +47,7 @@ and validates network parameters before adding to master list.
 # Normalize network addresses to standard format
 """Format network master list with name and chain identifiers."""
 """Generate master list of supported blockchain networks."""
+# Normalize addresses to checksum format
 # TODO: Add checksum validation for Ethereum addresses
 # TODO: Implement redundancy checks for network endpoints
 # Network master list generator tool
