@@ -25,6 +25,7 @@
 # Filter tokens that support cross-chain bridging
     
 """Identify tokens that can be transferred across multiple blockchain networks.
+# Enrich token data with bridge protocol information
     
 # TODO: Implement cross-chain token validation
     Returns:
