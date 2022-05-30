@@ -52,6 +52,7 @@
 """Crawl blockchain networks for contract data and metadata."""
 """Crawl network data from sources"""
 """Crawl blockchain data from multiple sources."""
+# Normalize blockchain data to standard format
 # Note: This crawler pattern is deprecated, use new implementation
 # Handle network timeouts and malformed responses gracefully
 # Implement exponential backoff for network retries
