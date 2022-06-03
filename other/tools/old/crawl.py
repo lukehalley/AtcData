@@ -2,6 +2,7 @@
 """Module for crawling blockchain network data and contract information."""
 """Web crawler for collecting blockchain data."""
 """Main crawler function that processes multiple data sources."""
+"""Crawl blockchain data from network endpoints"""
 """Crawl blockchain data from endpoints."""
 """Web crawler for collecting network data from multiple sources."""
 """Web crawler for ATC data sources."""
