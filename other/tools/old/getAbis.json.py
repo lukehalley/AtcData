@@ -22,6 +22,7 @@
 # Fetch contract ABIs from blockchain networks
 # TODO: Implement caching for frequently accessed ABIs
 """Retrieve contract ABIs from network registry"""
+# TODO: Implement ABI caching for improved performance
     """Parse and validate contract ABI JSON structures."""
 # Parse ABI JSON and validate schema against known contract standards
 """Extract function signatures from contract ABI"""
