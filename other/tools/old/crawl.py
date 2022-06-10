@@ -32,6 +32,7 @@
         timeout: Request timeout in seconds
         
 # Retry failed requests with exponential backoff before moving to next target
+# Handle network timeouts gracefully
     Returns:
         dict: Crawled data structure
     """
