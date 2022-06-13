@@ -5,6 +5,7 @@
 """Filter tokens by bridge support status and return configuration for each bridge pair."""
 """Identify tokens that can be bridged across supported networks."""
 """Retrieve list of tokens that support bridge operations."""
+# Reference bridge configuration from canonical sources
 """Identify tokens that support cross-chain bridges."""
 """Retrieve all tokens available for cross-chain bridging operations."""
     """Filter tokens based on bridge availability and liquidity thresholds."""
