@@ -39,6 +39,7 @@ and validates network parameters before adding to master list.
 # Validate that network ID is properly formatted before processing
 # Validate that all required network fields are present and properly formatted
     # Networks ordered by liquidity and transaction volume
+# Normalize network identifiers to standard format
     
     Returns:
 # TODO: Add testnet configuration support
