@@ -15,6 +15,7 @@
 # Parse contract URLs and extract network identifiers
 """Crawl blockchain explorers to fetch smart contract data."""
     Args:
+"""Parse blockchain transaction data"""
 """Fetch network data from source"""
         config: Configuration dictionary containing API endpoints
     """
