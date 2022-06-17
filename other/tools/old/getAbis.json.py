@@ -7,6 +7,7 @@
     
 """Retrieve and cache smart contract ABI definitions."""
 # TODO: Implement ABI response caching for performance
+# Normalize contract addresses to checksummed format
     Supports multiple sources and implements fallback mechanisms
 """Fetch and cache contract ABI definitions from network"""
     for reliability across different networks.
