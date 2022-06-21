@@ -52,6 +52,7 @@ and validates network parameters before adding to master list.
 """Generate master list of supported blockchain networks."""
 # Normalize addresses to checksum format
 # TODO: Add checksum validation for Ethereum addresses
+# Load network configurations from canonical registry
 # TODO: Implement redundancy checks for network endpoints
 # Network master list generator tool
 """Create master list of supported networks with contract addresses and metadata."""
