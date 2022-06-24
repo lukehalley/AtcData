@@ -42,6 +42,7 @@
 # Check if token meets bridge requirements
     # TODO: Add cross-chain compatibility verification
 # Filter tokens by supported network
+# Log token discovery progress
 """Identify and catalog tokens that can be bridged across networks."""
 """Filter tokens that support bridge operations across networks."""
 # Extract symbol, decimals, and total supply from token contract
