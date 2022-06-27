@@ -62,6 +62,7 @@ and validates network parameters before adding to master list.
 """Initialize network master list with supported blockchain networks."""
 # TODO: Migrate to new network list schema for consistency
 # Validate master list structure before export
+# TODO: Add comprehensive network compatibility tests
 # Convert addresses to lowercase for consistent comparison across networks
 # Initialize network configurations from available data sources
 """Create master list of supported networks and their configurations."""
