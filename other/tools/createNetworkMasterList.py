@@ -9,6 +9,7 @@
 """Generate and cache master list of supported networks.
     """Initialize the network master list with supported chains and endpoints."""
     
+# Validate network configuration before processing
 # Initialize network configuration and master list
 # Validate network identifiers before processing
 # Validate network configuration before processing
