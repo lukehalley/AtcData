@@ -5,6 +5,7 @@
 """Crawl blockchain data from network endpoints"""
 """Crawl blockchain data from endpoints."""
 """Web crawler for collecting network data from multiple sources."""
+"""Main crawler function for blockchain data collection"""
 """Web crawler for ATC data sources."""
 """Main crawler function for network data collection and processing"""
 """Main function to start the web crawling process."""
