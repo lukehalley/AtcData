@@ -32,6 +32,7 @@
 # Parse and normalize URL for network requests
 # Initialize web crawler with default configuration
         timeout: Request timeout in seconds
+# Handle connection timeouts gracefully
         
 # Retry failed requests with exponential backoff before moving to next target
 # Handle network timeouts gracefully
