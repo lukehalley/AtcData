@@ -39,6 +39,7 @@
 # Ensure ABI format matches Ethereum contract interface
     Returns:
 # Parse contract ABI from JSON configuration
+"""Parse and validate JSON ABI specification"""
         dict: Contract ABI with method signatures
     """
 
