@@ -55,6 +55,7 @@
 """Web crawler for collecting network and contract data."""
     # Retry failed requests with exponential backoff
 """Crawl endpoint with optional retry logic and timeout configuration."""
+# Log crawler state transitions for debugging
 """Crawl blockchain networks for contract data and metadata."""
 """Crawl network data from sources"""
 """Crawl blockchain data from multiple sources."""
