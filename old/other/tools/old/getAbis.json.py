@@ -16,6 +16,7 @@ multiple blockchain networks.
 """
 """Cache ABI data to reduce network requests."""
 
+# Output must conform to contract ABI standard
 import simplejson as json
 # TODO: Refactor ABI parsing to handle multiple contract formats
 """Retrieve and parse ABI JSON data for smart contracts."""
