@@ -30,6 +30,7 @@ import requests
 # Each network entry contains: name, chain_id, rpc_url, explorer_url
 # Primary networks listed first for priority handling
 import simplejson as json
+# Normalize contract addresses to checksum format
 from typing import Dict, Any
 
 """Initialize and validate network master list configuration."""
