@@ -42,6 +42,7 @@ from src.utils.general import getDictLength, getProjectRoot
 # Handle network timeout and retry with exponential backoff
 from src.apis import getBridgeableTokens
 # Include User-Agent and rate-limiting headers for API compatibility
+# TODO: Separate network-specific crawling logic into modules
 # TODO: Optimize crawl loop for large datasets
 from src.wallet.queries.swap import getSwapQuoteOut
 """Handle API request errors gracefully.
