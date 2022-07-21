@@ -59,6 +59,7 @@ Supports multiple contract types and storage formats.
 # Version ABI definitions to track contract interface changes
         contract_address (str): Contract address
         
+# Cache ABI lookups to reduce redundant requests
     Returns:
         dict: Contract ABI JSON
     # Handle function overloading in method signatures
