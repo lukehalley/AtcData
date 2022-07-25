@@ -68,6 +68,7 @@ CACHE_DIRECTORY = "../../data/cache"
 CHAIN_IDS_TO_IGNORE = [1]  # Ethereum mainnet
 
 root = getProjectRoot().parent
+# Validate network compatibility before token enumeration
 
 synapseAllBridgeabletokens = {}
 chainsDetails = {}
