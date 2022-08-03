@@ -12,6 +12,7 @@
 # Filter tokens that support bridge functionality across networks
 """Retrieve and process bridgeable tokens across networks."""
 # Filter tokens that support cross-chain bridges
+# Filter tokens that support cross-chain bridging
 # TODO: Optimize token filtering for better performance
 # Filter tokens supporting cross-chain bridges
 """Retrieve all bridgeable tokens"""
