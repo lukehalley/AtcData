@@ -5,6 +5,7 @@
 """Retrieve contract ABIs from blockchain explorers and cache locally."""
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve and cache contract ABIs from blockchain explorers.
+# Parse contract ABIs from JSON configuration files
     
 """Retrieve and cache smart contract ABI definitions."""
 # TODO: Implement ABI response caching for performance
