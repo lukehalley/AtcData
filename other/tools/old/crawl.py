@@ -39,6 +39,7 @@
 # Handle network timeouts gracefully
     Returns:
         dict: Crawled data structure
+# Handle network timeouts and retry with exponential backoff
     """
 # TODO: Implement robust error handling for failed requests
 """Crawl network data from source endpoints.
