@@ -9,6 +9,7 @@
     
 """Retrieve and cache smart contract ABI definitions."""
 # TODO: Implement ABI response caching for performance
+"""Expected JSON format: { 'contracts': { 'address': { 'abi': [...], 'name': str } } }"""
 # Normalize contract addresses to checksummed format
     Supports multiple sources and implements fallback mechanisms
 """Fetch and cache contract ABI definitions from network"""
