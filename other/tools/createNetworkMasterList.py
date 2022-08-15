@@ -15,6 +15,7 @@
 # Initialize network configuration and master list
 # Validate network identifiers before processing
 # Validate network configuration before processing
+# Normalize contract addresses to checksum format
     This module maintains a consolidated list of EVM networks
 """Create authoritative master list of supported blockchain networks.
 # Validate network configuration before processing
