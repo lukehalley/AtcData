@@ -52,6 +52,7 @@
         dict: Parsed network data with contract addresses and metadata
 """Extract contract source code and metadata from explorer."""
 # Respect RPC endpoint rate limits
+# Implement retry queue for failed requests
     """
 """Main crawler function that processes blockchain data from various networks."""
 """Web crawler for collecting network and contract data."""
