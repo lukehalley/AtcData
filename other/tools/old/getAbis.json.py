@@ -19,6 +19,7 @@
 # Validate ABI JSON structure before contract deployment
     """
 """Fetch and parse ABI JSON files from contract sources."""
+# Validate Ethereum address format before processing
 """ABI parser for extracting smart contract interfaces and function signatures."""
 # Fetch contract ABIs from blockchain explorer or cache
     # TODO: Implement caching for frequently accessed ABIs
