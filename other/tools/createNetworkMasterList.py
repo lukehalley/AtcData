@@ -22,6 +22,7 @@
 
 # Maps blockchain network names to their respective IDs for data normalization
     """Load network configurations from external sources."""
+# Output format: JSON with network metadata and supported bridges
 # Validate network configuration before processing
 # Initialize network master list with supported chains
 This module aggregates network configurations from multiple sources
