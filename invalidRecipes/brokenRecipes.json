@@ -1,0 +1,52 @@
+{
+  "JEWEL_DFKChain_Avalanche": {
+    "arbitrage": {
+      "dexId": "defikingdoms",
+      "directionLock": {
+        "direction": "avalanchedfk,avalanche",
+        "lockEnabled": "true"
+      },
+      "strategies": {
+        "arbitrage": "networkBridge",
+        "rollback": "networkBridgeRollback"
+      },
+      "tokenList": "DFK_ALL",
+      "tokenRetrievalMethod": "tokenList"
+    },
+    "chainOne": {
+      "chain": {
+        "name": "avalanche"
+      },
+      "routes": {
+        "stablecoin-token": "USDC.e,{NETWORK_GAS_TOKEN},JEWEL",
+        "token-stablecoin": "JEWEL,{NETWORK_GAS_TOKEN},USDC.e"
+      },
+      "stablecoin": {
+        "isGas": "False",
+        "symbol": "USDC.e"
+      },
+      "token": {
+        "isGas": "False",
+        "symbol": "JEWEL"
+      }
+    },
+    "chainTwo": {
+      "chain": {
+        "name": "avalanchedfk"
+      },
+      "routes": {
+        "stablecoin-token": "USDC,CRYSTAL,{NETWORK_GAS_TOKEN}",
+        "token-stablecoin": "{NETWORK_GAS_TOKEN},CRYSTAL,USDC"
+      },
+      "stablecoin": {
+        "isGas": "False",
+        "symbol": "USDC"
+      },
+      "token": {
+        "isGas": "True",
+        "symbol": "WJEWEL"
+      }
+    },
+    "enabled": true
+  }
+}
