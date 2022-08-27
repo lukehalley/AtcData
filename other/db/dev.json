@@ -2217,82 +2217,104 @@
   "dexs": {
     "avalanche": {
       "pangolin": {
-        "factory": {
-          "address": "0xefa94DE7a4656D787667C749f7E1223D71E9FD88"
-        },
-        "router": {
-          "address": "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106",
-          "mapping": {
-            "WETH": "WAVAX",
-            "swapETHForExactTokens": "swapAVAXForExactTokens",
-            "swapExactETHForTokens": "swapExactAVAXForTokens",
-            "swapExactTokensForETH": "swapExactTokensForAVAX",
-            "swapTokensForExactETH": "swapTokensForExactAVAX"
+        "contracts": {
+          "factory": {
+            "address": "0xefa94DE7a4656D787667C749f7E1223D71E9FD88"
+          },
+          "router": {
+            "address": "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106",
+            "mapping": {
+              "WETH": "WAVAX",
+              "swapETHForExactTokens": "swapAVAXForExactTokens",
+              "swapExactETHForTokens": "swapExactAVAXForTokens",
+              "swapExactTokensForETH": "swapExactTokensForAVAX",
+              "swapTokensForExactETH": "swapTokensForExactAVAX"
+            }
+          },
+          "weth": {
+            "address": ""
           }
         },
-        "weth": {
-          "address": ""
-        }
+        "tokenLists": [
+          "https://raw.githubusercontent.com/pangolindex/tokenlists/main/pangolin.tokenlist.json"
+        ]
       }
     },
     "avalanchedfk": {
-      "defiKingdoms": {
-        "factory": {
-          "address": "0x794C07912474351b3134E6D6B3B7b3b4A07cbAAa"
-        },
-        "router": {
-          "address": "0x3C351E1afdd1b1BC44e931E12D4E05D6125eaeCa",
-          "mapping": {
-            "WETH": "WETH",
-            "swapETHForExactTokens": "swapETHForExactTokens",
-            "swapExactETHForTokens": "swapExactETHForTokens",
-            "swapExactTokensForETH": "swapExactTokensForETH",
-            "swapTokensForExactETH": "swapTokensForExactETH"
+      "defikingdoms": {
+        "contracts": {
+          "factory": {
+            "address": "0x794C07912474351b3134E6D6B3B7b3b4A07cbAAa"
+          },
+          "router": {
+            "address": "0x3C351E1afdd1b1BC44e931E12D4E05D6125eaeCa",
+            "mapping": {
+              "WETH": "WETH",
+              "swapETHForExactTokens": "swapETHForExactTokens",
+              "swapExactETHForTokens": "swapExactETHForTokens",
+              "swapExactTokensForETH": "swapExactTokensForETH",
+              "swapTokensForExactETH": "swapTokensForExactETH"
+            }
+          },
+          "weth": {
+            "address": ""
           }
         },
-        "weth": {
-          "address": ""
-        }
+        "tokenLists": [
+          "https://raw.githubusercontent.com/DefiKingdoms/community-token-list/main/build/defikingdoms-community.tokenlist.json",
+          "https://raw.githubusercontent.com/DefiKingdoms/community-token-list/main/src/defikingdoms-default.tokenlist.json"
+        ]
       }
     },
     "fantom": {
       "spiritswap": {
-        "factory": {
-          "address": "0xef45d134b73241eda7703fa787148d9c9f4950b0"
-        },
-        "router": {
-          "address": "0x16327E3FbDaCA3bcF7E38F5Af2599D2DDc33aE52",
-          "mapping": {
-            "WETH": "WETH",
-            "swapETHForExactTokens": "swapETHForExactTokens",
-            "swapExactETHForTokens": "swapExactETHForTokens",
-            "swapExactTokensForETH": "swapExactTokensForETH",
-            "swapTokensForExactETH": "swapTokensForExactETH"
+        "contracts": {
+          "factory": {
+            "address": "0xef45d134b73241eda7703fa787148d9c9f4950b0"
+          },
+          "router": {
+            "address": "0x16327E3FbDaCA3bcF7E38F5Af2599D2DDc33aE52",
+            "mapping": {
+              "WETH": "WETH",
+              "swapETHForExactTokens": "swapETHForExactTokens",
+              "swapExactETHForTokens": "swapExactETHForTokens",
+              "swapExactTokensForETH": "swapExactTokensForETH",
+              "swapTokensForExactETH": "swapTokensForExactETH"
+            }
+          },
+          "weth": {
+            "address": ""
           }
         },
-        "weth": {
-          "address": ""
-        }
+        "tokenLists": [
+          "https://raw.githubusercontent.com/Alium-Finance/tokens-list/041450c4c442ec31a2882f54b1da396fff190c7c/lists/tokensFantomMainnet.json"
+        ]
       }
     },
     "harmony": {
-      "defiKingdoms": {
-        "factory": {
-          "address": "0x9014B937069918bd319f80e8B3BB4A2cf6FAA5F7"
-        },
-        "router": {
-          "address": "0x24ad62502d1C652Cc7684081169D04896aC20f30",
-          "mapping": {
-            "WETH": "WETH",
-            "swapETHForExactTokens": "swapETHForExactTokens",
-            "swapExactETHForTokens": "swapExactETHForTokens",
-            "swapExactTokensForETH": "swapExactTokensForETH",
-            "swapTokensForExactETH": "swapTokensForExactETH"
+      "defikingdoms": {
+        "contracts": {
+          "factory": {
+            "address": "0x9014B937069918bd319f80e8B3BB4A2cf6FAA5F7"
+          },
+          "router": {
+            "address": "0x24ad62502d1C652Cc7684081169D04896aC20f30",
+            "mapping": {
+              "WETH": "WETH",
+              "swapETHForExactTokens": "swapETHForExactTokens",
+              "swapExactETHForTokens": "swapExactETHForTokens",
+              "swapExactTokensForETH": "swapExactTokensForETH",
+              "swapTokensForExactETH": "swapTokensForExactETH"
+            }
+          },
+          "weth": {
+            "address": ""
           }
         },
-        "weth": {
-          "address": ""
-        }
+        "tokenLists": [
+          "https://raw.githubusercontent.com/DefiKingdoms/community-token-list/main/build/defikingdoms-community.tokenlist.json",
+          "https://raw.githubusercontent.com/DefiKingdoms/community-token-list/main/src/defikingdoms-default.tokenlist.json"
+        ]
       }
     }
   },
@@ -2411,7 +2433,7 @@
           "isGas": "True",
           "symbol": "WAVAX"
         },
-        "dexsToUse": ["pangolin"]
+        "dexToUse": ["pangolin"]
       },
       "chainTwo": {
         "chain": {
@@ -2429,7 +2451,7 @@
           "isGas": "False",
           "symbol": "AVAX"
         },
-        "dexsToUse": ["defiKingdoms"]
+        "dexToUse": ["defikingdoms"]
       }
     },
     "JEWEL_DFKChain_Avalanche": {
@@ -2462,7 +2484,7 @@
           "isGas": "False",
           "symbol": "JEWEL"
         },
-        "dexsToUse": ["pangolin"]
+        "dexToUse": ["pangolin"]
       },
       "chainTwo": {
         "chain": {
@@ -2480,7 +2502,7 @@
           "isGas": "True",
           "symbol": "WJEWEL"
         },
-        "dexsToUse": ["defiKingdoms"]
+        "dexToUse": ["defikingdoms"]
       }
     },
     "JEWEL_Harmony_DFKChain": {
@@ -2513,7 +2535,7 @@
           "isGas": "False",
           "symbol": "JEWEL"
         },
-        "dexsToUse": ["defiKingdoms"]
+        "dexToUse": ["defikingdoms"]
       },
       "chainTwo": {
         "chain": {
@@ -2531,7 +2553,7 @@
           "isGas": "True",
           "symbol": "WJEWEL"
         },
-        "dexsToUse": ["defiKingdoms"]
+        "dexToUse": ["defikingdoms"]
       }
     },
     "xJEWEL_Harmony_DFKChain": {
@@ -2564,7 +2586,7 @@
           "isGas": "False",
           "symbol": "xJEWEL"
         },
-        "dexsToUse": ["defiKingdoms"]
+        "dexToUse": ["defikingdoms"]
       },
       "chainTwo": {
         "chain": {
@@ -2582,7 +2604,7 @@
           "isGas": "False",
           "symbol": "xJEWEL"
         },
-        "dexsToUse": ["defiKingdoms"]
+        "dexToUse": ["defikingdoms"]
       }
     }
   },
@@ -2657,11 +2679,7 @@
   },
   "tokenLists": {
     "DFK_ALL": [
-      "https://raw.githubusercontent.com/DefiKingdoms/community-token-list/main/build/defiKingdoms-community.tokenlist.json",
-      "https://raw.githubusercontent.com/DefiKingdoms/community-token-list/main/src/defiKingdoms-default.tokenlist.json",
       "https://raw.githubusercontent.com/tradescrow/token-lists/main/build/tradescrow-all.tokenlist.json",
-      "https://raw.githubusercontent.com/pangolindex/tokenlists/main/pangolin.tokenlist.json",
-      "https://raw.githubusercontent.com/Alium-Finance/tokens-list/041450c4c442ec31a2882f54b1da396fff190c7c/lists/tokensFantomMainnet.json",
       "https://raw.githubusercontent.com/itslhk/additional-tokens/master/lhk-additional-tokens.json"
     ]
   }
