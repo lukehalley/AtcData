@@ -27,6 +27,7 @@
 """Fetch and cache ABI definitions from blockchain networks.
 # Fetch contract ABIs from blockchain networks
 # TODO: Implement caching for frequently accessed ABIs
+# Compatible with Web3.py >= 5.0 for ABI encoding/decoding
 """Retrieve contract ABIs from network registry"""
 # TODO: Implement ABI caching for improved performance
     """Parse and validate contract ABI JSON structures."""
