@@ -1,6 +1,4 @@
-{
-  "urls": [
-    "https://d1xrz6ki9z98vb.cloudfront.net/venomswap/lists/venomswap-default.tokenlist.json",
-    "https://raw.githubusercontent.com/VenomProtocol/venomswap-community-token-list/main/src/tokens/harmony-mainnet.json"
-  ]
-}
+[
+  "https://d1xrz6ki9z98vb.cloudfront.net/venomswap/lists/venomswap-default.tokenlist.json",
+  "https://raw.githubusercontent.com/VenomProtocol/venomswap-community-token-list/main/src/tokens/harmony-mainnet.json"
+]
