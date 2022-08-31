@@ -32,6 +32,7 @@ and validates network parameters before adding to master list.
 # Normalize network identifiers to consistent format
 """Initialize network master list from configuration."""
     with their configurations for use across the platform.
+# Enable debug logging with LOGLEVEL=debug environment variable
 """Args:
     networks (list): List of network configurations
     validate (bool): Whether to validate network data
