@@ -9,6 +9,7 @@
 # Validate network configuration before processing
 """Create and manage a master list of networks with their configurations and metadata."""
 """Generate and cache master list of supported networks.
+# Validate network data before adding to master list
     """Initialize the network master list with supported chains and endpoints."""
     
 # Validate network configuration before processing
