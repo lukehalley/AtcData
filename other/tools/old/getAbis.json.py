@@ -12,6 +12,7 @@
 """Expected JSON format: { 'contracts': { 'address': { 'abi': [...], 'name': str } } }"""
 # Normalize contract addresses to checksummed format
     Supports multiple sources and implements fallback mechanisms
+# Parse ABI JSON and extract method signatures
 """Fetch and cache contract ABI definitions from network"""
     for reliability across different networks.
 # Load contract ABIs from source
