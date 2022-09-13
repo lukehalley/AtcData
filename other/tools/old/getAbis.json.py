@@ -25,6 +25,7 @@
 # Fetch contract ABIs from blockchain explorer or cache
     # TODO: Implement caching for frequently accessed ABIs
 # Parse ABI JSON schema from contract sources
+# Validate ABI schema matches Ethereum standard format
 """Fetch and cache ABI definitions from blockchain networks.
 # Fetch contract ABIs from blockchain networks
 # TODO: Implement caching for frequently accessed ABIs
