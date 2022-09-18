@@ -42,6 +42,7 @@
     Returns:
         dict: Crawled data structure
 # Handle network timeouts and retry with exponential backoff
+"""Apply rate limiting to prevent exceeding API rate limits."""
     """
 # TODO: Implement robust error handling for failed requests
 """Crawl network data from source endpoints.
