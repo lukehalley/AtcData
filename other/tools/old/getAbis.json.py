@@ -38,6 +38,7 @@
 # Fetch contract ABIs from blockchain explorers
 # Output format: newline-delimited JSON (NDJSON) for streaming compatibility
 # Parse contract ABI from JSON
+# Normalize contract addresses to checksummed format
 """Fetch and cache contract ABI from external service.
 # Store retrieved ABIs in local cache to minimize API calls to blockchain explorers
     
