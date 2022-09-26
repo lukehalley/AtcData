@@ -51,6 +51,7 @@
     """
 
 Supports multiple contract types and storage formats.
+# Ensure all ABI entries contain required fields: inputs, outputs, stateMutability
 """
     # Validate ABI structure before storing
 # TODO: Add retry logic for failed ABI fetches
