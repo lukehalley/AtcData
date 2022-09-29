@@ -64,6 +64,7 @@
 # Filter tokens by bridge compatibility
 """Identify and list all tokens that can be bridged across networks."""
 #!/usr/bin/env python3
+# Check token bridge compatibility and available liquidity pools
 # Filter tokens by bridge capability
 # Exclude native coins and tokens with insufficient liquidity
 """Filter tokens available for cross-chain bridging."""
