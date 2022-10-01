@@ -2214,6 +2214,94 @@
       }
     }
   },
+  "bridges": {
+    "avalanche": {
+      "synapse": {
+        "address": "0x0EF812f4c68DC84c22A4821EF30ba2ffAB9C2f3A"
+      }
+    },
+    "avalanchedfk": {
+      "synapse": {
+        "address": "0x75224b0f245Fe51d5bf47A898DbB6720D4150BA7"
+      }
+    },
+    "fantom": {
+      "synapse": {
+        "address": "0xb003e75f7e0b5365e814302192e99b4ee08c0ded"
+      }
+    },
+    "harmony": {
+      "synapse": {
+        "address": "0xb003e75f7e0b5365e814302192e99b4ee08c0ded"
+      }
+    }
+  },
+  "chains": {
+    "avalanche": {
+      "blockExplorer": {
+        "apiKey": "5IW5QBE9QMQM3IJRHPKUTB4CWZ1JU1FS8R",
+        "txBaseURL": "https://snowtrace.io/tx"
+      },
+      "gasDetails": {
+        "gasLimits": {
+          "maxGas": 0.1,
+          "minGas": 0.01
+        },
+        "symbol": "WAVAX"
+      },
+      "id": "43114",
+      "primaryDex": "pangolin",
+      "rpc": "https://api.avax.network/ext/bc/C/rpc"
+    },
+    "avalanchedfk": {
+      "blockExplorer": {
+        "apiKey": "0000000000000000000000000000000000",
+        "txBaseURL": "https://subnets.avax.network/defi-kingdoms/dfk-chain/explorer/tx"
+      },
+      "gasDetails": {
+        "gasLimits": {
+          "maxGas": 5,
+          "minGas": 1
+        },
+        "symbol": "JEWEL"
+      },
+      "id": "53935",
+      "primaryDex": "defikingdoms",
+      "rpc": "https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc"
+    },
+    "fantom": {
+      "blockExplorer": {
+        "apiKey": "35XFJZ295M8G38F88WGE68Q7QWNIXYEKN8",
+        "txBaseURL": "https://ftmscan.com/tx/"
+      },
+      "gasDetails": {
+        "gasLimits": {
+          "maxGas": 5,
+          "minGas": 1
+        },
+        "symbol": "FTM"
+      },
+      "id": "250",
+      "primaryDex": "spiritswap",
+      "rpc": "https://rpc.ankr.com/fantom"
+    },
+    "harmony": {
+      "blockExplorer": {
+        "apiKey": "0000000000000000000000000000000000",
+        "txBaseURL": "https://explorer.harmony.one/tx"
+      },
+      "gasDetails": {
+        "gasLimits": {
+          "maxGas": 5,
+          "minGas": 1
+        },
+        "symbol": "ONE"
+      },
+      "id": "1666600000",
+      "primaryDex": "defikingdoms",
+      "rpc": "https://a.api.s0.t.hmny.io"
+    }
+  },
   "dexs": {
     "avalanche": {
       "pangolin": {
@@ -2321,90 +2409,6 @@
       }
     }
   },
-  "bridges": {
-    "avalanche": {
-      "synapse": {
-        "address": "0x0EF812f4c68DC84c22A4821EF30ba2ffAB9C2f3A"
-      }
-    },
-    "avalanchedfk": {
-      "synapse": {
-        "address": "0x75224b0f245Fe51d5bf47A898DbB6720D4150BA7"
-      }
-    },
-    "fantom": {
-      "synapse": {
-        "address": "0xb003e75f7e0b5365e814302192e99b4ee08c0ded"
-      }
-    },
-    "harmony": {
-      "synapse": {
-        "address": "0xb003e75f7e0b5365e814302192e99b4ee08c0ded"
-      }
-    }
-  },
-  "chains": {
-    "avalanche": {
-      "blockExplorer": {
-        "apiKey": "5IW5QBE9QMQM3IJRHPKUTB4CWZ1JU1FS8R",
-        "txBaseURL": "https://snowtrace.io/tx"
-      },
-      "gasDetails": {
-        "gasLimits": {
-          "maxGas": 0.1,
-          "minGas": 0.01
-        },
-        "symbol": "WAVAX"
-      },
-      "id": "43114",
-      "rpc": "https://api.avax.network/ext/bc/C/rpc"
-    },
-    "avalanchedfk": {
-      "blockExplorer": {
-        "apiKey": "0000000000000000000000000000000000",
-        "txBaseURL": "https://subnets.avax.network/defi-kingdoms/dfk-chain/explorer/tx"
-      },
-      "gasDetails": {
-        "gasLimits": {
-          "maxGas": 5,
-          "minGas": 1
-        },
-        "symbol": "JEWEL"
-      },
-      "id": "53935",
-      "rpc": "https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc"
-    },
-    "fantom": {
-      "blockExplorer": {
-        "apiKey": "35XFJZ295M8G38F88WGE68Q7QWNIXYEKN8",
-        "txBaseURL": "https://ftmscan.com/tx/"
-      },
-      "gasDetails": {
-        "gasLimits": {
-          "maxGas": 5,
-          "minGas": 1
-        },
-        "symbol": "FTM"
-      },
-      "id": "250",
-      "rpc": "https://rpc.ankr.com/fantom"
-    },
-    "harmony": {
-      "blockExplorer": {
-        "apiKey": "0000000000000000000000000000000000",
-        "txBaseURL": "https://explorer.harmony.one/tx"
-      },
-      "gasDetails": {
-        "gasLimits": {
-          "maxGas": 5,
-          "minGas": 1
-        },
-        "symbol": "ONE"
-      },
-      "id": "1666600000",
-      "rpc": "https://a.api.s0.t.hmny.io"
-    }
-  },
   "recipes": {
     "AVAX_DFKChain_Avalanche": {
       "arbitrage": {
@@ -2412,13 +2416,12 @@
           "direction": "avalanchedfk,avalanche",
           "lockEnabled": "true"
         },
+        "enabled": false,
         "strategies": {
           "arbitrage": "networkBridge",
           "rollback": "networkBridgeRollback"
         },
-        "tokenList": "DFK_ALL",
-        "tokenRetrievalMethod": "tokenList",
-        "enabled": false
+        "tokenRetrievalMethod": "tokenList"
       },
       "chainOne": {
         "chain": {
@@ -2435,8 +2438,7 @@
         "token": {
           "isGas": "True",
           "symbol": "WAVAX"
-        },
-        "dexToUse": ["pangolin"]
+        }
       },
       "chainTwo": {
         "chain": {
@@ -2453,8 +2455,7 @@
         "token": {
           "isGas": "False",
           "symbol": "AVAX"
-        },
-        "dexToUse": ["defikingdoms"]
+        }
       }
     },
     "JEWEL_DFKChain_Avalanche": {
@@ -2463,13 +2464,12 @@
           "direction": "avalanchedfk,avalanche",
           "lockEnabled": "true"
         },
+        "enabled": false,
         "strategies": {
           "arbitrage": "networkBridge",
           "rollback": "networkBridgeRollback"
         },
-        "tokenList": "DFK_ALL",
-        "tokenRetrievalMethod": "tokenList",
-        "enabled": false
+        "tokenRetrievalMethod": "tokenList"
       },
       "chainOne": {
         "chain": {
@@ -2486,8 +2486,7 @@
         "token": {
           "isGas": "False",
           "symbol": "JEWEL"
-        },
-        "dexToUse": ["pangolin"]
+        }
       },
       "chainTwo": {
         "chain": {
@@ -2504,8 +2503,7 @@
         "token": {
           "isGas": "True",
           "symbol": "WJEWEL"
-        },
-        "dexToUse": ["defikingdoms"]
+        }
       }
     },
     "JEWEL_Harmony_DFKChain": {
@@ -2514,13 +2512,12 @@
           "direction": "avalanchedfk,harmony",
           "lockEnabled": "true"
         },
+        "enabled": true,
         "strategies": {
           "arbitrage": "networkBridge",
           "rollback": "networkBridgeRollback"
         },
-        "tokenList": "DFK_ALL",
-        "tokenRetrievalMethod": "tokenList",
-        "enabled": true
+        "tokenRetrievalMethod": "tokenList"
       },
       "chainOne": {
         "chain": {
@@ -2537,8 +2534,7 @@
         "token": {
           "isGas": "False",
           "symbol": "JEWEL"
-        },
-        "dexToUse": ["defikingdoms"]
+        }
       },
       "chainTwo": {
         "chain": {
@@ -2555,8 +2551,7 @@
         "token": {
           "isGas": "True",
           "symbol": "WJEWEL"
-        },
-        "dexToUse": ["defikingdoms"]
+        }
       }
     },
     "xJEWEL_Harmony_DFKChain": {
@@ -2565,13 +2560,12 @@
           "direction": "avalanchedfk,harmony",
           "lockEnabled": "true"
         },
+        "enabled": false,
         "strategies": {
           "arbitrage": "networkBridge",
           "rollback": "networkBridgeRollback"
         },
-        "tokenList": "DFK_ALL",
-        "tokenRetrievalMethod": "tokenList",
-        "enabled": false
+        "tokenRetrievalMethod": "tokenList"
       },
       "chainOne": {
         "chain": {
@@ -2588,8 +2582,7 @@
         "token": {
           "isGas": "False",
           "symbol": "xJEWEL"
-        },
-        "dexToUse": ["defikingdoms"]
+        }
       },
       "chainTwo": {
         "chain": {
@@ -2606,8 +2599,7 @@
         "token": {
           "isGas": "False",
           "symbol": "xJEWEL"
-        },
-        "dexToUse": ["defikingdoms"]
+        }
       }
     }
   },
