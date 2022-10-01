@@ -102,7 +102,7 @@
             "direction": "avalanchedfk,harmony",
             "lockEnabled": "true"
           },
-          "enabled": true,
+          "enabled": false,
           "tokenRetrievalMethod": "tokenList"
         },
         "chainOne": {
@@ -146,10 +146,10 @@
     "internalChain": {
       "Harmony_Dexs": {
         "arbitrage": {
-          "enabled": false,
+          "enabled": true,
           "tokenRetrievalMethod": "tokenList"
         },
-        "chain": {
+        "chainOne": {
           "chain": {
             "dexToUse": "*",
             "name": "harmony"
@@ -157,6 +157,10 @@
           "stablecoin": {
             "isGas": "False",
             "symbol": "1USDC"
+          },
+          "routes": {
+            "stablecoin-token": "1USDC,{ANY_TOKEN}",
+            "token-stablecoin": "{ANY_TOKEN},1USDC"
           }
         }
       }

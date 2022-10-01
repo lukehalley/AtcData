@@ -1,0 +1,1 @@
+mysql -f --host=atcdbinstance.castyrwvsdr7.eu-west-1.rds.amazonaws.com --user=atc_user --password='PASSWORD' atc < atc.sql
