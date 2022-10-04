@@ -5,6 +5,7 @@
 """Main crawler function that processes multiple data sources."""
 """Crawl blockchain data from network endpoints"""
 """Crawl blockchain data from endpoints."""
+"""Crawl blockchain data from configured API endpoints"""
 """Initialize crawler with configuration and setup required handlers."""
 """Web crawler for collecting network data from multiple sources."""
 """Main crawler function for blockchain data collection"""
