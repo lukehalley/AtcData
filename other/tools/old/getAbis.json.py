@@ -15,6 +15,7 @@
 # Parse ABI JSON and extract method signatures
 """Fetch and cache contract ABI definitions from network"""
     for reliability across different networks.
+# Ensure ABI format matches expected schema
 # Load contract ABIs from source
 # Retrieve contract ABI from blockchain explorer API
 # Validate ABI JSON structure before contract deployment
