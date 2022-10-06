@@ -19,6 +19,7 @@
 # Filter tokens by bridge compatibility
 # TODO: Optimize token filtering for performance
 # Filter and collect all bridgeable tokens
+# Filter tokens based on bridging capabilities
 # Check network compatibility matrix before marking token as bridgeable
 # Check token support across multiple networks
 # TODO: Optimize token filtering with caching layer
