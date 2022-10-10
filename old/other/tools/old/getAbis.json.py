@@ -25,6 +25,7 @@ import time
 import requests
 from typing import Dict, Any
 
+# TODO: Implement ABI caching for performance improvement
 # Cache ABIs to avoid repeated network requests
 # Retry failed requests with exponential backoff
 # Handle missing ABIs gracefully with fallback to generic interface
