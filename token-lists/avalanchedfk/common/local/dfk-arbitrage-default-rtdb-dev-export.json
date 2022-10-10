@@ -462,7 +462,7 @@
         "wasSuccessful": true
       },
       "result": {
-        "arbitrageStrategy": "crossChain",
+        "arbitrageStrategy": "networkBridge",
         "percentageDifference": 1.66,
         "profitLoss": 0.13,
         "timeTookSeconds": 145.37208691499998,
@@ -2250,6 +2250,7 @@
         "symbol": "WAVAX"
       },
       "id": "43114",
+      "primaryDex": "pangolin",
       "rpc": "https://api.avax.network/ext/bc/C/rpc"
     },
     "avalanchedfk": {
@@ -2265,6 +2266,7 @@
         "symbol": "JEWEL"
       },
       "id": "53935",
+      "primaryDex": "defikingdoms",
       "rpc": "https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc"
     },
     "fantom": {
@@ -2280,6 +2282,7 @@
         "symbol": "FTM"
       },
       "id": "250",
+      "primaryDex": "spiritswap",
       "rpc": "https://rpc.ankr.com/fantom"
     },
     "harmony": {
@@ -2295,6 +2298,7 @@
         "symbol": "ONE"
       },
       "id": "1666600000",
+      "primaryDex": "defikingdoms",
       "rpc": "https://a.api.s0.t.hmny.io"
     }
   },
@@ -2389,241 +2393,201 @@
     }
   },
   "recipes": {
-    "crossChain": {
-      "AVAX_Avalanche_DFKChain": {
-        "arbitrage": {
-          "directionLock": {
-            "direction": "avalanchedfk,avalanche",
-            "lockEnabled": "true"
-          },
-          "enabled": false,
-          "strategies": {
-            "arbitrage": "crossChain",
-            "rollback": "crossChainRollback"
-          },
-          "tokenRetrievalMethod": "tokenList",
-          "primaryBridge": "synapse"
+    "AVAX_DFKChain_Avalanche": {
+      "arbitrage": {
+        "directionLock": {
+          "direction": "avalanchedfk,avalanche",
+          "lockEnabled": "true"
         },
-        "chainOne": {
-          "chain": {
-            "name": "avalanche",
-            "primaryDex": "pangolin"
-          },
-          "routes": {
-            "stablecoin-token": "USDC.e,{NETWORK_GAS_TOKEN}",
-            "token-stablecoin": "{NETWORK_GAS_TOKEN},USDC.e"
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "USDC.e"
-          },
-          "token": {
-            "isGas": "True",
-            "symbol": "WAVAX"
-          }
+        "enabled": false,
+        "strategies": {
+          "arbitrage": "networkBridge",
+          "rollback": "networkBridgeRollback"
         },
-        "chainTwo": {
-          "chain": {
-            "name": "avalanchedfk",
-            "primaryDex": "defikingdoms"
-          },
-          "routes": {
-            "stablecoin-token": "USDC,CRYSTAL,{NETWORK_GAS_TOKEN}",
-            "token-stablecoin": "{NETWORK_GAS_TOKEN},CRYSTAL,USDC"
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "USDC"
-          },
-          "token": {
-            "isGas": "False",
-            "symbol": "AVAX"
-          }
+        "tokenRetrievalMethod": "tokenList"
+      },
+      "chainOne": {
+        "chain": {
+          "name": "avalanche"
+        },
+        "routes": {
+          "stablecoin-token": "USDC.e,{NETWORK_GAS_TOKEN}",
+          "token-stablecoin": "{NETWORK_GAS_TOKEN},USDC.e"
+        },
+        "stablecoin": {
+          "isGas": "False",
+          "symbol": "USDC.e"
+        },
+        "token": {
+          "isGas": "True",
+          "symbol": "WAVAX"
         }
       },
-      "JEWEL_Avalanche_DFKChain": {
-        "arbitrage": {
-          "directionLock": {
-            "direction": "avalanchedfk,avalanche",
-            "lockEnabled": "true"
-          },
-          "enabled": false,
-          "strategies": {
-            "arbitrage": "crossChain",
-            "rollback": "crossChainRollback"
-          },
-          "tokenRetrievalMethod": "tokenList",
-          "primaryBridge": "synapse"
+      "chainTwo": {
+        "chain": {
+          "name": "avalanchedfk"
         },
-        "chainOne": {
-          "chain": {
-            "name": "avalanche",
-            "primaryDex": "pangolin"
-          },
-          "routes": {
-            "stablecoin-token": "USDC.e,{NETWORK_GAS_TOKEN},JEWEL",
-            "token-stablecoin": "JEWEL,{NETWORK_GAS_TOKEN},USDC.e"
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "USDC.e"
-          },
-          "token": {
-            "isGas": "False",
-            "symbol": "JEWEL"
-          }
+        "routes": {
+          "stablecoin-token": "USDC,CRYSTAL,{NETWORK_GAS_TOKEN}",
+          "token-stablecoin": "{NETWORK_GAS_TOKEN},CRYSTAL,USDC"
         },
-        "chainTwo": {
-          "chain": {
-            "name": "avalanchedfk",
-            "primaryDex": "defikingdoms"
-          },
-          "routes": {
-            "stablecoin-token": "USDC,CRYSTAL,{NETWORK_GAS_TOKEN}",
-            "token-stablecoin": "{NETWORK_GAS_TOKEN},CRYSTAL,USDC"
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "USDC"
-          },
-          "token": {
-            "isGas": "True",
-            "symbol": "WJEWEL"
-          }
-        }
-      },
-      "JEWEL_Harmony_DFKChain": {
-        "arbitrage": {
-          "directionLock": {
-            "direction": "avalanchedfk,harmony",
-            "lockEnabled": "true"
-          },
-          "enabled": true,
-          "strategies": {
-            "arbitrage": "crossChain",
-            "rollback": "crossChainRollback"
-          },
-          "tokenRetrievalMethod": "tokenList",
-          "primaryBridge": "synapse"
+        "stablecoin": {
+          "isGas": "False",
+          "symbol": "USDC"
         },
-        "chainOne": {
-          "chain": {
-            "name": "harmony",
-            "primaryDex": "defikingdoms"
-          },
-          "routes": {
-            "stablecoin-token": "",
-            "token-stablecoin": ""
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "1USDC"
-          },
-          "token": {
-            "isGas": "False",
-            "symbol": "JEWEL"
-          }
-        },
-        "chainTwo": {
-          "chain": {
-            "name": "avalanchedfk",
-            "primaryDex": "defikingdoms"
-          },
-          "routes": {
-            "stablecoin-token": "USDC,CRYSTAL,{NETWORK_GAS_TOKEN}",
-            "token-stablecoin": "{NETWORK_GAS_TOKEN},CRYSTAL,USDC"
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "USDC"
-          },
-          "token": {
-            "isGas": "True",
-            "symbol": "WJEWEL"
-          }
-        }
-      },
-      "JEWEL_Harmony_DFKChain": {
-        "arbitrage": {
-          "directionLock": {
-            "direction": "avalanchedfk,harmony",
-            "lockEnabled": "true"
-          },
-          "enabled": true,
-          "strategies": {
-            "arbitrage": "crossChain",
-            "rollback": "crossChainRollback"
-          },
-          "tokenRetrievalMethod": "tokenList",
-          "primaryBridge": "synapse"
-        },
-        "chainOne": {
-          "chain": {
-            "name": "harmony",
-            "primaryDex": "defikingdoms"
-          },
-          "routes": {
-            "stablecoin-token": "",
-            "token-stablecoin": ""
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "1USDC"
-          },
-          "token": {
-            "isGas": "False",
-            "symbol": "JEWEL"
-          }
-        },
-        "chainTwo": {
-          "chain": {
-            "name": "avalanchedfk",
-            "primaryDex": "defikingdoms"
-          },
-          "routes": {
-            "stablecoin-token": "USDC,CRYSTAL,{NETWORK_GAS_TOKEN}",
-            "token-stablecoin": "{NETWORK_GAS_TOKEN},CRYSTAL,USDC"
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "USDC"
-          },
-          "token": {
-            "isGas": "True",
-            "symbol": "WJEWEL"
-          }
+        "token": {
+          "isGas": "False",
+          "symbol": "AVAX"
         }
       }
     },
-    "internalChain": {
-      "Harmony_Dexs": {
-        "arbitrage": {
-          "enabled": true,
-          "strategies": {
-            "arbitrage": "internalChain",
-            "rollback": "internalChainRollback"
-          },
-          "tokenRetrievalMethod": "tokenList"
+    "JEWEL_DFKChain_Avalanche": {
+      "arbitrage": {
+        "directionLock": {
+          "direction": "avalanchedfk,avalanche",
+          "lockEnabled": "true"
         },
+        "enabled": false,
+        "strategies": {
+          "arbitrage": "networkBridge",
+          "rollback": "networkBridgeRollback"
+        },
+        "tokenRetrievalMethod": "tokenList"
+      },
+      "chainOne": {
         "chain": {
-          "chain": {
-            "name": "harmony",
-            "primaryDex": "defikingdoms"
-          },
-          "routes": {
-            "stablecoin-token": "",
-            "token-stablecoin": ""
-          },
-          "stablecoin": {
-            "isGas": "False",
-            "symbol": "1USDC"
-          }
+          "name": "avalanche"
+        },
+        "routes": {
+          "stablecoin-token": "USDC.e,{NETWORK_GAS_TOKEN},JEWEL",
+          "token-stablecoin": "JEWEL,{NETWORK_GAS_TOKEN},USDC.e"
+        },
+        "stablecoin": {
+          "isGas": "False",
+          "symbol": "USDC.e"
+        },
+        "token": {
+          "isGas": "False",
+          "symbol": "JEWEL"
+        }
+      },
+      "chainTwo": {
+        "chain": {
+          "name": "avalanchedfk"
+        },
+        "routes": {
+          "stablecoin-token": "USDC,CRYSTAL,{NETWORK_GAS_TOKEN}",
+          "token-stablecoin": "{NETWORK_GAS_TOKEN},CRYSTAL,USDC"
+        },
+        "stablecoin": {
+          "isGas": "False",
+          "symbol": "USDC"
+        },
+        "token": {
+          "isGas": "True",
+          "symbol": "WJEWEL"
+        }
+      }
+    },
+    "JEWEL_Harmony_DFKChain": {
+      "arbitrage": {
+        "directionLock": {
+          "direction": "avalanchedfk,harmony",
+          "lockEnabled": "true"
+        },
+        "enabled": true,
+        "strategies": {
+          "arbitrage": "networkBridge",
+          "rollback": "networkBridgeRollback"
+        },
+        "tokenRetrievalMethod": "tokenList"
+      },
+      "chainOne": {
+        "chain": {
+          "name": "harmony"
+        },
+        "routes": {
+          "stablecoin-token": "",
+          "token-stablecoin": ""
+        },
+        "stablecoin": {
+          "isGas": "False",
+          "symbol": "1USDC"
+        },
+        "token": {
+          "isGas": "False",
+          "symbol": "JEWEL"
+        }
+      },
+      "chainTwo": {
+        "chain": {
+          "name": "avalanchedfk"
+        },
+        "routes": {
+          "stablecoin-token": "USDC,CRYSTAL,{NETWORK_GAS_TOKEN}",
+          "token-stablecoin": "{NETWORK_GAS_TOKEN},CRYSTAL,USDC"
+        },
+        "stablecoin": {
+          "isGas": "False",
+          "symbol": "USDC"
+        },
+        "token": {
+          "isGas": "True",
+          "symbol": "WJEWEL"
+        }
+      }
+    },
+    "xJEWEL_Harmony_DFKChain": {
+      "arbitrage": {
+        "directionLock": {
+          "direction": "avalanchedfk,harmony",
+          "lockEnabled": "true"
+        },
+        "enabled": false,
+        "strategies": {
+          "arbitrage": "networkBridge",
+          "rollback": "networkBridgeRollback"
+        },
+        "tokenRetrievalMethod": "tokenList"
+      },
+      "chainOne": {
+        "chain": {
+          "name": "harmony"
+        },
+        "routes": {
+          "stablecoin-token": "1USDC,JEWEL,xJEWEL",
+          "token-stablecoin": "xJEWEL,JEWEL,1USDC"
+        },
+        "stablecoin": {
+          "isGas": "False",
+          "symbol": "1USDC"
+        },
+        "token": {
+          "isGas": "False",
+          "symbol": "xJEWEL"
+        }
+      },
+      "chainTwo": {
+        "chain": {
+          "name": "avalanchedfk"
+        },
+        "routes": {
+          "stablecoin-token": "USDC,WJEWEL,xJEWEL",
+          "token-stablecoin": "xJEWEL,WJEWEL,USDC"
+        },
+        "stablecoin": {
+          "isGas": "False",
+          "symbol": "USDC"
+        },
+        "token": {
+          "isGas": "False",
+          "symbol": "xJEWEL"
         }
       }
     }
   },
   "strategies": {
-    "crossChain": [
+    "networkBridge": [
       {
         "from": "stablecoin",
         "name": "originSwap",
@@ -2660,7 +2624,7 @@
         "type": "swap"
       }
     ],
-    "crossChainRollback": [
+    "networkBridgeRollback": [
       {
         "from": "stablecoin",
         "name": "destinationSwap",
