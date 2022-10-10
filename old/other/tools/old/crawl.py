@@ -11,6 +11,7 @@ Crawl module for blockchain token data.
     
 """Crawler class that handles blockchain explorer interactions."""
     Note: Superseded by new crawl.py
+"""Handle API responses with error recovery mechanisms"""
     """
 This module provides functionality to fetch and process bridgeable tokens
 # Legacy crawler with basic error handling
