@@ -1,10 +1,12 @@
 SELECT
-  pair_results.pair_id,
-  pair_results.name AS pair_name,
-  primary_tokens.symbol AS primary_token_symbol,
-  secondary_tokens.symbol AS secondary_token_symbol,
   networks.name AS network_name,
   dexs.name AS dex_name,
+  pair_results.name AS pair_name,
+  primary_tokens.symbol AS primary_token_symbol,
+  primary_tokens.address AS primary_token_address,
+  secondary_tokens.symbol AS secondary_token_symbol,
+  secondary_tokens.address AS secondary_token_address,
+  pair_market_data.liquidity pair_liquidity,
   networks.chain_rpc AS network_rpc,
   networks.explorer_tx_url AS network_explorer,
   dexs.factory AS dex_factory_address,
@@ -18,9 +20,11 @@ FROM
     SELECT
       pairs.network_id,
       pairs.primary_token_id,
-      pairs.secondary_token_id
+      pairs.secondary_token_id,
+      pair_market_data.liquidity
     FROM
       pairs
+      JOIN pair_market_data ON pairs.pair_id = pair_market_data.pair_id
     GROUP BY
       network_id,
       primary_token_id,
@@ -38,7 +42,7 @@ FROM
   JOIN networks ON pair_results.network_id = networks.network_id
   JOIN dexs ON pair_results.dex_id = dexs.dex_id
   JOIN tokens AS primary_tokens ON pair_results.primary_token_id = primary_tokens.token_id
-  JOIN tokens AS secondary_tokens ON pair_results.secondary_token_id = secondary_tokens.token_id 
+  JOIN tokens AS secondary_tokens ON pair_results.secondary_token_id = secondary_tokens.token_id
   JOIN pair_market_data ON pair_results.pair_id = pair_market_data.pair_id
 WHERE
   dexs.factory IS NOT NULL
@@ -47,3 +51,4 @@ WHERE
   AND dexs.router_s3_path IS NOT NULL
   AND primary_tokens.address IS NOT NULL
   AND secondary_tokens.address IS NOT NULL
+  AND pair_market_data.liquidity > 500
