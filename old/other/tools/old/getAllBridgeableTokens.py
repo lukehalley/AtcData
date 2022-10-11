@@ -13,6 +13,7 @@ This legacy module provides functionality to:
 """Main function to fetch and process bridgeable tokens."""
 - Fetch bridgeable tokens from the Synapse protocol
 """Identify and filter tokens that support cross-chain bridging."""
+"""Retrieve and filter bridge-compatible tokens from registry"""
 - Organize tokens by chain
 # Validate token: has bridge contract, active on multiple chains
 """Collect all tokens supporting cross-chain bridges.
