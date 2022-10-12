@@ -1,10 +1,26 @@
 SELECT
-  pairs.pair_id,
-  pairs.name,
-  pairs.network_id,
-  pairs.dex_id,
-  pairs.primary_token_id,
-  pairs.secondary_token_id
+  networks.name AS network_name,
+  dexs.name AS dex_name,
+  pairs.pair_id AS pair_db_id,
+  pairs.name AS pair_name,
+  primary_tokens.token_id AS primary_token_db_id,
+  primary_tokens.symbol AS primary_token_symbol,
+  primary_tokens.address AS primary_token_address,
+  secondary_tokens.token_id AS secondary_token_db_id,
+  secondary_tokens.symbol AS secondary_token_symbol,
+  secondary_tokens.address AS secondary_token_address,
+  pair_market_data.liquidity AS pair_liquidity,
+  pair_market_data.volume AS pair_volume,
+  pair_market_data.fdv AS pair_fdv,
+  networks.network_id AS network_db_id,
+  networks.chain_number AS network_chain_number,
+  networks.chain_rpc AS network_chain_rpc,
+  networks.explorer_tx_url AS network_chain_explorer,
+  dexs.dex_id AS dex_db_id,
+  dexs.factory AS dex_factory_address,
+  dexs.factory_s3_path AS dex_factory_abi,
+  dexs.router AS dex_factory_address,
+  dexs.router_s3_path AS dex_router_abi
 FROM
   (
     pairs
@@ -46,6 +62,19 @@ FROM
         AND pairs_matches.secondary_token_id = pairs_join_liquidity.secondary_token_id
         AND pairs_matches.dex_id = pairs_join_liquidity.dex_id
         AND pairs_matches.network_id = pairs_join_liquidity.network_id
+        JOIN networks ON pairs_matches.network_id = networks.network_id
+        JOIN dexs ON pairs_matches.dex_id = dexs.dex_id
+        JOIN tokens AS primary_tokens ON pairs_matches.primary_token_id = primary_tokens.token_id
+        JOIN tokens AS secondary_tokens ON pairs_matches.secondary_token_id = secondary_tokens.token_id
+        JOIN pair_market_data ON pairs_matches.pair_id = pair_market_data.pair_id
+      WHERE
+        dexs.factory IS NOT NULL
+        AND dexs.factory_s3_path IS NOT NULL
+        AND dexs.router IS NOT NULL
+        AND dexs.router_s3_path IS NOT NULL
+        AND primary_tokens.address IS NOT NULL
+        AND secondary_tokens.address IS NOT NULL
+        AND pair_market_data.liquidity > 500
       GROUP BY
         pairs_matches.primary_token_id,
         pairs_matches.secondary_token_id,
@@ -57,6 +86,11 @@ FROM
         pairs_matches.secondary_token_id,
         pairs_matches.network_id
     ) AS pairs_multidex ON FIND_IN_SET(pairs.pair_id, pairs_multidex.idsgroup)
+    JOIN networks ON pairs.network_id = networks.network_id
+    JOIN dexs ON pairs.dex_id = dexs.dex_id
+    JOIN tokens AS primary_tokens ON pairs.primary_token_id = primary_tokens.token_id
+    JOIN tokens AS secondary_tokens ON pairs.secondary_token_id = secondary_tokens.token_id
+    JOIN pair_market_data ON pairs.pair_id = pair_market_data.pair_id
   )
 ORDER BY
   pairs.primary_token_id,
