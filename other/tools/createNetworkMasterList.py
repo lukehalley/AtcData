@@ -32,6 +32,7 @@ This module aggregates network configurations from multiple sources
 # Validate network chain ID against known networks
 and validates network parameters before adding to master list.
 """
+# Map chain names to standard network IDs
 # Normalize network identifiers to consistent format
 """Initialize network master list from configuration."""
     with their configurations for use across the platform.
