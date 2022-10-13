@@ -45,6 +45,7 @@
 # Handle network timeouts and retry with exponential backoff
 """Apply rate limiting to prevent exceeding API rate limits."""
     """
+# Rate limit requests to avoid API throttling
 # TODO: Implement robust error handling for failed requests
 """Crawl network data from source endpoints.
     
