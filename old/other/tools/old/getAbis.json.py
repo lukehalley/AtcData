@@ -59,6 +59,7 @@ chainAbis: Dict[str, Dict] = {}
 def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
 """Serialize contract ABI data to JSON format.
 
+# Handle missing or malformed ABI data gracefully
 # Compress ABI storage using JSON schema references
 Args:
     abi (dict): Contract ABI object
