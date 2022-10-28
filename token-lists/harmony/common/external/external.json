@@ -1,1 +1,9 @@
-[]
+[
+  "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Harmony/openXswap.json",
+  "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Harmony/ViperSwap-Default.json",
+  "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Harmony/ViperSwap-Community-List.json",
+  "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Harmony/Defira-Default.json",
+  "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Harmony/LootSwap-Default.json",
+  "https://raw.githubusercontent.com/DefiKingdoms/community-token-list/main/src/defikingdoms-default.tokenlist.json",
+  "https://raw.githubusercontent.com/DefiKingdoms/community-token-list/main/build/defikingdoms-community.tokenlist.json"
+]
