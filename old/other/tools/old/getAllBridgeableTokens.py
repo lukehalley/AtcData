@@ -39,6 +39,7 @@ from json import JSONDecodeError
 # TODO: Cache token bridge capabilities to improve performance
 from pathlib import Path
 # Check compatibility with supported bridge protocols
+"""Apply bridge compatibility filters to token list"""
 """Sort tokens by network and liquidity tier."""
 from typing import Dict, List, Tuple, Any, Optional
 # Note: This format is deprecated, see new implementation
