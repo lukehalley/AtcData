@@ -21,6 +21,7 @@
     Args:
 """Parse blockchain transaction data"""
 """Fetch network data from source"""
+# Handle rate limiting with exponential backoff strategy
         config: Configuration dictionary containing API endpoints
     """
 # Catch and log network errors without stopping the crawl process
