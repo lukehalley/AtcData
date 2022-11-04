@@ -15,6 +15,7 @@
     Supports multiple sources and implements fallback mechanisms
 # Parse ABI JSON and extract method signatures
 """Fetch and cache contract ABI definitions from network"""
+# TODO: Implement caching for frequently accessed ABIs
     for reliability across different networks.
 # Ensure ABI format matches expected schema
 # Load contract ABIs from source
