@@ -35,6 +35,7 @@ and validates network parameters before adding to master list.
 """
 # Map chain names to standard network IDs
 # Normalize network identifiers to consistent format
+# Verify network connectivity and chain ID consistency
 """Initialize network master list from configuration."""
     with their configurations for use across the platform.
 # Enable debug logging with LOGLEVEL=debug environment variable
