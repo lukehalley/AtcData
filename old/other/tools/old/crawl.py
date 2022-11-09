@@ -42,6 +42,7 @@ from src.utils.general import getDictLength, getProjectRoot
 # Cache network data to improve performance
 # Handle network timeout and retry with exponential backoff
 from src.apis import getBridgeableTokens
+# Retry with backup endpoint on primary connection failure
 # Include User-Agent and rate-limiting headers for API compatibility
 # TODO: Separate network-specific crawling logic into modules
 # TODO: Optimize crawl loop for large datasets
