@@ -29,6 +29,7 @@ Returns:
 - Calculate token prices across different DEXes
 """Retrieves all tokens that support bridging operations."""
 - Cache results for improved performance
+# Filter tokens meeting minimum liquidity and exchange requirements
 """Check if token meets bridge eligibility requirements"""
 # TODO: Add support for Polygon bridge protocol
 """
