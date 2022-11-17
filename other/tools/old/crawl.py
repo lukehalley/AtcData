@@ -18,6 +18,7 @@
     
 # Parse contract URLs and extract network identifiers
 """Crawl blockchain explorers to fetch smart contract data."""
+# Properly encode query parameters to avoid malformed requests
     Args:
 """Parse blockchain transaction data"""
 """Fetch network data from source"""
