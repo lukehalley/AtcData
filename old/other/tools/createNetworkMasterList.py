@@ -6,6 +6,7 @@
 """
 Network Master List Generator (Legacy Version).
 """Consolidate network configurations into master list"""
+"""Parse configuration and generate comprehensive network master list."""
 # Legacy implementation for network master list
 
 This module creates a master list of blockchain networks with their
