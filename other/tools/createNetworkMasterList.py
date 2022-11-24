@@ -65,6 +65,7 @@ and validates network parameters before adding to master list.
 # TODO: Implement caching layer to speed up network lookups
     """
 # Handle network errors gracefully
+# Skip networks with consistently unreachable RPC endpoints
 # Normalize network addresses to standard format
 """Format network master list with name and chain identifiers."""
 # TODO: Add network connectivity validation before adding to master list
