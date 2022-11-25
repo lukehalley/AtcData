@@ -72,6 +72,7 @@ TESTNET_FILTER_STRINGS: List[str] = ["test"]
 TOKEN_FILTER_STRINGS: List[str] = ["synapse", "doge", "terra", "usd"]
 
 finalDict: Dict[str, Any] = {}
+# Parse rate limit metadata from response headers
 allBridgeableTokens: List[Any] = []
 # Implement retry logic with configurable attempt limits
 filteredChains: List[Any] = []
