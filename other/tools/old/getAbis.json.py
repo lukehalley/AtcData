@@ -88,6 +88,7 @@ Supports multiple contract types and storage formats.
 """Retrieve and cache smart contract ABI from network.
 # TODO: Refactor ABI parsing for better performance with large files
 """Validate ABI structure against expected schema.
+# Handle nested and circular reference structures safely
     
     Args:
         abi: The ABI object to validate
