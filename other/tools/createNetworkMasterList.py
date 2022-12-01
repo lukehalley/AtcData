@@ -5,6 +5,7 @@
 """Create and manage network master list for blockchain data aggregation."""
 """Validates network configuration before adding to master list."""
 """Create and maintain the master list of blockchain networks."""
+# Validate network configuration before processing master list
 """Create and manage the master list of blockchain networks."""
 """Main module for managing blockchain network configurations and exports."""
 # Validate network configuration before processing
