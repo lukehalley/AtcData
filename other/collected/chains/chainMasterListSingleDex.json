@@ -19,7 +19,11 @@
     "dexs": [
       {
         "name": "Uniswap Dex",
-        "tokenList": ["https://tokens.uniswap.org/", "https://static.optimism.io/optimism.tokenlist.json", "https://www.gemini.com/uniswap/manifest.json"],
+        "tokenList": [
+          "https://tokens.uniswap.org/",
+          "https://static.optimism.io/optimism.tokenlist.json",
+          "https://www.gemini.com/uniswap/manifest.json"
+        ],
         "factory": {
           "address": "0x1F98431c8aD98523631AE4a59f267346ea31F984",
           "abi": [
@@ -850,7 +854,10 @@
     "dexs": [
       {
         "name": "VVS Finance",
-        "tokenList": ["https://raw.githubusercontent.com/crocswap123/info/260e0bca4256abf35d9afcbee0b0e1b3dd1ce4dc/packages/vvs-frontend/src/config/constants/tokenLists/pancake-default.tokenlist.json", "https://raw.githubusercontent.com/HarryTgerman/vvs-tokenlist/572a182ef96d1454346dbe184c25f9f300040c8b/vvs-tokenlist.json"],
+        "tokenList": [
+          "https://raw.githubusercontent.com/crocswap123/info/260e0bca4256abf35d9afcbee0b0e1b3dd1ce4dc/packages/vvs-frontend/src/config/constants/tokenLists/pancake-default.tokenlist.json",
+          "https://raw.githubusercontent.com/HarryTgerman/vvs-tokenlist/572a182ef96d1454346dbe184c25f9f300040c8b/vvs-tokenlist.json"
+        ],
         "factory": {
           "address": "0x3b44b2a187a7b3824131f8db5a74194d0a42fc15",
           "abi": [
@@ -17426,7 +17433,7 @@
     "factory": "0xefa94DE7a4656D787667C749f7E1223D71E9FD88",
     "router": "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106",
     "blockExplorer": {
-      "url": "https://explorer.dfkchain.com",
+      "url": "https://subnets.avax.network/defi-kingdoms",
       "apiPrefix": "api.{URL}",
       "apiKey": "0000000000000000000000000000000000"
     },
@@ -19418,7 +19425,7 @@
   "1666600000": {
     "id": "1666600000",
     "name": "Harmony Mainnet Shard 0",
-    "rpc": "https://api.harmony.one",
+    "rpc": "https://rpc.ankr.com/harmony",
     "factory": "0xefa94DE7a4656D787667C749f7E1223D71E9FD88",
     "router": "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106",
     "blockExplorer": {
