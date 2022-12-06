@@ -1,0 +1,16 @@
+{
+  "blockExplorer": {
+    "apiKey": "35XFJZ295M8G38F88WGE68Q7QWNIXYEKN8",
+    "txBaseURL": "https://ftmscan.com/tx/"
+  },
+  "gasDetails": {
+    "gasLimits": {
+      "maxGas": 5,
+      "minGas": 1
+    },
+    "symbol": "FTM"
+  },
+  "id": "250",
+  "rpc": "https://rpc.ankr.com/fantom",
+  "primaryDex": "spiritswap"
+}

@@ -1,0 +1,52 @@
+{
+  "JEWEL_Harmony_FTM": {
+    "arbitrage": {
+      "dexId": "defikingdoms",
+      "directionLock": {
+        "direction": "fantom,harmony",
+        "lockEnabled": "true"
+      },
+      "strategies": {
+        "arbitrage": "networkBridge",
+        "rollback": "networkBridgeRollback"
+      },
+      "tokenList": "DFK_ALL",
+      "tokenRetrievalMethod": "tokenList"
+    },
+    "chainOne": {
+      "chain": {
+        "name": "harmony"
+      },
+      "routes": {
+        "stablecoin-token": "",
+        "token-stablecoin": ""
+      },
+      "stablecoin": {
+        "isGas": "False",
+        "symbol": "1USDC"
+      },
+      "token": {
+        "isGas": "False",
+        "symbol": "JEWEL"
+      }
+    },
+    "chainTwo": {
+      "chain": {
+        "name": "fantom"
+      },
+      "routes": {
+        "stablecoin-token": "USDC,{NETWORK_GAS_TOKEN},JEWEL",
+        "token-stablecoin": "JEWEL,{NETWORK_GAS_TOKEN},USDC"
+      },
+      "stablecoin": {
+        "isGas": "False",
+        "symbol": "USDC"
+      },
+      "token": {
+        "isGas": "False",
+        "symbol": "JEWEL"
+      }
+    },
+    "enabled": false
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "from": "stablecoin",
+    "name": "originSwap",
+    "position": "origin",
+    "to": "token",
+    "type": "swap"
+  },
+  {
+    "from": "token",
+    "name": "originBridge",
+    "position": "origin",
+    "to": "token",
+    "type": "bridge"
+  },
+  {
+    "from": "token",
+    "name": "destinationSwap",
+    "position": "destination",
+    "to": "stablecoin",
+    "type": "swap"
+  },
+  {
+    "from": "stablecoin",
+    "name": "destinationBridge",
+    "position": "destination",
+    "to": "stablecoin",
+    "type": "bridge"
+  },
+  {
+    "from": "stablecoin",
+    "name": "originCompletion",
+    "position": "origin",
+    "to": "done",
+    "type": "swap"
+  }
+]
