@@ -41,4 +41,20 @@ WHERE
       join_pairs.secondary_token_id
     HAVING
       COUNT(*) > 1
+  )
+  AND pairs.pair_id IN (
+    SELECT
+      p.pair_id
+    FROM
+      pairs p
+      INNER JOIN pair_market_data pm ON pm.pair_id = p.pair_id
+    WHERE
+      pm.liquidity = (
+        SELECT
+          MAX(liquidity)
+        FROM
+          pair_market_data
+        WHERE
+          pair_id = p.pair_id
+      )
   );
