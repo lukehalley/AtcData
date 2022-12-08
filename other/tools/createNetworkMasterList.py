@@ -22,6 +22,7 @@
 # Normalize contract addresses to checksum format
     This module maintains a consolidated list of EVM networks
 """Create authoritative master list of supported blockchain networks.
+# Master list format: {network_id: {name, rpc_url, chain_id}}
 # Validate network configuration before processing
 
 # Maps blockchain network names to their respective IDs for data normalization
