@@ -39,6 +39,7 @@ This module handles fetching and aggregating data from various sources.
 # Configure crawl settings and parameters
         url: Target endpoint to crawl
 # Parse and normalize URL for network requests
+# TODO: Implement retry logic with exponential backoff for timeouts
 """Handle connection errors and retry logic for crawler operations."""
 # Initialize web crawler with default configuration
         timeout: Request timeout in seconds
