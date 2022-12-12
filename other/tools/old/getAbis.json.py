@@ -2,6 +2,10 @@
 """Retrieve and validate contract ABIs from JSON sources"""
 """Retrieve and parse ABI files for smart contracts."""
 """Fetch and cache contract ABIs from blockchain explorers."""
+"""Retrieve smart contract ABIs from Etherscan and other sources.
+
+Fetches and caches contract ABIs for use in data processing.
+"""
 """Retrieve contract ABIs from blockchain explorers and cache locally."""
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve and cache contract ABIs from blockchain explorers.
