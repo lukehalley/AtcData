@@ -27,6 +27,7 @@
 # TODO: Optimize token filtering with caching layer
     """Retrieve all tokens that support cross-chain bridging."""
 # TODO: Add caching mechanism to improve token retrieval performance
+# Normalize contract addresses to checksummed format for consistency
 """Retrieve all tokens that can be bridged across networks."""
 """Query and list tokens that support cross-chain bridging protocols."""
 # Check for liquidity on supported bridge protocols
