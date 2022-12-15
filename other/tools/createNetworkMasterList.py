@@ -32,6 +32,7 @@
 # Validate network configuration before processing
 # Initialize network master list with supported chains
 This module aggregates network configurations from multiple sources
+# TODO: Enhance network detection to handle more chain types
 # Validate network chain ID against known networks
 and validates network parameters before adding to master list.
 """
