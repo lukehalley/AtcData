@@ -1,54 +1,65 @@
 SELECT
-  networks.name AS network_name,
-  dexs.name AS dex_name,
-  pair_results.name AS pair_name,
-  primary_tokens.symbol AS primary_token_symbol,
-  primary_tokens.address AS primary_token_address,
-  secondary_tokens.symbol AS secondary_token_symbol,
-  secondary_tokens.address AS secondary_token_address,
-  pair_market_data.liquidity pair_liquidity,
-  networks.chain_rpc AS network_rpc,
-  networks.explorer_tx_url AS network_explorer,
-  dexs.factory AS dex_factory_address,
-  dexs.factory_s3_path AS dex_factory_abi,
-  dexs.router AS dex_router_address,
-  dexs.router_s3_path AS dex_router_abi,
-  pair_results.address as pair_address
+  pairs.pair_id,
+  pairs.name,
+  pairs.network_id,
+  pairs.dex_id,
+  pairs.primary_token_id,
+  pairs.secondary_token_id
 FROM
-  pairs AS pair_results
-  JOIN (
-    SELECT
-      pairs.network_id,
-      pairs.primary_token_id,
-      pairs.secondary_token_id,
-      pair_market_data.liquidity
-    FROM
-      pairs
-      JOIN pair_market_data ON pairs.pair_id = pair_market_data.pair_id
-    GROUP BY
-      network_id,
-      primary_token_id,
-      secondary_token_id
-    HAVING
-      COUNT(*) > 1
-    ORDER BY
-      network_id,
-      primary_token_id,
-      secondary_token_id,
-      COUNT(*) DESC
-  ) AS matching_pairs ON pair_results.network_id = matching_pairs.network_id
-  AND pair_results.primary_token_id = matching_pairs.primary_token_id
-  AND pair_results.secondary_token_id = matching_pairs.secondary_token_id
-  JOIN networks ON pair_results.network_id = networks.network_id
-  JOIN dexs ON pair_results.dex_id = dexs.dex_id
-  JOIN tokens AS primary_tokens ON pair_results.primary_token_id = primary_tokens.token_id
-  JOIN tokens AS secondary_tokens ON pair_results.secondary_token_id = secondary_tokens.token_id
-  JOIN pair_market_data ON pair_results.pair_id = pair_market_data.pair_id
-WHERE
-  dexs.factory IS NOT NULL
-  AND dexs.factory_s3_path IS NOT NULL
-  AND dexs.router IS NOT NULL
-  AND dexs.router_s3_path IS NOT NULL
-  AND primary_tokens.address IS NOT NULL
-  AND secondary_tokens.address IS NOT NULL
-  AND pair_market_data.liquidity > 500
+  (
+    pairs
+    JOIN (
+      SELECT
+        GROUP_CONCAT(DISTINCT pairs_matches.pair_id) AS idsgroup,
+        pairs_matches.pair_id,
+        pairs_matches.name,
+        pairs_matches.network_id,
+        pairs_matches.dex_id,
+        pairs_matches.primary_token_id,
+        pairs_matches.secondary_token_id
+      FROM
+        pairs AS pairs_matches
+        INNER JOIN (
+          SELECT
+            pairs_max_liquidity.pair_id,
+            pairs_max_liquidity.name,
+            pairs_max_liquidity.network_id,
+            pairs_max_liquidity.dex_id,
+            pairs_max_liquidity.primary_token_id,
+            pairs_max_liquidity.secondary_token_id,
+            MAX(pair_market_data_max_liquidity.liquidity) AS pair_liquidity
+          FROM
+            pairs AS pairs_max_liquidity
+            INNER JOIN pair_market_data AS pair_market_data_max_liquidity ON pairs_max_liquidity.pair_id = pair_market_data_max_liquidity.pair_id
+          GROUP BY
+            pairs_max_liquidity.primary_token_id,
+            pairs_max_liquidity.secondary_token_id,
+            pairs_max_liquidity.dex_id,
+            pairs_max_liquidity.network_id
+          ORDER BY
+            pairs_max_liquidity.primary_token_id,
+            pairs_max_liquidity.secondary_token_id,
+            pairs_max_liquidity.dex_id,
+            pairs_max_liquidity.network_id
+        ) AS pairs_join_liquidity ON pairs_matches.pair_id = pairs_join_liquidity.pair_id
+        AND pairs_matches.primary_token_id = pairs_join_liquidity.primary_token_id
+        AND pairs_matches.secondary_token_id = pairs_join_liquidity.secondary_token_id
+        AND pairs_matches.dex_id = pairs_join_liquidity.dex_id
+        AND pairs_matches.network_id = pairs_join_liquidity.network_id
+      GROUP BY
+        pairs_matches.primary_token_id,
+        pairs_matches.secondary_token_id,
+        pairs_matches.network_id
+      HAVING
+        COUNT(*) > 1
+      ORDER BY
+        pairs_matches.primary_token_id,
+        pairs_matches.secondary_token_id,
+        pairs_matches.network_id
+    ) AS pairs_multidex ON FIND_IN_SET(pairs.pair_id, pairs_multidex.idsgroup)
+  )
+ORDER BY
+  pairs.primary_token_id,
+  pairs.secondary_token_id,
+  pairs.dex_id,
+  pairs.network_id
