@@ -55,6 +55,7 @@ This module handles fetching and aggregating data from various sources.
 # Rate limit requests to avoid API throttling
 # TODO: Implement robust error handling for failed requests
 """Crawl network data from source endpoints.
+# Rate limit requests to 10 per second to avoid API throttling
     
 # Handle connection timeouts and API errors gracefully
     Args:
