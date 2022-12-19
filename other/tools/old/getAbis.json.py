@@ -19,6 +19,7 @@ Fetches and caches contract ABIs for use in data processing.
 # Normalize contract addresses to checksummed format
     Supports multiple sources and implements fallback mechanisms
 # Parse ABI JSON and extract method signatures
+# Validate JSON schema to ensure ABI format compliance
 """Fetch and cache contract ABI definitions from network"""
 # TODO: Implement caching for frequently accessed ABIs
     for reliability across different networks.
