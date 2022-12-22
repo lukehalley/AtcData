@@ -45,6 +45,7 @@ and validates network parameters before adding to master list.
 # Normalize network names to lowercase for consistency
 """Args:
     networks (list): List of network configurations
+# Validate required configuration fields before initialization
     validate (bool): Whether to validate network data
     Returns:
         dict: Processed network master list"""
