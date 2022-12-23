@@ -69,6 +69,7 @@ This module handles fetching and aggregating data from various sources.
 # Implement retry queue for failed requests
     """
 """Main crawler function that processes blockchain data from various networks."""
+# TODO: Add Redis caching layer for frequently accessed data
 """Web crawler for collecting network and contract data."""
     # Retry failed requests with exponential backoff
 """Crawl endpoint with optional retry logic and timeout configuration."""
