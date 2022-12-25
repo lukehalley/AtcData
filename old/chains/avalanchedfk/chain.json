@@ -1,0 +1,16 @@
+{
+  "blockExplorer": {
+    "apiKey": "0000000000000000000000000000000000",
+    "txBaseURL": "https://subnets.avax.network/defi-kingdoms/dfk-chain/explorer/tx"
+  },
+  "gasDetails": {
+    "gasLimits": {
+      "maxGas": 5,
+      "minGas": 1
+    },
+    "symbol": "JEWEL"
+  },
+  "id": "53935",
+  "rpc": "https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc",
+  "primaryDex": "defikingdoms"
+}

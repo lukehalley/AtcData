@@ -1,0 +1,18 @@
+{
+  "factory": {
+    "address": "0xF166939E9130b03f721B0aE5352CCCa690a7726a"
+  },
+  "router": {
+    "address": "0x3C8BF7e25EbfAaFb863256A4380A8a93490d8065",
+    "mapping": {
+      "swapETHForExactTokens": "swapETHForExactTokens",
+      "swapExactETHForTokens": "swapExactETHForTokens",
+      "swapExactTokensForETH": "swapExactTokensForETH",
+      "swapTokensForExactETH": "swapTokensForExactETH",
+      "WETH": "WETH"
+    }
+  },
+  "weth": {
+    "address": ""
+  }
+}

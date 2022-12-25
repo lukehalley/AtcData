@@ -1,0 +1,102 @@
+{
+  "ETH_DFKChain_Avalanche": {
+    "arbitrage": {
+      "dexId": "defikingdoms",
+      "directionLock": {
+        "direction": "avalanchedfk,avalanche",
+        "lockEnabled": "true"
+      },
+      "strategies": {
+        "arbitrage": "networkBridge",
+        "rollback": "networkBridgeRollback"
+      },
+      "tokenList": "DFK_ALL",
+      "tokenRetrievalMethod": "tokenList"
+    },
+    "chainOne": {
+      "chain": {
+        "name": "avalanche"
+      },
+      "routes": {
+        "stablecoin-token": "USDC.e,{NETWORK_GAS_TOKEN},WETH.e",
+        "token-stablecoin": "WETH.e,{NETWORK_GAS_TOKEN},USDC.e"
+      },
+      "stablecoin": {
+        "isGas": "False",
+        "symbol": "USDC.e"
+      },
+      "token": {
+        "isGas": "False",
+        "symbol": "WETH.e"
+      }
+    },
+    "chainTwo": {
+      "chain": {
+        "name": "avalanchedfk"
+      },
+      "routes": {
+        "stablecoin-token": "USDC,CRYSTAL,ETH",
+        "token-stablecoin": "ETH,USDC"
+      },
+      "stablecoin": {
+        "isGas": "False",
+        "symbol": "USDC"
+      },
+      "token": {
+        "isGas": "False",
+        "symbol": "ETH"
+      }
+    },
+    "enabled": true
+  },
+  "ETH_Harmony_DFKChain": {
+    "arbitrage": {
+      "dexId": "defikingdoms",
+      "directionLock": {
+        "direction": "avalanchedfk,harmony",
+        "lockEnabled": "true"
+      },
+      "strategies": {
+        "arbitrage": "networkBridge",
+        "rollback": "networkBridgeRollback"
+      },
+      "tokenList": "DFK_ALL",
+      "tokenRetrievalMethod": "tokenList"
+    },
+    "chainOne": {
+      "chain": {
+        "name": "harmony"
+      },
+      "routes": {
+        "stablecoin-token": "1USDC,{NETWORK_GAS_TOKEN},1ETH",
+        "token-stablecoin": "1ETH,{NETWORK_GAS_TOKEN},1USDC"
+      },
+      "stablecoin": {
+        "isGas": "False",
+        "symbol": "1USDC"
+      },
+      "token": {
+        "isGas": "False",
+        "symbol": "1ETH"
+      }
+    },
+    "chainTwo": {
+      "chain": {
+        "name": "avalanchedfk"
+      },
+      "routes": {
+        "stablecoin-token": "USDC,CRYSTAL,ETH",
+        "token-stablecoin": "ETH,USDC"
+      },
+      "stablecoin": {
+        "isGas": "False",
+        "symbol": "USDC"
+      },
+      "token": {
+        "isGas": "False",
+        "symbol": "ETH"
+      }
+    },
+    "enabled": false
+  }
+}
