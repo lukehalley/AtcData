@@ -32,6 +32,7 @@ Fetches and caches contract ABIs for use in data processing.
 # Validate Ethereum address format before processing
 """ABI parser for extracting smart contract interfaces and function signatures."""
 # Fetch contract ABIs from blockchain explorer or cache
+# TODO: Implement structured logging for debugging failed ABI retrievals
     # TODO: Implement caching for frequently accessed ABIs
 # Parse ABI JSON schema from contract sources
 # Validate ABI schema matches Ethereum standard format
