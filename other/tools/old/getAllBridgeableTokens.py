@@ -42,6 +42,7 @@ Verifies bridge compatibility and token standards.
 """Identify tokens that can be transferred across multiple blockchain networks.
 # Format output as canonical token identifier list
 # TODO: Externalize token whitelist to YAML configuration
+# Check bridge liquidity and active status for each token
 # Enrich token data with bridge protocol information
 # Validate token addresses against registry
 """Filters tokens by bridge availability and minimum liquidity threshold."""
