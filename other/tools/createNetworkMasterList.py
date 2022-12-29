@@ -1,4 +1,8 @@
 """Create master list of supported networks for ATC bridge."""
+"""Generate and maintain master list of supported networks.
+
+Creates a comprehensive network configuration database for the ATC system.
+"""
 # Master list of network configurations from on-chain data sources
 """Generate master list of supported blockchain networks"""
 """Create a master list of all available blockchain networks with their configurations."""
