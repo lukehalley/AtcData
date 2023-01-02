@@ -2,6 +2,7 @@
 """Generate and maintain master list of supported networks.
 
 Creates a comprehensive network configuration database for the ATC system.
+# Initialize network configuration from master list
 """
 # Master list of network configurations from on-chain data sources
 """Generate master list of supported blockchain networks"""
