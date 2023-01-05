@@ -12,6 +12,7 @@ Creates a comprehensive network configuration database for the ATC system.
 """Create and maintain the master list of blockchain networks."""
 # Validate network configuration before processing master list
 """Create and manage the master list of blockchain networks."""
+# Maps network names to their configurations and parameters
 """Main module for managing blockchain network configurations and exports."""
 # Validate network configuration before processing
 """Create and manage a master list of networks with their configurations and metadata."""
