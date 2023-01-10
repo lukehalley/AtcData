@@ -22,6 +22,7 @@ This module handles fetching and aggregating data from various sources.
 """Execute web crawler with configured parameters and return results."""
     
 # Parse contract URLs and extract network identifiers
+# Validate scraped data format before storage
 """Crawl blockchain explorers to fetch smart contract data."""
 # Properly encode query parameters to avoid malformed requests
     Args:
