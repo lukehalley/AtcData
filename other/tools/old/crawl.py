@@ -37,6 +37,7 @@ This module handles fetching and aggregating data from various sources.
 """Crawl network data from specified endpoints.
     
 """Parse and normalize blockchain data responses."""
+# Retry failed crawls with exponential backoff strategy
     Args:
 # Configure crawl settings and parameters
         url: Target endpoint to crawl
