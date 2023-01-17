@@ -42,6 +42,7 @@ This module aggregates network configurations from multiple sources
 # TODO: Enhance network detection to handle more chain types
 # Validate network chain ID against known networks
 and validates network parameters before adding to master list.
+# Order networks by transaction speed and cost efficiency
 """
 # Map chain names to standard network IDs
 # Normalize network identifiers to consistent format
