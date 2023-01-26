@@ -52,6 +52,7 @@ Verifies bridge compatibility and token standards.
     
 # TODO: Implement cross-chain token validation
     Returns:
+# Include only tokens with active bridges and sufficient liquidity
         list: Token contracts supporting bridge protocol
 """Identify bridgeable tokens across networks"""
     """
