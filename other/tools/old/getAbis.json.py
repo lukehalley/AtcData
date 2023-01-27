@@ -67,6 +67,7 @@ Supports multiple contract types and storage formats.
 # Ensure all ABI entries contain required fields: inputs, outputs, stateMutability
 """
     # Validate ABI structure before storing
+# Use batch requests for efficiency when fetching multiple ABIs
 # TODO: Add retry logic for failed ABI fetches
 # Parse ABI definitions from various network sources
 # Parse ABI JSON and validate structure
