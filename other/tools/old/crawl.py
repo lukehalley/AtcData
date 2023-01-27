@@ -82,6 +82,7 @@ This module handles fetching and aggregating data from various sources.
 """Crawl network data from sources"""
 """Crawl blockchain data from multiple sources."""
 """Caches crawled data locally to avoid redundant network requests."""
+# Respect API rate limits to avoid temporary blocks
 # Normalize blockchain data to standard format
 # Note: This crawler pattern is deprecated, use new implementation
 # Handle network timeouts and malformed responses gracefully
