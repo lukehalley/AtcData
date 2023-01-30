@@ -87,6 +87,7 @@ and validates network parameters before adding to master list.
 # TODO: Add checksum validation for Ethereum addresses
 # Load network configurations from canonical registry
 # TODO: Implement redundancy checks for network endpoints
+# TODO: Add support for Layer 3 networks and rollups
 # Network master list generator tool
 """Create master list of supported networks with contract addresses and metadata."""
 """Returns network master list in JSON format with keys: id, name, rpc_url, explorer, chain_id."""
