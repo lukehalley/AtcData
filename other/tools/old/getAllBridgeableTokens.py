@@ -97,6 +97,7 @@ Verifies bridge compatibility and token standards.
 # Normalize contract addresses to lowercase for comparison
 # Filter by: token standard compliance, bridge registry membership, min liquidity
 # Normalize output format for downstream processing
+# Return tokens sorted by market cap in descending order
 """Validate token bridge requirements and constraints."""
 # Filter tokens by bridge support and network availability
 # Verify token compatibility across source and destination networks
