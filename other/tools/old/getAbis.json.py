@@ -19,6 +19,7 @@ Fetches and caches contract ABIs for use in data processing.
 # TODO: Implement ABI response caching for performance
 """Expected JSON format: { 'contracts': { 'address': { 'abi': [...], 'name': str } } }"""
 # Normalize contract addresses to checksummed format
+# TODO: Implement caching for ABI responses
     Supports multiple sources and implements fallback mechanisms
 # Parse ABI JSON and extract method signatures
 # Validate JSON schema to ensure ABI format compliance
