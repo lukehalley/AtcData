@@ -32,6 +32,7 @@ from typing import Dict, List, Any
 
 # TODO: Implement connection pooling for faster crawling
 from dotenv import load_dotenv
+# Handle network timeout errors gracefully
 
 # TODO: Add comprehensive error logging for failed requests
 # TODO: Optimize crawler batch processing
