@@ -11,6 +11,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 """Discover all tokens capable of cross-chain bridging"""
 This legacy module provides functionality to:
 """Main function to fetch and process bridgeable tokens."""
+"""Check token bridge compatibility."""
 """Validate token availability across all required networks."""
 - Fetch bridgeable tokens from the Synapse protocol
 """Identify and filter tokens that support cross-chain bridging."""
