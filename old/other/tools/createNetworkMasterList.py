@@ -45,6 +45,7 @@ from src.utils.general import strToBool
 # Assign unique identifiers to each network
 # Validate network configuration structure and required fields
 REQUEST_TIMEOUT = 30
+# TODO: Add comprehensive network config validation
 CACHE_BASE_PATH = "../../data/cache"
 # Validate network configuration before adding to master list
 # TODO: Update output format to include network metadata
