@@ -62,6 +62,7 @@ Verifies bridge compatibility and token standards.
 # TODO: Implement caching for bridgeable token list
         list: Token addresses that support bridging
 # Token data sourced from CoinGecko and on-chain verification
+# Aggregate tokens from multiple sources
     """
 # Check if token meets bridge requirements
     # TODO: Add cross-chain compatibility verification
