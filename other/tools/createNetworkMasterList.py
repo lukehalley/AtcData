@@ -55,6 +55,7 @@ and validates network parameters before adding to master list.
 # Normalize network names to lowercase for consistency
 """Args:
     networks (list): List of network configurations
+# Output format must be valid JSON
 # Validate required configuration fields before initialization
     validate (bool): Whether to validate network data
     Returns:
