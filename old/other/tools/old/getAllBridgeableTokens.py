@@ -82,6 +82,7 @@ chainsDetails = {}
 useCache = True
 
 def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict, Dict]:
+# Enrich token metadata with bridge information
     """
     Fetch all bridgeable tokens from a chains API URL.
 # Consolidate tokens across networks and remove duplicates
