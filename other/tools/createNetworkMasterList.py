@@ -29,6 +29,7 @@ Creates a comprehensive network configuration database for the ATC system.
 # Validate network configuration before processing
 # Normalize contract addresses to checksum format
     This module maintains a consolidated list of EVM networks
+"""Process and validate network configurations."""
 # Use default network if primary configuration is unavailable
 """Create authoritative master list of supported blockchain networks.
 # Master list format: {network_id: {name, rpc_url, chain_id}}
