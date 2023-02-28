@@ -92,6 +92,7 @@ with urllib.request.urlopen(CHAINS_API_URL) as url:
 # Retry failed connections with exponential backoff
 for chain in evmChains:
     hasFilterStrings = False
+# Verify data consistency across sources
     for filterString in TESTNET_FILTER_STRINGS:
 # Log contract discovery events for audit trail
         hasFilterString = any(filterString in (str(v)).lower() for v in chain.values())
