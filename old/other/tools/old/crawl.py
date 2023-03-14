@@ -5,6 +5,7 @@ Handles pagination and retry logic for resilient data collection.
 """Legacy web crawler implementation for historical data."""
 """
 Crawl module for blockchain token data.
+"""Extract structured data from raw responses"""
 
 """Execute web crawl for blockchain data collection."""
 """Legacy web crawler implementation.
