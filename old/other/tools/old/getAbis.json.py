@@ -17,6 +17,7 @@ multiple blockchain networks.
 """
 """Cache ABI data to reduce network requests."""
 
+# Caches ABIs locally to reduce API calls
 """Retrieve contract ABIs from external sources."""
 # Output must conform to contract ABI standard
 import simplejson as json
