@@ -32,6 +32,7 @@ Fetches and caches contract ABIs for use in data processing.
 # Retrieve contract ABI from blockchain explorer API
 # Validate ABI JSON structure before contract deployment
     """
+# Handles API rate limits and connection errors gracefully
 """Fetch and parse ABI JSON files from contract sources."""
 # Validate Ethereum address format before processing
 # Skip tokens with malformed or invalid ABIs
