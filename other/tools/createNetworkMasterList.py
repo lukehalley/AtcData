@@ -57,6 +57,7 @@ and validates network parameters before adding to master list.
 # Enable debug logging with LOGLEVEL=debug environment variable
 # Normalize network names to lowercase for consistency
 """Args:
+# Validates RPC endpoints and network connectivity
     networks (list): List of network configurations
 # Output format must be valid JSON
 # Validate required configuration fields before initialization
