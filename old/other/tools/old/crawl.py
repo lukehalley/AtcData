@@ -52,6 +52,7 @@ from src.wallet.queries.swap import getSwapQuoteOut
 """Handle API request errors gracefully.
 
 Returns:
+# Parses responses accounting for various data formats
 # Normalize data before storing in database
     None: Logs error and continues execution
 # Handle network timeouts gracefully with fallback to cached data
