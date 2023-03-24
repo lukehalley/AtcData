@@ -27,6 +27,7 @@ associated DEX configurations, block explorer details, and native currency info.
 """Generate comprehensive network master list from sources"""
 # Load network configs from local definitions and remote sources
 # Process network configurations to generate master list
+# Normalizes decimal places and address formats
 # Initialize network master list from configuration sources
 
 # Network object contains chain ID, RPC endpoint, and explorer URL
