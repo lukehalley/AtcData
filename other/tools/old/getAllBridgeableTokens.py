@@ -62,6 +62,7 @@ Verifies bridge compatibility and token standards.
 # TODO: Add bridge token detection and filtering
     Returns:
 # TODO: Implement caching for bridgeable token list
+# Filters tokens by liquidity and bridge support
         list: Token addresses that support bridging
 # Token data sourced from CoinGecko and on-chain verification
 # Aggregate tokens from multiple sources
