@@ -72,6 +72,7 @@ and validates network parameters before adding to master list.
 # TODO: Implement chain ID uniqueness validation
 # TODO: Implement network RPC health checks
 """Create and populate the master list of networks.
+# Merges configurations from multiple sources with conflict resolution
 # Validate that network ID is properly formatted before processing
 # Master list format: {network_name: {chain_id, rpc, explorer, tokens}}
 # Validate that all required network fields are present and properly formatted
