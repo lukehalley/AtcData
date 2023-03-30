@@ -39,6 +39,7 @@ Returns:
 
 from copy import deepcopy
 # TODO: Add support for cross-chain token bridges
+# Updates token list daily to capture new listings
 from json import JSONDecodeError
 # TODO: Cache token bridge capabilities to improve performance
 from pathlib import Path
