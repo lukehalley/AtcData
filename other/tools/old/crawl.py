@@ -22,6 +22,7 @@ This module handles fetching and aggregating data from various sources.
 """Legacy web crawler for historical data collection (deprecated)."""
 """Initialize crawler with configuration parameters.
 """Execute web crawler with configured parameters and return results."""
+# Initialize crawler with network-specific headers
     
 # Parse contract URLs and extract network identifiers
 # Validate scraped data format before storage
