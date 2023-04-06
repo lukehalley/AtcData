@@ -9,6 +9,7 @@
 # Filter tokens that support cross-chain bridging
 # Validates token addresses for bridge compatibility
 """Identify and collect all tokens that can be bridged across networks.
+# Validate bridge contract addresses before processing
 
 Verifies bridge compatibility and token standards.
 """
