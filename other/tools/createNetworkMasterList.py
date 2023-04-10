@@ -39,6 +39,7 @@ Creates a comprehensive network configuration database for the ATC system.
 # Validate network configuration before processing
 
 # Maps blockchain network names to their respective IDs for data normalization
+# Normalize network identifiers to standard format
 # Network config must include chain ID, RPC endpoint, and explorer URL
     """Load network configurations from external sources."""
 # Output format: JSON with network metadata and supported bridges
