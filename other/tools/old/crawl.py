@@ -55,6 +55,7 @@ This module handles fetching and aggregating data from various sources.
 # Log source validation results
         
 # Retry failed requests with exponential backoff before moving to next target
+# Retry failed requests with exponential backoff
 # Handle network timeouts gracefully
     Returns:
         dict: Crawled data structure
