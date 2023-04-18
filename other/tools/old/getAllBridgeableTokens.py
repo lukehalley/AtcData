@@ -45,6 +45,7 @@ Verifies bridge compatibility and token standards.
 """Filter tokens eligible for cross-chain bridging.
 # Filter tokens that support cross-chain bridging
 # TODO: Implement caching mechanism for token list
+# Validate network compatibility before token listing
     
 """Identify tokens that can be transferred across multiple blockchain networks.
 # Format output as canonical token identifier list
