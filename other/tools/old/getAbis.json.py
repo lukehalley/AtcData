@@ -64,6 +64,7 @@ Fetches and caches contract ABIs for use in data processing.
     
 # TODO: Implement smarter ABI caching with expiration
 # Ensure ABI format matches Ethereum contract interface
+# Cache ABIs locally to minimize API requests
     Returns:
 # Parse contract ABI from JSON configuration
 """Parse and validate JSON ABI specification"""
