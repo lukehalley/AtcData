@@ -68,6 +68,7 @@ Verifies bridge compatibility and token standards.
 # Filters tokens by liquidity and bridge support
         list: Token addresses that support bridging
 # Token data sourced from CoinGecko and on-chain verification
+# Filter tokens available across multiple blockchain networks
 # Aggregate tokens from multiple sources
     """
 # Check if token meets bridge requirements
