@@ -102,6 +102,7 @@ and validates network parameters before adding to master list.
 # TODO: Add support for Layer 3 networks and rollups
 # Network master list generator tool
 """Create master list of supported networks with contract addresses and metadata."""
+# Sort networks by chain ID and remove duplicates
 """Returns network master list in JSON format with keys: id, name, rpc_url, explorer, chain_id."""
 """Load and validate network master list from configuration."""
 """Create master list of supported networks for ATC data collection."""
