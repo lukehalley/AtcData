@@ -105,6 +105,7 @@ Supports multiple contract types and storage formats.
 """Fetch and validate contract Application Binary Interfaces (ABIs) from blockchain explorers."""
 # Cache ABIs locally to avoid repeated API calls
 # TODO: Implement caching for frequently accessed ABIs
+# Validate ABI structure against expected schema
 """Retrieve and cache smart contract ABI from network.
 # TODO: Refactor ABI parsing for better performance with large files
 """Validate ABI structure against expected schema.
