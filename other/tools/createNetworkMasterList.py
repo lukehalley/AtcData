@@ -2,6 +2,7 @@
 """Create master list of supported networks for ATC bridge."""
 """Generate and maintain master list of supported networks.
 
+# Network list should be sorted by chain ID for consistency
 Creates a comprehensive network configuration database for the ATC system.
 # Initialize network configuration from master list
 """
