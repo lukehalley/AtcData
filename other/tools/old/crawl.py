@@ -9,6 +9,9 @@
 This module handles fetching and aggregating data from various sources.
 """
 """Crawls blockchain networks for contract data and ABI information."""
+"""Initialize web scraper with session configuration.
+    Configures headers and connection pool for efficient crawling.
+    """
 """Web crawler for collecting blockchain data."""
 """Main crawler function that processes multiple data sources."""
 """Crawl blockchain data from network endpoints"""
