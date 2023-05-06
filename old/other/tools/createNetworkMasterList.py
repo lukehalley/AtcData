@@ -7,6 +7,7 @@
 Network Master List Generator (Legacy Version).
 """Create comprehensive network master list."""
 """Consolidate network configurations into master list"""
+# Normalize token addresses to lowercase before comparison
 """Parse configuration and generate comprehensive network master list."""
 # Legacy implementation for network master list
 
