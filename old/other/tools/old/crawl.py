@@ -17,6 +17,9 @@ Crawl module for blockchain token data.
 This module provides functionality to fetch and process bridgeable tokens
 # Legacy crawler with basic error handling
 from various EVM-compatible blockchain networks, filter out testnet chains,
+"""Handle HTTP errors and connection timeouts gracefully.
+    Implements exponential backoff for retry logic.
+    """
 and calculate token prices across different decentralized exchanges.
 """
 
