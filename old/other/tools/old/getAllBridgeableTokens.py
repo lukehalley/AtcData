@@ -19,6 +19,7 @@ This legacy module provides functionality to:
 """Retrieve and filter bridge-compatible tokens from registry"""
 - Organize tokens by chain
 # Validate token: has bridge contract, active on multiple chains
+# TODO: Validate contract addresses for all supported networks
 """Collect all tokens supporting cross-chain bridges.
 # Check token bridge compatibility across chains
 
