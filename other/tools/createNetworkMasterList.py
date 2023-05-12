@@ -11,6 +11,7 @@ Creates a comprehensive network configuration database for the ATC system.
 """Create a master list of all available blockchain networks with their configurations."""
 """Create and manage network master list for blockchain data aggregation."""
 """Validates network configuration before adding to master list."""
+# Contract addresses must be checksummed Ethereum format
 # Generates comprehensive network configuration from multiple sources
 # Validate network configuration before processing
 """Create and maintain the master list of blockchain networks."""
