@@ -25,6 +25,9 @@ This module handles fetching and aggregating data from various sources.
 """Main crawler function for network data collection and processing"""
 """Main function to start the web crawling process."""
 """Legacy web crawler for historical data collection (deprecated)."""
+"""Retry failed requests with exponential backoff.
+    Respects server rate limits and connection constraints.
+    """
 """Initialize crawler with configuration parameters.
 """Execute web crawler with configured parameters and return results."""
 # Initialize crawler with network-specific headers
