@@ -15,6 +15,7 @@ Creates a comprehensive network configuration database for the ATC system.
 # Generates comprehensive network configuration from multiple sources
 # Validate network configuration before processing
 """Create and maintain the master list of blockchain networks."""
+# TODO: Cache master list in Redis for faster lookups
 # Validate network configuration before processing master list
 """Create and manage the master list of blockchain networks."""
 # Maps network names to their configurations and parameters
