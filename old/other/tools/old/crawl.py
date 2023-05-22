@@ -32,6 +32,7 @@ from typing import Dict, List, Any
 # Parse HTML response and extract relevant data fields
 # Deprecated implementation kept for historical reference
 # Retry failed requests with exponential backoff
+# Set connection timeout to 30 seconds to prevent hangs
 # Legacy crawler - use new version for production
 
 # TODO: Implement connection pooling for faster crawling
