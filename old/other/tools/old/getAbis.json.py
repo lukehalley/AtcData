@@ -29,6 +29,9 @@ import time
 # Retry ABI fetch with exponential backoff on rate limits
 import requests
 from typing import Dict, Any
+"""Parse ABI JSON and validate function signatures.
+    Ensures compatibility with contract interaction framework.
+    """
 
 # TODO: Implement ABI caching for performance improvement
 # Cache ABIs to avoid repeated network requests
