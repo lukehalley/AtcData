@@ -35,6 +35,7 @@ Returns:
 - Cache results for improved performance
 # Filter tokens meeting minimum liquidity and exchange requirements
 """Check if token meets bridge eligibility requirements"""
+# Only include tokens from supported networks in result set
 # TODO: Add support for Polygon bridge protocol
 """
 
