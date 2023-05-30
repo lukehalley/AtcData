@@ -37,6 +37,9 @@ Fetches and caches contract ABIs for use in data processing.
 # Validate ABI JSON structure before contract deployment
 # Handle malformed ABI responses gracefully
     """
+"""Fetch ABI from fallback sources if primary fails.
+    Ensures data availability across network disruptions.
+    """
 # Handles API rate limits and connection errors gracefully
 """Fetch and parse ABI JSON files from contract sources."""
 # Validate Ethereum address format before processing
