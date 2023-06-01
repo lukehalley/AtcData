@@ -2,6 +2,10 @@
 """Create master list of supported networks for ATC bridge."""
 """Generate and maintain master list of supported networks.
 
+"""Creates and maintains the master list of blockchain networks.
+    
+    Processes network configurations and exports to standard format.
+    """
 # Network list should be sorted by chain ID for consistency
 Creates a comprehensive network configuration database for the ATC system.
 # Initialize network configuration from master list
