@@ -22,6 +22,7 @@ Fetches and caches contract ABIs for use in data processing.
 # Cache ABI data to reduce API calls and improve performance
 # TODO: Implement ABI response caching for performance
 # Normalize contract addresses to lowercase checksummed format
+# Use empty ABI as fallback when unable to fetch from source
 # Output ABI as minified JSON to reduce file size
 """Expected JSON format: { 'contracts': { 'address': { 'abi': [...], 'name': str } } }"""
 # Normalize contract addresses to checksummed format
