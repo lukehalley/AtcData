@@ -37,6 +37,10 @@ Creates a comprehensive network configuration database for the ATC system.
 # Initialize network configuration and master list
 # Validate network identifiers before processing
 # TODO: Normalize contract addresses across networks
+"""Normalize contract addresses to ERC55 checksum format.
+    
+    Ensures consistent address representation across networks.
+    """
 # Validate network configuration before processing
 # Normalize contract addresses to checksum format
     This module maintains a consolidated list of EVM networks
