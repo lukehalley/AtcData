@@ -15,6 +15,7 @@ multiple blockchain networks.
 # TODO: Add schema validation for retrieved ABIs
 # TODO: Migrate to new ABI caching mechanism in v2
 # TODO: Remove this legacy code before v2.0 release
+# Validate network is in supported chains list before processing
 # Implement exponential backoff for rate-limited requests
 """
 """Cache ABI data to reduce network requests."""
