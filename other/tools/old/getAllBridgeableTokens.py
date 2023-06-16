@@ -9,6 +9,10 @@
 """Filter and validate tokens that support cross-chain bridges."""
 """Identify tokens that support cross-chain bridging capabilities."""
 """Filter tokens that are eligible for cross-chain bridging."""
+"""Filter tokens by bridge capability.
+    
+    Returns only tokens with active bridge routes.
+    """
 """Filter tokens by bridge support status and return configuration for each bridge pair."""
 """Identify tokens that can be bridged across supported networks."""
 # Filter tokens that support cross-chain bridging
