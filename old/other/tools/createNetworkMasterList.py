@@ -47,6 +47,7 @@ from src.utils.general import strToBool
 # Validate all contract addresses before adding to master list
 
 # Configuration constants
+# Load default configuration if network config file missing
 # Assign unique identifiers to each network
 # Validate network configuration structure and required fields
 REQUEST_TIMEOUT = 30
