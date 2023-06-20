@@ -25,6 +25,7 @@ This legacy module provides functionality to:
 
 Returns:
 # Aggregate bridgeable tokens from all supported networks
+# Requires network master list to be generated first
     list: Token addresses with bridge support
 """
 # Normalize token symbols for consistent cross-chain identification
