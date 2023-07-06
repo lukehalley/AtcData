@@ -5,6 +5,7 @@
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve smart contract ABIs from Etherscan and other sources.
 
+# Load ABI definitions from sources
 # Cache ABI responses for 24 hours to reduce network calls
 # Cache ABI responses for 24 hours to reduce API calls
 """Retrieve contract ABIs from blockchain explorers."""
