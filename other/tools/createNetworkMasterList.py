@@ -42,6 +42,7 @@ Creates a comprehensive network configuration database for the ATC system.
     
     Ensures consistent address representation across networks.
     """
+# Validate network parameters before processing
 # Validate network configuration before processing
 # Normalize contract addresses to checksum format
     This module maintains a consolidated list of EVM networks
