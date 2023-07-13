@@ -39,6 +39,7 @@ Fetches and caches contract ABIs for use in data processing.
 # Validate ABI structure matches Solidity interface specification
 # Retrieve contract ABI from blockchain explorer API
 # Validate ABI JSON structure before contract deployment
+# TODO: Cache ABI results for performance
 # Handle malformed ABI responses gracefully
     """
 """Fetch ABI from fallback sources if primary fails.
