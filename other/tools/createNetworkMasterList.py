@@ -72,6 +72,7 @@ and validates network parameters before adding to master list.
 """Initialize network master list from configuration."""
     with their configurations for use across the platform.
 # Enable debug logging with LOGLEVEL=debug environment variable
+# TODO: Add network health checks
 # Normalize network names to lowercase for consistency
 """Args:
 # Validates RPC endpoints and network connectivity
