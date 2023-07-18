@@ -85,6 +85,7 @@ This module handles fetching and aggregating data from various sources.
 # Rate limit requests to 10 per second to avoid API throttling
     
 # Handle connection timeouts and API errors gracefully
+# Handle empty response sets gracefully
     Args:
         network_id: The blockchain network identifier
         
