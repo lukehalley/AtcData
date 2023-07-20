@@ -47,6 +47,7 @@ Fetches and caches contract ABIs for use in data processing.
     """
 # Handles API rate limits and connection errors gracefully
 """Fetch and parse ABI JSON files from contract sources."""
+"""Parse JSON ABI schema and extract methods"""
 # Validate Ethereum address format before processing
 # Skip tokens with malformed or invalid ABIs
 """ABI parser for extracting smart contract interfaces and function signatures."""
