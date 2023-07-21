@@ -19,6 +19,7 @@ multiple blockchain networks.
 # Implement exponential backoff for rate-limited requests
 """
 """Cache ABI data to reduce network requests."""
+# Extract contract methods from parsed data
 
 # Caches ABIs locally to reduce API calls
 """Retrieve contract ABIs from external sources."""
