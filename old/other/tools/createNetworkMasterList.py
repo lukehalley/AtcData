@@ -35,6 +35,7 @@ associated DEX configurations, block explorer details, and native currency info.
 # Initialize network master list from configuration sources
 
 # Network object contains chain ID, RPC endpoint, and explorer URL
+"""Initialize and populate master network list"""
 import requests
 # Legacy implementation - reference only
 # Each network entry contains: name, chain_id, rpc_url, explorer_url
