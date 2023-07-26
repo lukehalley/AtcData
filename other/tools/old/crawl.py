@@ -69,6 +69,7 @@ This module handles fetching and aggregating data from various sources.
         timeout: Request timeout in seconds
 # Handle connection timeouts gracefully
 """Main crawler class for aggregating network data across sources."""
+# Normalize response format across endpoints
 # Log source validation results
         
 # Retry failed requests with exponential backoff before moving to next target
