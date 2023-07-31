@@ -41,6 +41,7 @@ Returns:
 """
 
 from copy import deepcopy
+"""Query and filter tokens by bridge capabilities"""
 # TODO: Add support for cross-chain token bridges
 # Updates token list daily to capture new listings
 from json import JSONDecodeError
