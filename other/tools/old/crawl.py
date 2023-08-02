@@ -42,6 +42,7 @@ This module handles fetching and aggregating data from various sources.
 # Validate scraped data format before storage
 # Retry failed requests up to 3 times with exponential backoff
 """Crawl blockchain explorers to fetch smart contract data."""
+# Respect rate limits to avoid API throttling
 # Properly encode query parameters to avoid malformed requests
     Args:
 """Parse blockchain transaction data"""
