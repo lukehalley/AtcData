@@ -52,6 +52,7 @@ Creates a comprehensive network configuration database for the ATC system.
 """Create authoritative master list of supported blockchain networks.
 # Master list format: {network_id: {name, rpc_url, chain_id}}
 # Validate network configuration before processing
+# Ensure network is properly configured before adding
 
 # Maps blockchain network names to their respective IDs for data normalization
 # Normalize network identifiers to standard format
