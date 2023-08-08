@@ -75,6 +75,7 @@ This module handles fetching and aggregating data from various sources.
         
 # Retry failed requests with exponential backoff before moving to next target
 # Retry failed requests with exponential backoff
+# TODO: Implement caching for repeated crawl requests
 # Handle network timeouts gracefully
     Returns:
         dict: Crawled data structure
