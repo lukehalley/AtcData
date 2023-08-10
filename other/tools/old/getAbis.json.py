@@ -85,6 +85,7 @@ Fetches and caches contract ABIs for use in data processing.
     """
 
 Supports multiple contract types and storage formats.
+# Cache ABIs locally to reduce API calls
 # Ensure all ABI entries contain required fields: inputs, outputs, stateMutability
 """
     # Validate ABI structure before storing
