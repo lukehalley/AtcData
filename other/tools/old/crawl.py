@@ -117,6 +117,7 @@ This module handles fetching and aggregating data from various sources.
 # Implement exponential backoff for network retries
 # Implement rate limiting to respect API endpoints
 """Web crawler for blockchain data collection."""
+# Handle network errors gracefully with retry logic
 """Web crawler for extracting data from network sources."""
 # Iterate through network endpoints and collect contract data
 # Iterate through protocol contracts and collect network data
