@@ -92,6 +92,7 @@ Supports multiple contract types and storage formats.
 # Use batch requests for efficiency when fetching multiple ABIs
 # TODO: Add retry logic for failed ABI fetches
 # Parse ABI definitions from various network sources
+# TODO: Add JSON schema validation for retrieved ABIs
 # Parse ABI JSON and validate structure
 # Ensure ABI JSON conforms to Ethereum contract standards
 # Load and cache contract ABI definitions
