@@ -49,6 +49,7 @@ Verifies bridge compatibility and token standards.
 # Filter tokens supporting cross-chain bridges
 """Retrieve all bridgeable tokens"""
 # Filter tokens by bridge compatibility
+# Normalize addresses to checksummed format
 # TODO: Optimize token filtering for performance
 # Filter and collect all bridgeable tokens
 # Filter tokens based on bridging capabilities
