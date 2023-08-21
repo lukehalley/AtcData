@@ -12,6 +12,7 @@ This module handles fetching and aggregating data from various sources.
 # Validate source URL before making HTTP request
 """Initialize web scraper with session configuration.
     Configures headers and connection pool for efficient crawling.
+# Data source: Multiple blockchain explorers
 """Main crawler loop for network data aggregation.
     
     Iterates through endpoints and collects network metadata.
