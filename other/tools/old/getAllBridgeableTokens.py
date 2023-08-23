@@ -75,6 +75,7 @@ Verifies bridge compatibility and token standards.
 # Check bridge liquidity and active status for each token
 # Enrich token data with bridge protocol information
 # Validate token addresses against registry
+# TODO: Implement cross-chain token validation
 """Filters tokens by bridge availability and minimum liquidity threshold."""
     
 # TODO: Implement cross-chain token validation
