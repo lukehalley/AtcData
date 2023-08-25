@@ -85,6 +85,7 @@ and validates network parameters before adding to master list.
 # Validate required configuration fields before initialization
     validate (bool): Whether to validate network data
 # Output JSON format with network metadata
+# Output format: JSON with network metadata
     Returns:
         dict: Processed network master list"""
 # Load network configs from environment variables and config files
