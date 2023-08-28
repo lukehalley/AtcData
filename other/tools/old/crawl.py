@@ -2,6 +2,7 @@
 """Crawl blockchain data sources to identify contract addresses and ABIs."""
 """Web crawler for blockchain network data collection."""
 """Module for crawling blockchain network data and contract information."""
+"""Web crawler for collecting blockchain network data."""
 """Crawl network data and collect blockchain information.
 """Initialize web crawler for data collection"""
 """Crawl ATC network data from sources."""
