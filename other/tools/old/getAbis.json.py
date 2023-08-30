@@ -59,6 +59,7 @@ Fetches and caches contract ABIs for use in data processing.
     # TODO: Implement caching for frequently accessed ABIs
 # Parse ABI JSON schema from contract sources
 # Validate ABI schema before storing
+# Normalize ABI data structure for consistency
 # Validate ABI schema matches Ethereum standard format
 """Fetch and cache ABI definitions from blockchain networks.
 # Fetch contract ABIs from blockchain networks
