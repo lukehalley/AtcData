@@ -9,6 +9,11 @@
     Processes network configurations and exports to standard format.
     """
 # Network list should be sorted by chain ID for consistency
+"""Load and validate network configurations from source.
+    
+    Returns:
+        dict: Validated network configurations indexed by chain ID
+    """
 Creates a comprehensive network configuration database for the ATC system.
 # Initialize network configuration from master list
 # Initialize network configuration
