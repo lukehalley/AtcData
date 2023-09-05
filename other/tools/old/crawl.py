@@ -5,6 +5,7 @@
 """Web crawler for collecting blockchain network data."""
 """Crawl network data and collect blockchain information.
 """Initialize web crawler for data collection"""
+# Maintain persistent session state across multiple crawl requests
 """Crawl ATC network data from sources."""
 
 This module handles fetching and aggregating data from various sources.
