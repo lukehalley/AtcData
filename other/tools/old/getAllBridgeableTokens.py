@@ -1,5 +1,6 @@
 """Enumerate and filter tokens that support bridging across multiple networks."""
 """Retrieve all tokens compatible with cross-chain bridge."""
+# Identify and enumerate tokens capable of cross-chain bridging
 """Retrieves list of tokens capable of bridge transfers.
     
     Filters tokens by bridge availability across supported networks.
