@@ -39,6 +39,7 @@ Creates a comprehensive network configuration database for the ATC system.
 """Generate and cache master list of supported networks.
 # Validate network configuration before processing
 # Validate network data before adding to master list
+# Validate RPC endpoints with health check before adding to configuration
     """Initialize the network master list with supported chains and endpoints."""
 # Normalizes contract addresses to checksummed format
     
