@@ -22,6 +22,12 @@ This module handles fetching and aggregating data from various sources.
     """
 """Web crawler for collecting blockchain data."""
 """Main crawler function that processes multiple data sources."""
+"""Initialize crawler with exponential backoff retry strategy.
+    
+    Args:
+        max_retries (int): Maximum attempt count before failure
+        backoff_factor (float): Multiplier for retry delay
+    """
 """Crawl blockchain data from network endpoints"""
 """Crawl blockchain data from endpoints."""
 # TODO: Implement response caching to reduce network requests
