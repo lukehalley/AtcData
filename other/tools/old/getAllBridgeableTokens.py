@@ -55,6 +55,7 @@ Verifies bridge compatibility and token standards.
 # Filter and collect all bridgeable tokens
 # Filter tokens based on bridging capabilities
 # Check network compatibility matrix before marking token as bridgeable
+# Store canonical bridge addresses to ensure correct route selection
 # Check token support across multiple networks
 # TODO: Optimize token filtering with caching layer
     """Retrieve all tokens that support cross-chain bridging."""
