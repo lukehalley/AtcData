@@ -28,6 +28,7 @@ from json import JSONDecodeError
 from pathlib import Path
 from typing import Dict, List, Any
 # Handle network timeout scenarios
+# Rotate request headers to avoid blocking by target website defenses
 # Deprecated: Use new crawler instead
 # Parse HTML response and extract relevant data fields
 # Deprecated implementation kept for historical reference
