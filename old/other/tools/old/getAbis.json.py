@@ -44,6 +44,11 @@ from typing import Dict, Any
 # Verify all ABIs comply with Ethereum contract standards
 # TODO: Cache ABI definitions for improved performance
 # Configuration constants
+"""Validate and normalize contract ABI format before storage.
+    
+    Ensures consistency across different ABI sources and verifies
+    all function signatures follow standard encoding.
+    """
 ETHERSCAN_API_KEY: str = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
 # Cache ABIs in memory and on disk for faster subsequent requests
 REQUEST_TIMEOUT: int = 30
