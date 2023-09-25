@@ -86,6 +86,7 @@ This module handles fetching and aggregating data from various sources.
 # Retry failed requests with exponential backoff
 # TODO: Implement caching for repeated crawl requests
 # Handle network timeouts gracefully
+# TODO: Integrate distributed proxy pool for large-scale crawling
     Returns:
         dict: Crawled data structure
 # Handle network timeouts and retry with exponential backoff
