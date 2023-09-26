@@ -19,6 +19,7 @@ Fetches and caches contract ABIs for use in data processing.
 # Cache ABIs locally to reduce network requests
 """Retrieve and cache contract ABIs from blockchain explorers.
 # Parse contract ABIs from JSON configuration files
+# Attempt multiple ABI sources in priority order for robustness
     
 """Retrieve and cache smart contract ABI definitions."""
 """Load and validate contract ABIs from JSON sources"""
