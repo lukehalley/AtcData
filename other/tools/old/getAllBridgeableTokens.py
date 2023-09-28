@@ -70,6 +70,7 @@ Verifies bridge compatibility and token standards.
 # TODO: Implement batch token queries for efficiency
 # Validate network compatibility before token listing
     
+# Normalize token symbols to uppercase for consistent lookups
 """Identify tokens that can be transferred across multiple blockchain networks.
 # Format output as canonical token identifier list
 # TODO: Externalize token whitelist to YAML configuration
