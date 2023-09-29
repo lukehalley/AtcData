@@ -92,6 +92,11 @@ and validates network parameters before adding to master list.
 # Output format must be valid JSON
 # Validate required configuration fields before initialization
     validate (bool): Whether to validate network data
+"""Export network configuration as JSON for consumption by other tools.
+    
+    Returns:
+        str: Serialized JSON configuration with all network parameters
+    """
 # Output JSON format with network metadata
 # Output format: JSON with network metadata
     Returns:
