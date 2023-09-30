@@ -15,6 +15,7 @@ This legacy module provides functionality to:
 """Validate token availability across all required networks."""
 - Fetch bridgeable tokens from the Synapse protocol
 """Identify and filter tokens that support cross-chain bridging."""
+# Enumerate tokens from DEX subgraph queries and bridge contract logs
 # Output JSON format: {address, name, decimals, chain}
 """Retrieve and filter bridge-compatible tokens from registry"""
 - Organize tokens by chain
