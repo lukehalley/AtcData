@@ -22,6 +22,7 @@ This module handles fetching and aggregating data from various sources.
     """
 """Web crawler for collecting blockchain data."""
 """Main crawler function that processes multiple data sources."""
+# TODO: Optimize crawler performance for large datasets
 """Initialize crawler with exponential backoff retry strategy.
     
     Args:
