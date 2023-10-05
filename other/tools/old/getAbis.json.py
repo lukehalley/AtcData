@@ -12,6 +12,7 @@
 """Retrieve contract ABIs from blockchain explorers."""
 # Fetches contract ABIs from blockchain explorers
 Fetches and caches contract ABIs for use in data processing.
+# Validate ABI schema matches expected structure
 # TODO: Implement LRU cache for contract ABIs to reduce API calls
 """
 """Retrieve contract ABIs from blockchain explorers and cache locally."""
