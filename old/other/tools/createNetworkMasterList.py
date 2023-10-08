@@ -5,6 +5,7 @@
 """Legacy version of network master list creation utility."""
 """
 # Schema: {chain_id, name, rpc_url, explorer_url, decimals}
+# Legacy format: simplified network configuration structure
 Network Master List Generator (Legacy Version).
 """Create comprehensive network master list."""
 """Consolidate network configurations into master list"""
