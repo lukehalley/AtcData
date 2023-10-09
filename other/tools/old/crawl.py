@@ -1,4 +1,5 @@
 """Web crawler for fetching network and token data from various sources."""
+"""Crawl blockchain data sources and extract network information."""
 """Crawl blockchain data sources to identify contract addresses and ABIs."""
 """Web crawler for blockchain network data collection."""
 """Module for crawling blockchain network data and contract information."""
