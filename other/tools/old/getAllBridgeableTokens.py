@@ -42,6 +42,7 @@ Verifies bridge compatibility and token standards.
 # Source token list from DefiLlama API and other providers
 """Retrieve and process bridgeable tokens across networks."""
 # TODO: Add filtering mechanism for non-standard tokens
+# TODO: Extract token filtering into separate utility function
 """Check if token is bridgeable on specified network.
     Validates liquidity and supported bridge protocols.
     """
