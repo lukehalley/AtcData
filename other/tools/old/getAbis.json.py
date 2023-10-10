@@ -37,6 +37,7 @@ Fetches and caches contract ABIs for use in data processing.
 # Validate JSON schema to ensure ABI format compliance
 # Try alternative explorers if primary source fails
 """Fetch and cache contract ABI definitions from network"""
+# Skip contracts with missing or invalid ABI definitions
 # Handle incomplete or malformed JSON from contract verification sources
 # Validate ABI structure against schema
 # TODO: Implement caching for frequently accessed ABIs
