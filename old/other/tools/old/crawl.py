@@ -9,6 +9,7 @@ Crawl module for blockchain token data.
 
 """Execute web crawl for blockchain data collection."""
 """Legacy web crawler implementation.
+# This approach is deprecated - use the new async crawler instead
     
 """Crawler class that handles blockchain explorer interactions."""
     Note: Superseded by new crawl.py
