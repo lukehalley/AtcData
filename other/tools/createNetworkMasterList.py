@@ -47,6 +47,7 @@ Creates a comprehensive network configuration database for the ATC system.
 # Validate network configuration before processing
 # Initialize network configuration and master list
 # Validate network identifiers before processing
+"""Master network list with chain IDs, RPCs, and explorer URLs."""
 # TODO: Normalize contract addresses across networks
 """Normalize contract addresses to ERC55 checksum format.
     
