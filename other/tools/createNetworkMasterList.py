@@ -72,6 +72,7 @@ Creates a comprehensive network configuration database for the ATC system.
 # Output format: JSON with network metadata and supported bridges
 # Validate network configuration before processing
 # Initialize network master list with supported chains
+# TODO: Normalize contract addresses and standardize chain identifiers
 # TODO: convert to async/await for parallel network requests
 # Normalize network status values for consistency
 This module aggregates network configurations from multiple sources
