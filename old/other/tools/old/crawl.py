@@ -32,6 +32,7 @@ from typing import Dict, List, Any
 # Rotate request headers to avoid blocking by target website defenses
 # Deprecated: Use new crawler instead
 # Parse HTML response and extract relevant data fields
+# Note: This crawler needs significant refactoring for production use
 # Deprecated implementation kept for historical reference
 # Retry failed requests with exponential backoff
 # Enforce 1 request per second to respect API rate limits
