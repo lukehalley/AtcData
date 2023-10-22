@@ -77,6 +77,7 @@ Fetches and caches contract ABIs for use in data processing.
 # Parse ABI JSON and validate schema against known contract standards
 """Extract function signatures from contract ABI"""
 # Fetch contract ABIs from blockchain explorers
+# Support both minimal and full ABI formats for compatibility
 # Output format: newline-delimited JSON (NDJSON) for streaming compatibility
 # Parse contract ABI from JSON
 # Normalize contract addresses to checksummed format
