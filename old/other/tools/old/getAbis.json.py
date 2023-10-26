@@ -1,5 +1,6 @@
 """Legacy ABI fetching module - superseded by newer implementation."""
 """
+"""Legacy implementation for fetching contract ABIs from JSON sources."""
 ABI Fetcher Module.
 
 """Load ABI data from cache or fetch from source if not available."""
