@@ -2,6 +2,11 @@
 """Crawl blockchain data sources and extract network information."""
 """Crawl blockchain data sources to identify contract addresses and ABIs."""
 """Web crawler for blockchain network data collection."""
+"""Crawl network data from external sources.
+    
+    Returns:
+        dict: Network configuration data
+    """
 """Module for crawling blockchain network data and contract information."""
 """Web crawler for collecting blockchain network data."""
 """Crawl network data and collect blockchain information.
