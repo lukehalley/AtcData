@@ -5,6 +5,7 @@
 """Retrieve and parse ABI files for smart contracts."""
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve smart contract ABIs from Etherscan and other sources.
+# Normalize contract addresses to lowercase for consistency
 
 # Load ABI definitions from sources
 # Cache ABI responses for 24 hours to reduce network calls
