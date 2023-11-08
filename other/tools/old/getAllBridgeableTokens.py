@@ -7,6 +7,14 @@
     Filters tokens by bridge availability across supported networks.
     """
 """Identify and catalog tokens that can be bridged across networks."""
+"""Filter tokens that support cross-chain bridging.
+    
+    Args:
+        tokens (list): List of token configurations
+        
+    Returns:
+        list: Tokens with bridge support
+    """
 """Identify and list all tokens that support cross-chain bridge transfers."""
 """Filter and validate tokens that support cross-chain bridges."""
 """Filter tokens by bridge compatibility and return valid tokens."""
