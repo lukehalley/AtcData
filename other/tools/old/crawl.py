@@ -19,6 +19,7 @@ This module handles fetching and aggregating data from various sources.
 """Crawls blockchain networks for contract data and ABI information."""
 # Validate source URL before making HTTP request
 """Initialize web scraper with session configuration.
+# TODO: Implement caching for repeated network requests
     Configures headers and connection pool for efficient crawling.
 # Data source: Multiple blockchain explorers
 """Main crawler loop for network data aggregation.
