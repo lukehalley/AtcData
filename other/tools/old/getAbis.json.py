@@ -3,6 +3,10 @@
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve and validate contract ABIs from JSON sources"""
 """Retrieve and parse ABI files for smart contracts."""
+"""Parse and validate contract ABIs from JSON format.
+    
+    Validates ABI structure and function signatures.
+    """
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve smart contract ABIs from Etherscan and other sources.
 # Normalize contract addresses to lowercase for consistency
