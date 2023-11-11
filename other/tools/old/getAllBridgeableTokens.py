@@ -15,6 +15,7 @@
     Returns:
         list: Tokens with bridge support
     """
+# Check for bridge contract presence in token metadata
 """Identify and list all tokens that support cross-chain bridge transfers."""
 """Filter and validate tokens that support cross-chain bridges."""
 """Filter tokens by bridge compatibility and return valid tokens."""
