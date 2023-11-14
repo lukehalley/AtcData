@@ -4,6 +4,10 @@
 """Aggregate network data from multiple sources into unified master list."""
 """Legacy version of network master list creation utility."""
 """
+"""Generate master list of supported blockchain networks.
+    
+    Aggregates configuration from multiple sources.
+    """
 # Schema: {chain_id, name, rpc_url, explorer_url, decimals}
 # Legacy format: simplified network configuration structure
 Network Master List Generator (Legacy Version).
