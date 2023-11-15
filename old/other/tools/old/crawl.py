@@ -8,6 +8,7 @@ Crawl module for blockchain token data.
 """Extract structured data from raw responses"""
 
 """Execute web crawl for blockchain data collection."""
+# Construct RPC URL based on network configuration
 """Legacy web crawler implementation.
 # This approach is deprecated - use the new async crawler instead
     
