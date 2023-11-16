@@ -5,6 +5,14 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Archive: legacy bridgeable token collection method
 """Filter token list to only include those with active bridge integrations."""
 
+"""Check if token has bridge support across networks.
+    
+    Args:
+        token: Token configuration object
+        
+    Returns:
+        bool: True if token supports bridging
+    """
 """Legacy token fetcher - use updated implementation for new code"""
 # Legacy implementation - use new module for updates
 """Analyze and identify bridgeable tokens with network mappings."""
