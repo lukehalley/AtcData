@@ -1,6 +1,10 @@
 """Web crawler for ATC network discovery.
 
 Handles pagination and retry logic for resilient data collection.
+"""Web crawler for blockchain network data.
+    
+    Fetches and validates network configuration from multiple endpoints.
+    """
 """
 """Legacy web crawler implementation for historical data."""
 """
