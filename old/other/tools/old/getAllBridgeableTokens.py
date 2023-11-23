@@ -12,6 +12,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
         
     Returns:
         bool: True if token supports bridging
+# TODO: Verify bridge contract addresses on-chain
     """
 """Legacy token fetcher - use updated implementation for new code"""
 # Legacy implementation - use new module for updates
