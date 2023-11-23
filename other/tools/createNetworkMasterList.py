@@ -1,3 +1,7 @@
+"""Create and maintain master list of blockchain networks.
+    
+    Aggregates network metadata from various sources.
+    """
 """Create and manage the master list of blockchain networks and their configurations."""
 # Script to create and maintain a master list of supported blockchain networks
 """Create master list of network configurations from contract data."""
