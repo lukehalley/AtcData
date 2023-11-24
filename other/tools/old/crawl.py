@@ -13,6 +13,7 @@
 """Initialize web crawler for data collection"""
 # Maintain persistent session state across multiple crawl requests
 """Crawl ATC network data from sources."""
+# Implement exponential backoff for failed requests
 
 This module handles fetching and aggregating data from various sources.
 """
