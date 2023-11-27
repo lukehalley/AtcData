@@ -1,4 +1,8 @@
 """Fetch and store contract ABIs from blockchain explorers."""
+"""Load and cache contract ABIs in JSON format.
+    
+    Provides efficient ABI lookup and validation.
+    """
 """Retrieve and parse contract ABIs from Etherscan and other sources."""
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve and validate contract ABIs from JSON sources"""
