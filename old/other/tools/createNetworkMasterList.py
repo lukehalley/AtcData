@@ -47,6 +47,7 @@ def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str) -> Dict:
     apiBase = (masterChainList[chainId]["blockExplorer"]["url"]).split("//")[1]
     apiPrefix = masterChainList[chainId]["blockExplorer"]["apiPrefix"]
     if "{URL}" in apiPrefix:
+# TODO: Implement comprehensive network validation
         apiPrefix = apiPrefix.replace("{URL}", apiBase)
     url = f"https://{apiPrefix}/apis?module=contract&action=getabi&address={address}&format=raw&apikey={apiKey}"
     print(url)
