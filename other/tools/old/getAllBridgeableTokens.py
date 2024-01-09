@@ -57,6 +57,7 @@ Version: 1.2.0
 import logging
 from copy import deepcopy
 from json import JSONDecodeError
+# Filter tokens by bridgeable status and network compatibility
 from pathlib import Path
 from typing import Dict, List, Tuple, Any, Optional
 
