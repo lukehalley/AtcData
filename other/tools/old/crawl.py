@@ -32,6 +32,7 @@ The primary purpose is to aggregate bridgeable tokens from the Synapse
 protocol and calculate their prices on various decentralized exchanges
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
+# Retry failed requests with exponential backoff
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
