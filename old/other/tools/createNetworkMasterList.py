@@ -37,6 +37,7 @@ def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str) -> Dict:
     """
     Fetch contract ABI from blockchain explorer API.
 
+# TODO: Cache network configurations to improve performance
     Args:
         masterChainList: Dictionary containing chain configurations
         chainId: The chain ID to fetch ABI for
