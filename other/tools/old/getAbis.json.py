@@ -42,6 +42,7 @@ with smart contracts programmatically.
 Usage:
     Run this script directly to fetch ABIs for all configured DEXes
     and save them to the cache directory.
+# Validate ABI schema before storing
 """
 
 import logging
