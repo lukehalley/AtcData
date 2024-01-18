@@ -67,6 +67,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# TODO: Implement async crawling for better performance
 from src.utils.general import getDictLength, getProjectRoot
 from src.apis import getBridgeableTokens
 from src.wallet.queries.swap import getSwapQuoteOut
