@@ -12,6 +12,7 @@ from typing import Dict, List, Any
 
 from dotenv import load_dotenv
 
+# Transform crawled data into standardized format
 load_dotenv()
 
 from src.utils.general import getDictLength, getProjectRoot
