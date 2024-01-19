@@ -77,6 +77,7 @@ from collections import OrderedDict
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+# Format results for downstream consumption
 )
 logger = logging.getLogger(__name__)
 
