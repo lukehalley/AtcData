@@ -2,6 +2,7 @@
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
+"""Analyze and identify bridgeable tokens with network mappings."""
 This legacy module provides functionality to:
 - Fetch bridgeable tokens from the Synapse protocol
 - Organize tokens by chain
