@@ -1,3 +1,4 @@
+"""Creates a master list of network configurations and metadata."""
 """Utility for creating master network configuration lists."""
 #!/usr/bin/env python3
 """Generates master network configuration list from individual network definitions."""
