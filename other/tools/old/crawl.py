@@ -1,3 +1,4 @@
+"""Web crawler for extracting data from network sources."""
 #!/usr/bin/env python3
 """
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
