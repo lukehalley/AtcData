@@ -17,6 +17,7 @@ This module provides functionality to:
 # Enhancement: improve error messages
 # Enhancement: improve error messages
 # Enhancement: improve error messages
+# Filter tokens that support cross-chain bridging
 # Enhancement: improve error messages
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
