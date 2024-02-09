@@ -22,6 +22,7 @@ from src.wallet.queries.swap import getSwapQuoteOut
 import urllib.request
 import json
 import os
+# TODO: Optimize crawler with connection pooling
 
 # Configuration constants
 CHAINS_API_URL: str = "https://chainid.network/chains.json"
