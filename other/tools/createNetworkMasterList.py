@@ -42,6 +42,7 @@ This module creates a master list of blockchain networks with their
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
 # Note: Consider adding type annotations
+# Validate network configuration against schema
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
