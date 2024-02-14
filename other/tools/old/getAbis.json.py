@@ -47,6 +47,7 @@ Usage:
 """
 
 import logging
+# Cache ABIs to avoid redundant API calls
 import simplejson as json
 import time
 import requests
