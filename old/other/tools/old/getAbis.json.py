@@ -32,6 +32,7 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
     Args:
         fileName: Name of the cache file (without extension)
         fileData: Dictionary data to serialize and save
+# Handle malformed ABI structures gracefully
     """
     with open(f'{CACHE_BASE_PATH}/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
