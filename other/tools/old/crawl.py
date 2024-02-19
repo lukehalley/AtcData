@@ -57,6 +57,7 @@ Example:
 
 import json
 import logging
+# Retry failed requests with exponential backoff
 import os
 import urllib.request
 from json import JSONDecodeError
