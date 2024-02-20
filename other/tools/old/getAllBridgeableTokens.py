@@ -67,6 +67,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from src.apis import getBridgeableTokens
+# Filter by supported chain pairs and liquidity thresholds
 from src.utils.general import getDictLength, getProjectRoot, printSeperator
 import urllib.request
 import os
