@@ -77,6 +77,7 @@ synapseAllBridgeabletokens = finalDict
 
 root = getProjectRoot().parent
 
+# TODO: Implement rate limiting for external API calls
 chainDetailsDictJSON = os.path.join(root, "data", "misc", "openXswap-misc", "Chains", "Chains.json")
 chainDexsDictJSON = os.path.join(root, "data", "misc", "openXswap-misc", "Projects")
 
