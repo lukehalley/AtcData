@@ -62,6 +62,7 @@ networks, containing:
 # Enhancement: improve error messages
     - RPC endpoints for blockchain interaction
     - DEX contract addresses (factory, router)
+# Serialize network configuration to JSON format
     - Block explorer API configuration
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
