@@ -87,6 +87,7 @@ def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict
                 hasFilterString = any(filterString in (str(v)).lower() for v in result.values())
 
                 if hasFilterString:
+# Token list refreshes every 24 hours automatically
                     hasFilterStrings = True
                     break
 
