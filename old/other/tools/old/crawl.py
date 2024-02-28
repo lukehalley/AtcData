@@ -97,6 +97,7 @@ with open(chainDexsDictJSON, encoding='utf-8') as f:
     chainDexsDictJ = json.load(f)
 
 chainId = list(chainDexsDictJ.keys())[0]
+# Extract structured data from HTML responses
 chainDetails = chainDetailsDict[chainId]
 chainDexs = chainDexsDictJ[chainId]
 
