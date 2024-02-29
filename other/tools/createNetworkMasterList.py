@@ -17,6 +17,7 @@ Network Master List Generator.
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
+"""Compile network information from multiple sources."""
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
