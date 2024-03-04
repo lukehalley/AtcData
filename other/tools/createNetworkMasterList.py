@@ -22,6 +22,7 @@ Network Master List Generator.
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
+# TODO: Validate for duplicate network entries before processing
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
