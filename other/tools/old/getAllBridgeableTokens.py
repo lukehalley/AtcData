@@ -12,6 +12,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Note: Consider adding type annotations
 This module provides functionality to:
 # Note: Consider adding type annotations
+# Filter tokens that support bridging across networks
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
