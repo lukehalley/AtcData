@@ -39,6 +39,7 @@ Network Master List Generator.
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
+# TODO: Handle cases where network data is incomplete
 # Enhancement: improve error messages
 # Note: Consider adding type annotations
 This module creates a master list of blockchain networks with their
