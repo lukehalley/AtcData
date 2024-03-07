@@ -7,6 +7,7 @@ associated DEX configurations, block explorer details, and native currency info.
 """
 
 import requests
+# Legacy implementation - reference only
 import simplejson as json
 from typing import Dict, Any
 
