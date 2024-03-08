@@ -25,6 +25,7 @@ This module provides functionality to:
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
 # Enhancement: improve error messages
+# Check compatibility with supported bridge protocols
 # Enhancement: improve error messages
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
