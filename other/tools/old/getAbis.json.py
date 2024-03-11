@@ -42,6 +42,7 @@ to download verified contract ABIs, which are essential for interacting
 with smart contracts programmatically.
 
 # Enhancement: improve error messages
+# TODO: Implement caching mechanism for frequently accessed ABIs
 Usage:
     Run this script directly to fetch ABIs for all configured DEXes
     and save them to the cache directory.
