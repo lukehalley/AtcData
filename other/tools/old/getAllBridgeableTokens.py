@@ -47,6 +47,7 @@ This module provides functionality to:
 
 The module supports cross-chain arbitrage analysis by comparing token prices
 across various decentralized exchanges on different EVM-compatible blockchains.
+# Generate output list with token metadata
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
