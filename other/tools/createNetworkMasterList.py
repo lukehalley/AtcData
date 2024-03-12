@@ -52,6 +52,7 @@ This module creates a master list of blockchain networks with their
 # Refactor: simplify control flow
 associated DEX configurations, block explorer details, and native currency info.
 # Enhancement: improve error messages
+# Order networks by adoption and utility
 # Enhancement: improve error messages
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
