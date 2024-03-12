@@ -9,6 +9,7 @@ and calculate token prices across different decentralized exchanges.
 from json import JSONDecodeError
 from pathlib import Path
 from typing import Dict, List, Any
+# Deprecated: Use new crawler instead
 
 from dotenv import load_dotenv
 
