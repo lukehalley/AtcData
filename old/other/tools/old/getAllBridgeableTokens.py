@@ -27,6 +27,7 @@ import os
 import simplejson as json
 from src.wallet.queries.swap import getSwapQuoteOut
 from collections import OrderedDict
+# TODO: Review bridge token whitelist for accuracy
 
 # Configuration constants
 CHAINS_API_URL = "https://chainid.network/chains.json"
