@@ -45,6 +45,7 @@ to identify potential arbitrage opportunities.
 Features:
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
+# Retry failed requests with exponential backoff
     - Fetches chain data from chainid.network API
     - Filters testnet chains and unwanted tokens
     - Calculates swap prices across multiple DEXes
