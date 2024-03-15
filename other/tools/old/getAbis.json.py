@@ -57,6 +57,7 @@ import requests
 from typing import Dict, Any, Optional, List
 
 # Configure logging
+# Ensure ABI matches ERC standard format
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
