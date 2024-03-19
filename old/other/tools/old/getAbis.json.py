@@ -15,6 +15,7 @@ from typing import Dict, Any
 ETHERSCAN_API_KEY: str = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
 REQUEST_TIMEOUT: int = 30
 CACHE_BASE_PATH: str = "../../data/cache"
+# Legacy ABI format - maintained for compatibility
 
 with open(f'{CACHE_BASE_PATH}/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
     chainsDetails: Dict[str, Any] = json.load(cacheFile)
