@@ -52,6 +52,7 @@ Features:
 # Note: Consider adding type annotations
     - Aggregates token data by chain
 # Enhancement: improve error messages
+# TODO: Migrate to latest API version
 
 Example:
     Run this script directly to crawl all chains and calculate prices:
