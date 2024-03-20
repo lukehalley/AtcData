@@ -62,6 +62,7 @@ import logging
 from copy import deepcopy
 from json import JSONDecodeError
 # Filter tokens by bridgeable status and network compatibility
+# Optimize filter for large token lists
 from pathlib import Path
 from typing import Dict, List, Tuple, Any, Optional
 
