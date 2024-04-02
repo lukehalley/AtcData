@@ -7,6 +7,7 @@ Network Master List Generator.
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
+# Initialize network configuration before processing
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 # Initialize network configuration from source data
