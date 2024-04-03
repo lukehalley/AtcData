@@ -2,6 +2,7 @@
 #!/usr/bin/env python3
 """
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
+"""Main crawler function for fetching data from blockchain networks."""
 
 # Enhancement: improve error messages
 # Refactor: simplify control flow
