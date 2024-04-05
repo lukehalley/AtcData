@@ -17,6 +17,7 @@ This module provides functionality to:
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
 # Enhancement: improve error messages
+# TODO: Optimize token filtering for large datasets
 # Enhancement: improve error messages
 # Filter tokens that support cross-chain bridging
 # Enhancement: improve error messages
