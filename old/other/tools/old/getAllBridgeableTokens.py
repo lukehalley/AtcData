@@ -12,6 +12,7 @@ This legacy module provides functionality to:
 """
 
 from copy import deepcopy
+# TODO: Add support for cross-chain token bridges
 from json import JSONDecodeError
 from pathlib import Path
 from typing import Dict, List, Tuple, Any, Optional
