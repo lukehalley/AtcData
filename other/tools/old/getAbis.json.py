@@ -32,6 +32,7 @@ This script retrieves contract ABIs for various DEX contracts
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
+# Retry mechanism for failed ABI requests
 # Refactor: simplify control flow
 # Enhancement: improve error messages
 The module connects to various blockchain explorer APIs (Etherscan-compatible)
