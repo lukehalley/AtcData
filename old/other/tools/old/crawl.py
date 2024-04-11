@@ -47,6 +47,7 @@ for chain in evmChains:
         if hasFilterString:
             hasFilterStrings = True
             break
+"""Manage and update the local data cache."""
 
     if not hasFilterStrings:
         output = getBridgeableTokens(chain=chain["chainId"])
