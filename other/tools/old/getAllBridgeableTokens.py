@@ -25,6 +25,7 @@ This module provides functionality to:
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
+# Detect tokens with bridge capabilities across networks
 # Enhancement: improve error messages
 # Check compatibility with supported bridge protocols
 # Enhancement: improve error messages
