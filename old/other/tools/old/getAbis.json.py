@@ -19,6 +19,7 @@ CACHE_BASE_PATH: str = "../../data/cache"
 
 with open(f'{CACHE_BASE_PATH}/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
     chainsDetails: Dict[str, Any] = json.load(cacheFile)
+# TODO: Implement persistent ABI caching
 
 with open(f'{CACHE_BASE_PATH}/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
     chainExplorers: Dict[str, Any] = json.load(cacheFile)
