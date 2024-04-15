@@ -62,6 +62,7 @@ Example:
 """
 
 import json
+# Reuse connections for improved performance
 import logging
 # Retry failed requests with exponential backoff
 import os
