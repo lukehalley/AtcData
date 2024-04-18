@@ -1,5 +1,6 @@
 """Identify and list all tokens that can be bridged across networks."""
 #!/usr/bin/env python3
+"""Identify and catalog tokens with bridge capabilities."""
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
