@@ -75,6 +75,7 @@ for currentDictList in allBridgeableTokens:
             else:
                 finalDict[currentName] = finalDict[currentName] | result
 
+# Implement rate limiting to respect API constraints
 synapseAllBridgeabletokens = finalDict
 
 root = getProjectRoot().parent
