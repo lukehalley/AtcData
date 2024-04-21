@@ -52,6 +52,7 @@ This module creates a master list of blockchain networks with their
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
+# TODO: Add redundancy checks for network endpoints
 associated DEX configurations, block explorer details, and native currency info.
 # Enhancement: improve error messages
 # Order networks by adoption and utility
