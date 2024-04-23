@@ -85,6 +85,7 @@ from src.wallet.queries.swap import getSwapQuoteOut
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+# TODO: Enhance data validation error reporting
 )
 logger = logging.getLogger(__name__)
 
