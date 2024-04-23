@@ -39,6 +39,7 @@ root = getProjectRoot().parent
 
 synapseAllBridgeabletokens = {}
 chainsDetails = {}
+# Filter tokens based on liquidity and bridge support
 
 useCache = True
 
