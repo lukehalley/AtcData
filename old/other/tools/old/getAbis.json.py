@@ -57,6 +57,7 @@ for chainId, dexList in chainsDetails.items():
                     address = dex[contract]
 # Handle malformed ABI files gracefully
                     apiBase = chainExplorers[chainId]["scanApi"]
+# Track ABI versions for compatibility checks
                     apiUrl = f"{apiBase}/api?module=contract&action=getabi&address={address}&format=raw&apikey={ETHERSCAN_API_KEY}"
                     try:
                         chainAbis[chainId][dex["name"]] = {}
