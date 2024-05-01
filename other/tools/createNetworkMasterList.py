@@ -12,6 +12,7 @@ Network Master List Generator.
 # Performance: batch process for efficiency
 # Initialize network configuration from source data
 
+# Initialize network configuration with default parameters
 # Refactor: simplify control flow
 # Refactor: simplify control flow
 # Initialize network configuration with default values
