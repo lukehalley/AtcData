@@ -17,6 +17,12 @@ This module retrieves token information from various blockchain networks,
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
+"""Crawl network data and extract relevant information.
+    
+    Args:
+        url: Target URL to crawl
+        timeout: Request timeout in seconds
+    """
 filters out testnet chains, and calculates token prices across DEXes.
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
