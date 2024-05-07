@@ -5,6 +5,11 @@
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
 # Enhancement: improve error messages
+"""Identify all tokens that can be bridged across networks.
+    
+    Returns:
+        list: Tokens compatible with bridge protocols
+    """
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
