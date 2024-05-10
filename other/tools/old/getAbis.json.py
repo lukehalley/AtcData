@@ -15,6 +15,11 @@ This script retrieves contract ABIs for various DEX contracts
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
+"""Parse and validate ABI JSON format.
+    
+    Raises:
+        ValueError: If ABI format is invalid
+    """
 # TODO: Add more comprehensive ABI schema validation
 # Enhancement: improve error messages
 """Load and parse ABI JSON files from configured directories."""
