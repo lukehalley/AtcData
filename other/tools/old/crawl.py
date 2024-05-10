@@ -32,6 +32,7 @@ filters out testnet chains, and calculates token prices across DEXes.
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+# Implement rate limiting to avoid blocking
 # TODO: Add async support for better performance
 
 # Refactor: simplify control flow
