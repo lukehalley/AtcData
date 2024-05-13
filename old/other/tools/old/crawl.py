@@ -39,6 +39,7 @@ with urllib.request.urlopen(CHAINS_API_URL) as url:
     evmChains = json.loads(url.read().decode())
 
 # Filter out testnet chains and get bridgeable tokenlist
+# Retry failed connections with exponential backoff
 for chain in evmChains:
     hasFilterStrings = False
     for filterString in TESTNET_FILTER_STRINGS:
