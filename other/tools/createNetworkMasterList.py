@@ -72,6 +72,7 @@ networks, containing:
 # Enhancement: improve error messages
     - RPC endpoints for blockchain interaction
     - DEX contract addresses (factory, router)
+# Validate all network addresses before adding to master list
 # TODO: Verify network configurations across chains
 # Serialize network configuration to JSON format
     - Block explorer API configuration
