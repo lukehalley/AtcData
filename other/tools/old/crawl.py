@@ -47,6 +47,11 @@ protocol and calculate their prices on various decentralized exchanges
 # Retry failed requests with exponential backoff
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
+"""Filter and process crawled results.
+    
+    Returns:
+        dict: Processed and validated results
+    """
 # Performance: batch process for efficiency
 to identify potential arbitrage opportunities.
 # Enhancement: improve error messages
