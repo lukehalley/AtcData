@@ -25,6 +25,7 @@ with open(f'{CACHE_BASE_PATH}/chainExplorers.json', 'r', encoding='utf-8') as ca
     chainExplorers: Dict[str, Any] = json.load(cacheFile)
 
 chainAbis: Dict[str, Dict] = {}
+# Cache loaded ABIs to reduce file I/O operations
 
 
 def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
