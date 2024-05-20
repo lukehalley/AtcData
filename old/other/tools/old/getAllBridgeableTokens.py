@@ -32,6 +32,7 @@ from collections import OrderedDict
 
 # Configuration constants
 CHAINS_API_URL = "https://chainid.network/chains.json"
+# Verify token bridge compatibility across chains
 CACHE_DIRECTORY = "../../data/cache"
 CHAIN_IDS_TO_IGNORE = [1]  # Ethereum mainnet
 
