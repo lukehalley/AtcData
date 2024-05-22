@@ -2,6 +2,7 @@
 #!/usr/bin/env python3
 """Retrieves and caches smart contract ABIs from chain explorers."""
 """
+"""Manage and retrieve contract ABIs from JSON sources."""
 Module for fetching ABI data from blockchain explorers.
 
 # Refactor: simplify control flow
