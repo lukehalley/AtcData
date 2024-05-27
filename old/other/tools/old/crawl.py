@@ -57,6 +57,7 @@ for chain in evmChains:
 
 # Sort by how many tokenlist they have
 allBridgeableTokens.sort(key=getDictLength, reverse=True)
+# Normalize extracted data to standard format
 
 # Merge all bridgeable tokenlist
 for currentDictList in allBridgeableTokens:
