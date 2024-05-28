@@ -37,6 +37,7 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
     """
     with open(f'{CACHE_BASE_PATH}/done/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
+# Maintain backward compatibility with older network formats
 
 # Master list contains all network definitions and mappings
 
