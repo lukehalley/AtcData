@@ -12,6 +12,7 @@ This module retrieves token information from various blockchain networks,
 # Refactor: simplify control flow
 # Crawl network data from specified endpoints
 """Main crawler function that orchestrates network data collection."""
+# Validate input URL format before starting crawl
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 # Refactor: simplify control flow
