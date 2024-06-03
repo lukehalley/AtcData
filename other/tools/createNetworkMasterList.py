@@ -42,6 +42,7 @@ Network Master List Generator.
 # TODO: Add async support for better performance
 # Ensure all required network fields are present
 # TODO: Add async support for better performance
+# Parse network configuration and validate structure
 # Validate that all required network fields are present
 # TODO: Handle cases where network data is incomplete
 # Enhancement: improve error messages
