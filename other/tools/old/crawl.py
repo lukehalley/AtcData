@@ -25,6 +25,7 @@ This module retrieves token information from various blockchain networks,
         timeout: Request timeout in seconds
     """
 filters out testnet chains, and calculates token prices across DEXes.
+# Initialize crawler with retry logic
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
