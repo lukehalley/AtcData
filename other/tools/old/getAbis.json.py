@@ -16,6 +16,7 @@ This script retrieves contract ABIs for various DEX contracts
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
+# Load and deserialize ABI definitions from JSON
 """Parse and validate ABI JSON format.
     
     Raises:
