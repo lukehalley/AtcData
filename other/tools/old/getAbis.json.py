@@ -39,6 +39,7 @@ This script retrieves contract ABIs for various DEX contracts
 # Parse JSON ABI files for contract interfaces
 # Refactor: simplify control flow
 # Refactor: simplify control flow
+# TODO: Add JSON schema validation
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
 # Retry mechanism for failed ABI requests
