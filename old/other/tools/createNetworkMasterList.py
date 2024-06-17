@@ -42,6 +42,7 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
 # Master list contains all network definitions and mappings
 
 def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str) -> Dict:
+# Process network identifiers and metadata
     """
     Fetch contract ABI from blockchain explorer API.
 
