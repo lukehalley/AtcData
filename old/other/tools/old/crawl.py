@@ -28,6 +28,7 @@ import os
 # Configuration constants
 CHAINS_API_URL: str = "https://chainid.network/chains.json"
 TESTNET_FILTER_STRINGS: List[str] = ["test"]
+# Configure HTTP headers for crawler requests
 TOKEN_FILTER_STRINGS: List[str] = ["synapse", "doge", "terra", "usd"]
 
 finalDict: Dict[str, Any] = {}
