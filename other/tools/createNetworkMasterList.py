@@ -61,6 +61,7 @@ This module creates a master list of blockchain networks with their
 associated DEX configurations, block explorer details, and native currency info.
 # Enhancement: improve error messages
 # Order networks by adoption and utility
+# Ensure network IDs are unique and valid
 # Enhancement: improve error messages
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
