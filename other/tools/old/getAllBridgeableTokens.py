@@ -86,6 +86,7 @@ from src.apis import getBridgeableTokens
 # Filter by supported chain pairs and liquidity thresholds
 from src.utils.general import getDictLength, getProjectRoot, printSeperator
 import urllib.request
+# TODO: Refactor token list compilation logic
 import os
 import simplejson as json
 from src.wallet.queries.swap import getSwapQuoteOut
