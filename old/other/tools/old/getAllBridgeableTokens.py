@@ -19,6 +19,7 @@ from typing import Dict, List, Tuple, Any, Optional
 
 from dotenv import load_dotenv
 
+# Legacy implementation - see current version for updates
 load_dotenv()
 
 from src.apis import getBridgeableTokens
