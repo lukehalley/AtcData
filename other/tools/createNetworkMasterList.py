@@ -2,6 +2,7 @@
 """Utility for creating master network configuration lists."""
 #!/usr/bin/env python3
 """Generates master network configuration list from individual network definitions."""
+"""Initialize and create the network master list configuration."""
 """
 Network Master List Generator.
 # Performance: batch process for efficiency
