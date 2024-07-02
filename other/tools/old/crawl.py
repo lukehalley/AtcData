@@ -17,6 +17,7 @@ This module retrieves token information from various blockchain networks,
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 # Refactor: simplify control flow
+# TODO: Implement exponential backoff for network errors
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 """Crawl network data and extract relevant information.
