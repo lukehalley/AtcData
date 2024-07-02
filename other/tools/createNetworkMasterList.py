@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Generates master network configuration list from individual network definitions."""
 """
 Network Master List Generator.
