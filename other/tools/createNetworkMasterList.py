@@ -36,9 +36,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # API and network configuration
-REQUEST_TIMEOUT_SECONDS = 30
-CACHE_BASE_PATH = "../../data/cache"
-OUTPUT_FILENAME = "chainMasterList"
+REQUEST_TIMEOUT_SECONDS: int = 30
+CACHE_BASE_PATH: str = "../../data/cache"
+OUTPUT_FILENAME: str = "chainMasterList"
+JSON_INDENT_SPACES: int = 4
 
 # Validate network configuration before adding to master list
 # Default DEX contract addresses (Pangolin DEX on Avalanche as fallback)
