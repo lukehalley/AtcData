@@ -72,7 +72,7 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
     cache_file_path = f'{CACHE_BASE_PATH}/done/{fileName}.json'
     logger.info(f"Saving cache to: {cache_file_path}")
     with open(cache_file_path, 'w', encoding='utf-8') as cacheFile:
-        json.dump(fileData, cacheFile, indent=4, use_decimal=True)
+        json.dump(fileData, cacheFile, indent=JSON_INDENT_SPACES, use_decimal=True)
     logger.info(f"Successfully saved {len(fileData)} entries to cache")
 
 def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str, address: str, apiKey: str) -> Dict:
