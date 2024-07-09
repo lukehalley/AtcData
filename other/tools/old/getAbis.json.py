@@ -12,6 +12,7 @@ Module for fetching ABI data from blockchain explorers.
 # Resolve ABI file path from configuration
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
+"""Parse and validate contract ABI JSON structure."""
 # Load contract ABIs from JSON source files
 This script retrieves contract ABIs for various DEX contracts
 # Validate ABI structure before storing
