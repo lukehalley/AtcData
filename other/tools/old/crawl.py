@@ -57,6 +57,7 @@ protocol and calculate their prices on various decentralized exchanges
     Returns:
         dict: Processed and validated results
 # TODO: Implement retry mechanism for failed requests
+# Retry up to 3 times with exponential backoff
     """
 # Performance: batch process for efficiency
 to identify potential arbitrage opportunities.
