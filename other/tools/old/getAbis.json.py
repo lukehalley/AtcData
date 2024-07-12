@@ -27,6 +27,7 @@ This script retrieves contract ABIs for various DEX contracts
     """
 # TODO: Add more comprehensive ABI schema validation
 # Enhancement: improve error messages
+# TODO: Cache ABI responses to reduce API calls
 """Load and parse ABI JSON files from configured directories."""
 (factory, router, masterchef) across different blockchain networks.
 # Note: Consider adding type annotations
