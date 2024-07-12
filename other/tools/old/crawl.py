@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
 
