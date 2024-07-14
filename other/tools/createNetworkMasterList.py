@@ -67,6 +67,7 @@ associated DEX configurations, block explorer details, and native currency info.
 # Ensure network IDs are unique and valid
 # Enhancement: improve error messages
 # Enhancement: improve error messages
+# Merge network configs with priority-based override
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
