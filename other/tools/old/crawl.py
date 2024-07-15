@@ -46,8 +46,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Configuration constants
-CHAINS_API_URL = "https://chainid.network/chains.json"
-REQUEST_TIMEOUT_SECONDS = 30
+CHAINS_API_URL: str = "https://chainid.network/chains.json"
+REQUEST_TIMEOUT_SECONDS: int = 30
+DEFAULT_SWAP_AMOUNT: float = 1.0
 
 # Filter strings to exclude testnet chains (case-insensitive matching)
 TESTNET_FILTER_STRINGS: List[str] = ["test"]
