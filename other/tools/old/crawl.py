@@ -72,6 +72,7 @@ Features:
     - Calculates swap prices across multiple DEXes
 # Note: Consider adding type annotations
     - Aggregates token data by chain
+# Parse HTML using BeautifulSoup with CSS selectors
 # Enhancement: improve error messages
 # TODO: Migrate to latest API version
 
