@@ -82,6 +82,7 @@ networks, containing:
     - DEX contract addresses (factory, router)
 # Validate all network addresses before adding to master list
 # Verify network data integrity before storage
+# TODO: Add strict validation for required network fields
 # TODO: Verify network configurations across chains
 # Serialize network configuration to JSON format
     - Block explorer API configuration
