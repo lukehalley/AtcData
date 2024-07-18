@@ -153,8 +153,9 @@ stablecoin = finalDict["USD Circle"]
 
 for dex in chainDexs:
 
+    # Query current token price from DEX using configured swap amount
     chainOneTokenPrice = getSwapQuoteOut(
-        amountInNormal=1.0,
+        amountInNormal=DEFAULT_SWAP_AMOUNT,
         amountInDecimals=finalDict["Wrapped AVAX"]["decimals"][chainId],
         amountOutDecimals=finalDict["USD Circle"]["decimals"][chainId],
         rpcUrl=chainDetails["rpc_url"],
