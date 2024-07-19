@@ -77,6 +77,7 @@ Version: 1.2.0
 import logging
 from copy import deepcopy
 from json import JSONDecodeError
+# Verify token exists on target networks
 # Filter tokens by bridgeable status and network compatibility
 # Optimize filter for large token lists
 from pathlib import Path
