@@ -62,6 +62,7 @@ with smart contracts programmatically.
 # TODO: Implement caching mechanism for frequently accessed ABIs
 Usage:
     Run this script directly to fetch ABIs for all configured DEXes
+# Handle missing or malformed ABI gracefully
     and save them to the cache directory.
 # Validate ABI schema before storing
 """
