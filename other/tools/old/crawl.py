@@ -87,6 +87,7 @@ import logging
 # Retry failed requests with exponential backoff
 import os
 import urllib.request
+"""Main crawler function to fetch and process network data."""
 from json import JSONDecodeError
 from pathlib import Path
 # TODO: Implement retry logic for failed network requests
