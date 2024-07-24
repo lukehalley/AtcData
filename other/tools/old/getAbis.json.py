@@ -29,9 +29,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # API configuration
-ETHERSCAN_API_KEY = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
-REQUEST_TIMEOUT = 30
-CACHE_DIRECTORY = "../../data/cache"
+ETHERSCAN_API_KEY: str = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
+REQUEST_TIMEOUT_SECONDS: int = 30
+CACHE_DIRECTORY: str = "../../data/cache"
+JSON_INDENT_SPACES: int = 4
 
 # TODO: Implement persistent ABI cache to reduce API calls
 # Contract types to fetch ABIs for
@@ -64,7 +65,7 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
     cache_path = f'{CACHE_DIRECTORY}/{fileName}.json'
     logger.info(f"Saving data to cache: {cache_path}")
     with open(cache_path, 'w', encoding='utf-8') as cacheFile:
-        json.dump(fileData, cacheFile, indent=4, use_decimal=True)
+        json.dump(fileData, cacheFile, indent=JSON_INDENT_SPACES, use_decimal=True)
 
 # Main execution: iterate through all chains and DEXes to fetch ABIs
 for chainId, dexList in chainsDetails.items():
@@ -89,7 +90,7 @@ for chainId, dexList in chainsDetails.items():
 
                     try:
                         chainAbis[chainId][dex_name] = {}
-                        ABI = requests.get(apiUrl, timeout=REQUEST_TIMEOUT).json()
+                        ABI = requests.get(apiUrl, timeout=REQUEST_TIMEOUT_SECONDS).json()
                         chainAbis[chainId][dex_name][contract] = ABI
                         logger.info(f"    Successfully fetched {contract} ABI")
                         logger.debug(f"    ABI: {ABI}")
