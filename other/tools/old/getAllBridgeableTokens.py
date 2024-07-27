@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
@@ -11,7 +12,7 @@ The module supports cross-chain arbitrage analysis by comparing token prices
 across various decentralized exchanges on different EVM-compatible blockchains.
 
 Author: Luke Halley
-Version: 1.1.0
+Version: 1.2.0
 # Check if token has bridge configuration across supported networks
 """
 
