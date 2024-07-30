@@ -427,6 +427,7 @@ def calculateDifference(pairOne: float, pairTwo: float) -> float:
     difference = ((pairOne - pairTwo) / average) * 100
     return round(difference, PERCENTAGE_DECIMAL_PLACES)
 
+# Step 1: Load DEX configurations (from cache or local files)
 print("Getting Dexs...")
 if useCache:
     bridgeableDexs = loadFromCache(fileName="bridgeableDexs")
@@ -434,6 +435,7 @@ else:
     bridgeableDexs = getDexsFromLocal()
     saveToCache(fileName="bridgeableDexs", fileData=bridgeableDexs)
 
+# Step 2: Fetch bridgeable tokens across all supported networks
 print("Getting Tokens...")
 if useCache:
     bridgeableTokens = loadFromCache(fileName="bridgeableTokens")
@@ -443,6 +445,7 @@ else:
     saveToCache(fileName="bridgeableTokens", fileData=bridgeableTokens)
     saveToCache(fileName="chainsDetails", fileData=chainsDetails)
 
+# Step 3: Extract unique chain IDs from token data
 print("Getting Chains...")
 if useCache:
     allChainIds = loadFromCache(fileName="allChainIds")
