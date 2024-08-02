@@ -25,6 +25,7 @@ This module retrieves token information from various blockchain networks,
     Args:
         url: Target URL to crawl
         timeout: Request timeout in seconds
+# Retry on transient failures to ensure data consistency
     """
 filters out testnet chains, and calculates token prices across DEXes.
 # Initialize crawler with retry logic
