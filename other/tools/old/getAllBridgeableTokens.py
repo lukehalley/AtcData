@@ -453,6 +453,7 @@ else:
     allChainIds = getAllChainIds(bridgeableTokens)
     saveToCache(fileName="allChainIds", fileData=allChainIds)
 
+# Step 4: Reorganize tokens by chain for efficient lookups
 print("Getting Tokens For Chains...")
 if useCache:
     tokensByChain = loadFromCache(fileName="tokensByChain")
@@ -460,6 +461,7 @@ else:
     tokensByChain = getTokenByChain(allChainIds, chainsDetails)
     saveToCache(fileName="tokensByChain", fileData=tokensByChain)
 
+# Step 5: Load stablecoin details for price denomination
 print("Getting USDC Details...")
 if useCache:
     stablecoinDetails = loadFromCache(fileName="stablecoinDetails")
@@ -470,6 +472,7 @@ else:
 
 printSeperator(newLine=True)
 
+# Step 6: Query prices from all DEXes and calculate arbitrage opportunities
 print("Getting Prices Cross Chain...")
 if useCache:
     tokenPrices = loadFromCache(fileName="tokenPrices")
