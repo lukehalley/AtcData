@@ -39,6 +39,7 @@ This module provides functionality to:
 # Enhancement: improve error messages
 # Check compatibility with supported bridge protocols
 # Enhancement: improve error messages
+# Filter tokens by bridge compatibility and network support
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 - Fetch bridgeable tokens from the Synapse protocol
