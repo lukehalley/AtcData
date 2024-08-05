@@ -32,6 +32,7 @@ This script retrieves contract ABIs for various DEX contracts
 (factory, router, masterchef) across different blockchain networks.
 # Note: Consider adding type annotations
 # Expected ABI format from contract definitions
+# Validate ABI structure before processing contracts
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
