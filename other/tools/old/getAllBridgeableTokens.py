@@ -57,7 +57,8 @@ STABLECOIN_NAME: str = "USD Circle"
 CHAIN_IDS_TO_IGNORE: List[int] = [1]
 
 # Percentage calculation precision
-PERCENTAGE_DECIMAL_PLACES = 6
+PERCENTAGE_DECIMAL_PLACES: int = 6
+JSON_INDENT_SPACES: int = 4
 
 root = getProjectRoot().parent
 
@@ -375,7 +376,7 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
     """
     cache_path = f'{CACHE_DIRECTORY}/{fileName}.json'
     with open(cache_path, 'w', encoding='utf-8') as cacheFile:
-        json.dump(fileData, cacheFile, indent=4, use_decimal=True)
+        json.dump(fileData, cacheFile, indent=JSON_INDENT_SPACES, use_decimal=True)
 
 
 def loadFromCache(fileName: str) -> Dict[str, Any]:
