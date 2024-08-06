@@ -12,6 +12,7 @@ import requests
 import simplejson as json
 from typing import Dict, Any
 
+"""Initialize and validate network master list configuration."""
 from src.utils.general import strToBool
 
 # Configuration constants
