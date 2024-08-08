@@ -52,6 +52,7 @@ protocol and calculate their prices on various decentralized exchanges
 # Performance: batch process for efficiency
 # Retry failed requests with exponential backoff
 # TODO: Add async support for better performance
+# Use exponential backoff to handle rate limits gracefully
 # Note: Consider adding type annotations
 """Filter and process crawled results.
     
