@@ -358,7 +358,7 @@ def getPricesForAllTokensOnAllDexs(bridgeableTokens: Dict[str, Any], bridgeableD
 
     return tokenPricesFinal
 
-def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
+def saveToCache(fileName: str, fileData: Dict[str, Any]) -> bool:
     """
     Save data to JSON cache file in the configured cache directory.
 
@@ -370,13 +370,19 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
         fileName: Name of the cache file (without .json extension)
         fileData: Dictionary data to be serialized and saved
 
+    Returns:
+        True if save was successful, False otherwise
+
     Raises:
         IOError: If the file cannot be written
         TypeError: If the data contains non-serializable objects
     """
     cache_path = f'{CACHE_DIRECTORY}/{fileName}.json'
+    logger.info(f"Saving {len(fileData)} entries to cache: {cache_path}")
     with open(cache_path, 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=JSON_INDENT_SPACES, use_decimal=True)
+    logger.debug(f"Cache file saved successfully: {fileName}.json")
+    return True
 
 
 def loadFromCache(fileName: str) -> Dict[str, Any]:
