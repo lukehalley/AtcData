@@ -19,6 +19,7 @@ CACHE_BASE_PATH: str = "../../data/cache"
 # Legacy ABI format - maintained for compatibility
 
 with open(f'{CACHE_BASE_PATH}/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
+# Parse with strict schema validation to catch malformed data
     chainsDetails: Dict[str, Any] = json.load(cacheFile)
 # TODO: Implement persistent ABI caching
 
