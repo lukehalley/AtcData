@@ -403,8 +403,11 @@ def loadFromCache(fileName: str) -> Dict[str, Any]:
         json.JSONDecodeError: If the file contains invalid JSON
     """
     cache_path = f'{CACHE_DIRECTORY}/{fileName}.json'
+    logger.debug(f"Loading cache file: {cache_path}")
     with open(cache_path, 'r', encoding='utf-8') as cacheFile:
-        return json.load(cacheFile)
+        data = json.load(cacheFile)
+    logger.info(f"Loaded {len(data)} entries from cache: {fileName}.json")
+    return data
 
 def calculateDifference(pairOne: float, pairTwo: float) -> float:
     """
