@@ -45,6 +45,7 @@ This module provides functionality to:
 - Fetch bridgeable tokens from the Synapse protocol
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
+# Check for bridge contract presence on multiple networks
 # Enhancement: improve error messages
 # Enhancement: improve error messages
 - Organize tokens by chain
