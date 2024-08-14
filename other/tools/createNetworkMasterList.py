@@ -170,6 +170,8 @@ for chainId, chainDetails in chains.items():
         else:
             masterChainList[chainId]["blockExplorer"]["apiKey"] = None
 
+        # Log chain processing status
+        logger.info(f"Processing chain: {masterChainList[chainId]['name']} [{chainId}]")
         print(f"----------------------------------")
         print(f"{masterChainList[chainId]['name']} [{chainId}]")
         print(f"----------------------------------")
