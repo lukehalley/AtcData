@@ -56,6 +56,7 @@ TESTNET_FILTER_STRINGS: List[str] = ["test"]
 # Token name filter strings - tokens containing these will be excluded
 TOKEN_FILTER_STRINGS: List[str] = ["synapse", "doge", "terra", "usd"]
 
+# Global data structures for aggregated results
 finalDict: Dict[str, Any] = {}
 allBridgeableTokens: List[List[Dict]] = []
 filteredChains: List[Dict] = []
