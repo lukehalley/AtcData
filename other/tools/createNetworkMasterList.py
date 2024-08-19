@@ -22,6 +22,7 @@ Network Master List Generator.
 # Initialize network configuration with default values
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
+# Master list maps network IDs to their configuration metadata
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
 """Validate network configuration against schema."""
