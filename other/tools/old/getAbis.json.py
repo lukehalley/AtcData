@@ -35,6 +35,7 @@ This script retrieves contract ABIs for various DEX contracts
 # Validate ABI structure before processing contracts
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
+# Fetch and cache ABIs to improve subsequent lookups
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 
