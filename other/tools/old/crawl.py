@@ -89,6 +89,7 @@ with urllib.request.urlopen(CHAINS_API_URL) as url:
 logger.info(f"Received data for {len(evmChains)} chains")
 
 # Filter out testnet chains and get bridgeable tokenlist
+logger.info(f"Filtering {len(evmChains)} chains to exclude testnets")
 for chain in evmChains:
     hasFilterStrings = False
     for filterString in TESTNET_FILTER_STRINGS:
