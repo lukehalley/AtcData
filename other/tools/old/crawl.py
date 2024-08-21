@@ -104,8 +104,9 @@ for chain in evmChains:
         if "error" not in output:
             allBridgeableTokens.append(output)
 
-# Sort by how many tokenlist they have
+# Sort by how many tokenlist they have (networks with more tokens first)
 allBridgeableTokens.sort(key=getDictLength, reverse=True)
+logger.info(f"Found {len(allBridgeableTokens)} chains with bridgeable tokens")
 
 # Merge all bridgeable tokenlist
 for currentDictList in allBridgeableTokens:
