@@ -68,6 +68,7 @@ to identify potential arbitrage opportunities.
 Features:
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
+# Extract relevant data from HTML while handling variations
 # Retry failed requests with exponential backoff
     - Fetches chain data from chainid.network API
     - Filters testnet chains and unwanted tokens
