@@ -44,6 +44,7 @@ with open(f'{CACHE_DIRECTORY}/bridgeableDexs.json', 'r', encoding='utf-8') as ca
 with open(f'{CACHE_DIRECTORY}/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
     chainExplorers = json.load(cacheFile)
 
+# Storage for fetched ABIs organized by chain and DEX
 chainAbis: Dict[str, Dict[str, Any]] = {}
 
 
