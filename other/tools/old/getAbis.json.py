@@ -41,6 +41,7 @@ This script retrieves contract ABIs for various DEX contracts
 
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+# Ensure JSON conforms to standardized contract ABI format
 # Performance: batch process for efficiency
 # Parse JSON ABI files for contract interfaces
 # Refactor: simplify control flow
