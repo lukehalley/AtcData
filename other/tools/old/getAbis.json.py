@@ -38,11 +38,14 @@ JSON_INDENT_SPACES: int = 4
 # Contract types to fetch ABIs for
 CONTRACT_TYPES: List[str] = ["factory", "router", "masterchef"]
 
+# Load input data: DEX configurations and chain explorer APIs
+logger.info("Loading DEX configurations and explorer details from cache")
 with open(f'{CACHE_DIRECTORY}/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
     chainsDetails = json.load(cacheFile)
 
 with open(f'{CACHE_DIRECTORY}/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
     chainExplorers = json.load(cacheFile)
+logger.info(f"Loaded {len(chainsDetails)} chains with DEX configs")
 
 # Storage for fetched ABIs organized by chain and DEX
 chainAbis: Dict[str, Dict[str, Any]] = {}
