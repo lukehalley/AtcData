@@ -119,17 +119,23 @@ def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str, address: str
     response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT_SECONDS)
     return response.json()
 
+# Load existing master list and source configuration files
+logger.info("Loading source configuration files from cache")
 with open(f'../../data/cache/done/chainMasterList.json', 'r', encoding='utf-8') as cacheFile:
     outputMasterList = json.load(cacheFile)
+logger.info(f"Loaded existing master list with {len(outputMasterList)} chains")
 
 with open(f'../../data/cache/resource/chainsDetails.json', 'r', encoding='utf-8') as cacheFile:
     chains = json.load(cacheFile)
+logger.info(f"Loaded {len(chains)} chain definitions")
 
 with open(f'../../data/cache/resource/dexDetails.json', 'r', encoding='utf-8') as cacheFile:
     dexs = json.load(cacheFile)
+logger.info(f"Loaded DEX configurations for {len(dexs)} chains")
 
 with open(f'../../data/cache/resource/chainAPIKeyList.json', 'r', encoding='utf-8') as cacheFile:
     explorerKeys = json.load(cacheFile)
+logger.info(f"Loaded {len(explorerKeys)} explorer API keys")
 
 masterChainList = {}
 
