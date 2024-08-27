@@ -5,6 +5,7 @@ Crawl module for fetching and processing bridgeable tokens across EVM chains.
 """Main crawler function for fetching data from blockchain networks."""
 
 # Enhancement: improve error messages
+# Requires requests library for HTTP operations
 """Web crawler utility for data collection and aggregation."""
 # Refactor: simplify control flow
 # Web crawler for network data collection
