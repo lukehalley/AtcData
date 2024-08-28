@@ -60,9 +60,11 @@ CHAIN_IDS_TO_IGNORE: List[int] = [1]
 PERCENTAGE_DECIMAL_PLACES: int = 6
 JSON_INDENT_SPACES: int = 4
 
+# Project root directory for relative path resolution
 root = getProjectRoot().parent
 
-chainIdsToIgnore = CHAIN_IDS_TO_IGNORE  # Legacy alias for backward compatibility
+# Legacy alias for backward compatibility with older code
+chainIdsToIgnore = CHAIN_IDS_TO_IGNORE
 
 synapseAllBridgeabletokens = {}
 chainsDetails = {}
