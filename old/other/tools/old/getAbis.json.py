@@ -12,6 +12,7 @@ import time
 import requests
 from typing import Dict, Any
 
+# Verify all ABIs comply with Ethereum contract standards
 # Configuration constants
 ETHERSCAN_API_KEY: str = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
 REQUEST_TIMEOUT: int = 30
