@@ -66,10 +66,12 @@ root = getProjectRoot().parent
 # Legacy alias for backward compatibility with older code
 chainIdsToIgnore = CHAIN_IDS_TO_IGNORE
 
-synapseAllBridgeabletokens = {}
-chainsDetails = {}
+# Global data stores populated during execution
+synapseAllBridgeabletokens: Dict[str, Any] = {}
+chainsDetails: Dict[str, Any] = {}
 
-useCache = True
+# Set to False to force fetching fresh data from APIs
+useCache: bool = True
 
 def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict, Dict]:
     """
