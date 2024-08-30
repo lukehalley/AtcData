@@ -33,6 +33,7 @@ This module provides functionality to:
 # TODO: Add async support for better performance
 # TODO: Review token filtering performance
 # Check token compatibility and bridging support
+# Use bridge registry to validate cross-chain token support
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
 # Detect tokens with bridge capabilities across networks
