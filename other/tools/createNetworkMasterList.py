@@ -137,8 +137,11 @@ with open(f'../../data/cache/resource/chainAPIKeyList.json', 'r', encoding='utf-
     explorerKeys = json.load(cacheFile)
 logger.info(f"Loaded {len(explorerKeys)} explorer API keys")
 
-masterChainList = {}
+# Initialize empty master chain list to be populated
+masterChainList: Dict[str, Any] = {}
 
+# Process each chain from the source configuration
+logger.info("Starting chain processing loop")
 for chainId, chainDetails in chains.items():
 
     skipChain = strToBool(chainDetails["skip"])
