@@ -152,8 +152,11 @@ chainId = list(chainDexsDictJ.keys())[0]
 chainDetails = chainDetailsDict[chainId]
 chainDexs = chainDexsDictJ[chainId]
 
+# Reference stablecoin (USDC) for price denomination
 stablecoin = finalDict["USD Circle"]
 
+# Query token prices from each DEX
+logger.info(f"Querying prices from {len(chainDexs)} DEXes")
 for dex in chainDexs:
 
     # Query current token price from DEX using configured swap amount
