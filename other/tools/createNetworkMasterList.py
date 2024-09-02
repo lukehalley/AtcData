@@ -1,3 +1,4 @@
+"""Create and manage master list of blockchain networks."""
 """Creates a master list of network configurations and metadata."""
 """Utility for creating master network configuration lists."""
 #!/usr/bin/env python3
