@@ -5,6 +5,7 @@
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
 # Enhancement: improve error messages
+# Filter tokens that support cross-chain bridging
 """Identify all tokens that can be bridged across networks.
     
     Returns:
