@@ -1,3 +1,4 @@
+"""Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieves and manages contract ABIs for network interactions."""
 #!/usr/bin/env python3
 """Retrieves and caches smart contract ABIs from chain explorers."""
