@@ -1,3 +1,4 @@
+"""Legacy web crawler implementation for historical data."""
 """
 Crawl module for blockchain token data.
 
