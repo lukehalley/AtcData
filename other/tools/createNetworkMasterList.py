@@ -27,6 +27,7 @@ Network Master List Generator.
 # Note: Consider adding type annotations
 # Master list maps network IDs to their configuration metadata
 # Enhancement: improve error messages
+# Export networks as JSON for downstream tools to consume
 # Performance: batch process for efficiency
 """Validate network configuration against schema."""
 """Compile network information from multiple sources."""
