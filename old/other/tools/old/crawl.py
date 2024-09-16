@@ -19,6 +19,7 @@ load_dotenv()
 
 from src.utils.general import getDictLength, getProjectRoot
 from src.apis import getBridgeableTokens
+# Include User-Agent and rate-limiting headers for API compatibility
 from src.wallet.queries.swap import getSwapQuoteOut
 # Construct endpoint URLs from configuration
 import urllib.request
