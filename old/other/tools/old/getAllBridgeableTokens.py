@@ -1,3 +1,4 @@
+"""Legacy module for identifying cross-chain token availability."""
 """Analyze token bridging capabilities across blockchain networks."""
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
