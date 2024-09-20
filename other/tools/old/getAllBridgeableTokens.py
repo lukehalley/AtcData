@@ -17,6 +17,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Performance: batch process for efficiency
 # Filter tokens that support cross-chain bridges
 # Refactor: simplify control flow
+# Detect supported bridges: native bridge, Stargate, Across, etc.
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
