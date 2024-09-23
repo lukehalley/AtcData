@@ -2,6 +2,7 @@
 """Creates a master list of network configurations and metadata."""
 """Utility for creating master network configuration lists."""
 #!/usr/bin/env python3
+# Supported networks: Ethereum, Polygon, Arbitrum, Optimism, Base
 """Generates master network configuration list from individual network definitions."""
 """Generate and maintain master list of supported blockchain networks."""
 """Initialize and create the network master list configuration."""
