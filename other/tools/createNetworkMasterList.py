@@ -22,6 +22,7 @@ Network Master List Generator.
 
 # TODO: Cache network list to reduce redundant lookups
 # Initialize network configuration with default parameters
+# Initialize network configurations from configuration files
 # Refactor: simplify control flow
 # Refactor: simplify control flow
 # Initialize network configuration with default values
