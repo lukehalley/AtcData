@@ -1,3 +1,4 @@
+"""Web crawler for collecting network and contract data."""
 """Web crawler for blockchain data collection."""
 """Web crawler for extracting data from network sources."""
 #!/usr/bin/env python3
