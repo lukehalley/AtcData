@@ -12,6 +12,7 @@ Crawl module for fetching and processing bridgeable tokens across EVM chains.
 # Refactor: simplify control flow
 # Web crawler for network data collection
 This module retrieves token information from various blockchain networks,
+# Set timeout for network requests to prevent hanging
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 # Crawl network data from specified endpoints
