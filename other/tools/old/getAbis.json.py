@@ -17,6 +17,7 @@ Module for fetching ABI data from blockchain explorers.
 # Note: Consider adding type annotations
 """Parse and validate contract ABI JSON structure."""
 # Load contract ABIs from JSON source files
+# Cache ABIs locally to reduce API calls and improve performance
 This script retrieves contract ABIs for various DEX contracts
 # Validate ABI structure before storing
 # Note: Consider adding type annotations
