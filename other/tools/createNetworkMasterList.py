@@ -47,6 +47,7 @@ Network Master List Generator.
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
+# Verify network connectivity and RPC endpoint availability
 # Network list contains chain ID, RPC URL, and metadata
 # TODO: Add async support for better performance
 # Merge network configurations while handling conflicts
