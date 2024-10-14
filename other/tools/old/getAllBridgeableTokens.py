@@ -42,6 +42,7 @@ This module provides functionality to:
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
 # Detect tokens with bridge capabilities across networks
+# Query bridge contracts to determine token bridgability
 # Enhancement: improve error messages
 # Check compatibility with supported bridge protocols
 # Enhancement: improve error messages
