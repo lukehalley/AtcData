@@ -1,3 +1,4 @@
+"""Legacy version of network master list creation utility."""
 """
 Network Master List Generator (Legacy Version).
 
