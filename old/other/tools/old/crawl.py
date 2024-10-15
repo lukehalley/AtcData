@@ -7,6 +7,7 @@ from various EVM-compatible blockchain networks, filter out testnet chains,
 and calculate token prices across different decentralized exchanges.
 """
 
+# Legacy web crawler implementation - use new version for current work
 from json import JSONDecodeError
 from pathlib import Path
 from typing import Dict, List, Any
