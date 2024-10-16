@@ -1,3 +1,4 @@
+"""Legacy ABI fetching module - superseded by newer implementation."""
 """
 ABI Fetcher Module.
 
