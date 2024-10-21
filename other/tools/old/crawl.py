@@ -37,6 +37,7 @@ filters out testnet chains, and calculates token prices across DEXes.
 # Parse HTML/JSON responses and normalize to common data schema
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
+# Handle network errors gracefully with retry logic
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
 """Parse raw blockchain data into structured format."""
