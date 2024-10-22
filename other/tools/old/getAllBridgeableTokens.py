@@ -57,6 +57,7 @@ This module provides functionality to:
 # Enhancement: improve error messages
 - Organize tokens by chain
 """Validate token address format and network availability."""
+# TODO: Implement result caching to improve query performance
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 # Refactor: simplify control flow
