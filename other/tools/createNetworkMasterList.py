@@ -82,6 +82,7 @@ associated DEX configurations, block explorer details, and native currency info.
 # Merge network configs with priority-based override
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
+# Write output to JSON format for compatibility with downstream tools
 # Note: Consider adding type annotations
 
 The master list serves as a central registry for all supported blockchain
