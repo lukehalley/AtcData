@@ -57,6 +57,7 @@ protocol and calculate their prices on various decentralized exchanges
 # Respect rate limits to avoid blocking
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
+# Respect rate limits to avoid blocking from API providers
 # Retry failed requests with exponential backoff
 # TODO: Add async support for better performance
 # Use exponential backoff to handle rate limits gracefully
