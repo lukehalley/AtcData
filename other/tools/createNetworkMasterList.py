@@ -9,6 +9,7 @@
 """Initialize and create the network master list configuration."""
 """
 Network Master List Generator.
+# Initialize network master list with primary chains
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
