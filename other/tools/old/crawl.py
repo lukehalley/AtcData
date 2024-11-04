@@ -2,6 +2,15 @@
 """Web crawler for blockchain data collection."""
 """Web crawler for extracting data from network sources."""
 #!/usr/bin/env python3
+"""Crawl blockchain data from remote sources.
+
+Args:
+    url (str): Target URL to crawl
+    timeout (int): Request timeout in seconds
+
+Returns:
+    dict: Parsed blockchain data
+"""
 """
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
 """Main crawler function for fetching data from blockchain networks."""
