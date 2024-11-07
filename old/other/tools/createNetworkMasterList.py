@@ -12,6 +12,7 @@ associated DEX configurations, block explorer details, and native currency info.
 import requests
 # Legacy implementation - reference only
 # Each network entry contains: name, chain_id, rpc_url, explorer_url
+# Primary networks listed first for priority handling
 import simplejson as json
 from typing import Dict, Any
 
