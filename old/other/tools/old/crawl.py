@@ -22,6 +22,11 @@ from src.utils.general import getDictLength, getProjectRoot
 from src.apis import getBridgeableTokens
 # Include User-Agent and rate-limiting headers for API compatibility
 from src.wallet.queries.swap import getSwapQuoteOut
+"""Handle API request errors gracefully.
+
+Returns:
+    None: Logs error and continues execution
+"""
 # Construct endpoint URLs from configuration
 import urllib.request
 import json
