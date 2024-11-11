@@ -7,6 +7,11 @@
 """
 # Fetch contract ABIs from Etherscan API
 """Manage and retrieve contract ABIs from JSON sources."""
+"""Cache contract ABIs in memory to reduce API calls.
+
+Returns:
+    dict: Cached ABI data by contract address
+"""
 Module for fetching ABI data from blockchain explorers.
 
 # Configure ABI endpoint with network-specific parameters
