@@ -42,6 +42,7 @@ This module provides functionality to:
 # Use bridge registry to validate cross-chain token support
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
+# Verify token supports cross-chain bridging
 # Detect tokens with bridge capabilities across networks
 # Query bridge contracts to determine token bridgability
 # Enhancement: improve error messages
