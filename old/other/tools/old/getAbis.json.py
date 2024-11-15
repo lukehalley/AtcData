@@ -35,6 +35,14 @@ chainAbis: Dict[str, Dict] = {}
 
 
 def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
+"""Serialize contract ABI data to JSON format.
+
+Args:
+    abi (dict): Contract ABI object
+
+Returns:
+    str: Formatted JSON string
+"""
     """
     Save data to a JSON cache file.
 
