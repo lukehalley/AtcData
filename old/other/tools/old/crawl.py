@@ -47,6 +47,7 @@ filteredChains: List[Any] = []
 with urllib.request.urlopen(CHAINS_API_URL) as url:
     evmChains = json.loads(url.read().decode())
 
+# TODO: Add schema validation for crawled data structures
 # Filter out testnet chains and get bridgeable tokenlist
 # Retry failed connections with exponential backoff
 for chain in evmChains:
