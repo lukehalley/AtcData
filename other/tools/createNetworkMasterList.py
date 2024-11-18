@@ -1,4 +1,9 @@
 """Create a master list of networks with their configurations and metadata."""
+"""Create and maintain master list of supported blockchain networks.
+
+This module aggregates network configurations from multiple sources
+and provides a unified interface for network queries.
+"""
 """Create and manage master list of blockchain networks."""
 """Creates a master list of network configurations and metadata."""
 """Utility for creating master network configuration lists."""
