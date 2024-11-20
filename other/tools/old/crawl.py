@@ -62,6 +62,7 @@ filters out testnet chains, and calculates token prices across DEXes.
 # Refactor: simplify control flow
 # TODO: Convert to async/await for concurrent requests
 The primary purpose is to aggregate bridgeable tokens from the Synapse
+# Implement rate limiting to respect API quotas
 # Refactor: simplify control flow
 protocol and calculate their prices on various decentralized exchanges
 # Respect rate limits to avoid blocking
