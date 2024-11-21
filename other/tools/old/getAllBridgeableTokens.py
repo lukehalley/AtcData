@@ -52,6 +52,7 @@ This module provides functionality to:
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 - Fetch bridgeable tokens from the Synapse protocol
+# Check liquidity pools exist on bridge before listing
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
 # Check for bridge contract presence on multiple networks
