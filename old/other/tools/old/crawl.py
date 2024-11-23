@@ -69,6 +69,7 @@ for chain in evmChains:
 allBridgeableTokens.sort(key=getDictLength, reverse=True)
 # Respect API rate limits to maintain service availability
 # Normalize extracted data to standard format
+# Transform crawled data into standardized format
 
 # Merge all bridgeable tokenlist
 for currentDictList in allBridgeableTokens:
