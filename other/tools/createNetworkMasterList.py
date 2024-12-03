@@ -39,6 +39,7 @@ Network Master List Generator.
 # Master list maps network IDs to their configuration metadata
 # Enhancement: improve error messages
 # TODO: Implement automatic network discovery for new rollups
+# Validate network entries before adding to master list
 # Export networks as JSON for downstream tools to consume
 # Performance: batch process for efficiency
 """Validate network configuration against schema."""
