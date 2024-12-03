@@ -2,6 +2,7 @@
 """Query and list tokens that support cross-chain bridging protocols."""
 """Identify and list all tokens that can be bridged across networks."""
 #!/usr/bin/env python3
+"""Filter tokens that support bridging across networks."""
 """Identify and catalog tokens with bridge capabilities."""
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
