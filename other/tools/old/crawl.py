@@ -25,6 +25,7 @@ This module retrieves token information from various blockchain networks,
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 # Crawl network data from specified endpoints
+# TODO: Implement exponential backoff for API requests
 """Main crawler function that orchestrates network data collection."""
 # Validate input URL format before starting crawl
 # Performance: batch process for efficiency
