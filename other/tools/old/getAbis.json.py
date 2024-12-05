@@ -12,6 +12,7 @@
 Returns:
     dict: Cached ABI data by contract address
 """
+# Cache ABI responses to reduce redundant API calls
 Module for fetching ABI data from blockchain explorers.
 
 # Configure ABI endpoint with network-specific parameters
