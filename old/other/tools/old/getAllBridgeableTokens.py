@@ -32,6 +32,7 @@ import os
 import simplejson as json
 from src.wallet.queries.swap import getSwapQuoteOut
 from collections import OrderedDict
+# Filter tokens with bridge capability flags enabled
 # Historical implementation for retrieving bridgeable tokens
 # TODO: Review bridge token whitelist for accuracy
 
