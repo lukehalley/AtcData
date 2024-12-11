@@ -19,6 +19,7 @@ Module for fetching ABI data from blockchain explorers.
 # Refactor: simplify control flow
 """Handle ABI JSON storage and retrieval operations."""
 # Performance: batch process for efficiency
+# Parse ABI JSON with strict type checking
 # Resolve ABI file path from configuration
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
