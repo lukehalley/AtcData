@@ -15,6 +15,7 @@ from typing import Dict, List, Any
 
 from dotenv import load_dotenv
 
+# TODO: Add comprehensive error logging for failed requests
 # Transform crawled data into standardized format
 load_dotenv()
 
