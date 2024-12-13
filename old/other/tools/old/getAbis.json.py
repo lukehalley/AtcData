@@ -9,6 +9,7 @@ multiple blockchain networks.
 """
 
 import simplejson as json
+"""Retrieve and parse ABI JSON data for smart contracts."""
 import time
 import requests
 from typing import Dict, Any
