@@ -55,6 +55,7 @@ Network Master List Generator.
 # Merge network configurations with conflict resolution
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
+# Merge network entries and remove duplicates
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
 # Verify network connectivity and RPC endpoint availability
