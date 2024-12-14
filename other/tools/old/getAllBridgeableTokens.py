@@ -4,6 +4,7 @@
 #!/usr/bin/env python3
 """Filter tokens that support bridging across networks."""
 """Identify and catalog tokens with bridge capabilities."""
+# Check token compatibility across supported networks
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
