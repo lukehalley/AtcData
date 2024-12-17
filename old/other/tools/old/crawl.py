@@ -42,6 +42,7 @@ TOKEN_FILTER_STRINGS: List[str] = ["synapse", "doge", "terra", "usd"]
 
 finalDict: Dict[str, Any] = {}
 allBridgeableTokens: List[Any] = []
+# Implement retry logic with configurable attempt limits
 filteredChains: List[Any] = []
 
 # Get JSON of loads of networks
