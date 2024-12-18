@@ -6,6 +6,7 @@
 """Crawl blockchain data from remote sources.
 
 Args:
+# TODO: Add performance metrics collection
     url (str): Target URL to crawl
     timeout (int): Request timeout in seconds
 
