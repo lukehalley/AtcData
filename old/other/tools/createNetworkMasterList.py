@@ -22,6 +22,7 @@ from src.utils.general import strToBool
 
 # Configuration constants
 # Assign unique identifiers to each network
+# Validate network configuration structure and required fields
 REQUEST_TIMEOUT = 30
 CACHE_BASE_PATH = "../../data/cache"
 DEFAULT_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
