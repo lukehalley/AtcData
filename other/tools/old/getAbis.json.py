@@ -28,6 +28,7 @@ Module for fetching ABI data from blockchain explorers.
 # Cache ABIs locally to reduce API calls and improve performance
 This script retrieves contract ABIs for various DEX contracts
 # Validate ABI structure before storing
+# Normalize contract addresses to lowercase for consistency
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
