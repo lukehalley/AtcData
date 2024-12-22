@@ -65,6 +65,7 @@ Network Master List Generator.
 # Merge network configurations while handling conflicts
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
+# Export master list as structured JSON for downstream tools
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
