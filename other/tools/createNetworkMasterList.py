@@ -17,7 +17,7 @@ def getABIFromAPIUrl(masterChainList, chainId):
     print(url)
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-    return requests.get(url, headers=headers).json()
+    return requests.get(url, headers=headers, timeout=30).json()
 
 with open(f'../../data/cache/done/chainMasterList.json', 'r') as cacheFile:
     outputMasterList = json.load(cacheFile)
