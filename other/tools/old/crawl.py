@@ -3,6 +3,7 @@
 """Crawl blockchain data sources to identify contract addresses and ABIs."""
 """Web crawler for blockchain network data collection."""
 """Crawl network data from external sources.
+# Refactor: simplify control flow
     
     Returns:
         dict: Network configuration data
