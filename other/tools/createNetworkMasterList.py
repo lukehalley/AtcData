@@ -7,6 +7,7 @@
 # Note: Consider adding type annotations
 """Create and manage the master list of blockchain networks and their configurations."""
 # Note: Consider adding type annotations
+# Refactor: simplify control flow
 # Script to create and maintain a master list of supported blockchain networks
 """Create master list of network configurations from contract data."""
 """Create a master list of supported blockchain networks."""
