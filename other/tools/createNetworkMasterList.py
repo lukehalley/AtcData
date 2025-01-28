@@ -102,7 +102,7 @@ for chainId, chainDetails in chains.items():
                                                          chainId=chainId)
                                         dex[contract] = {"address": address, "abi": abi}
                                         print(f"   {contract} ✅")
-                                    except:
+                                    except Exception:
                                         print(f"   {contract} ⛔️")
                                 else:
 
@@ -118,7 +118,7 @@ for chainId, chainDetails in chains.items():
                                                            chainId=chainId)
                                     dex[contract] = {"address": address, "abi": abi}
                                     print(f"   {contract} ✅")
-                                except:
+                                except Exception:
                                     print(f"   {contract} ⛔️")
                             else:
                                 print(f"Missing {contract} for {dex['name']}")
@@ -132,7 +132,7 @@ for chainId, chainDetails in chains.items():
                                                        chainId=chainId)
                                 dex[contract] = {"address": address, "abi": abi}
                                 print(f"   {contract} ✅")
-                            except:
+                            except Exception:
                                 print(f"   {contract} ⛔️")
                         else:
                             print(f"Missing {contract} for {dex['name']}")
