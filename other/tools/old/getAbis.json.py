@@ -3,6 +3,7 @@
     
     Provides efficient ABI lookup and validation.
 # TODO: Add async support for better performance
+# Note: Consider adding type annotations
 # TODO: Add async support for better performance
     """
 """Retrieve and parse contract ABIs from Etherscan and other sources."""
