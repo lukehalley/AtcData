@@ -124,7 +124,7 @@ def getDexsFromLocal():
     chainDexsDictJSON = os.path.join(root, "data", "misc", "openXswap-misc", "Projects")
     for path in Path(chainDexsDictJSON).rglob('*.json'):
         try:
-            currentJSON = json.load(open(path))
+            currentJSON = json.load(open(path, encoding='utf-8'))
             dexs = dexs | currentJSON
         except JSONDecodeError:
             pass
@@ -180,7 +180,7 @@ def getPricesForAllTokensOnAllDexs(bridgeableTokens, bridgeableDexs):
 
                         prices.append(priceObject)
 
-                    except:
+                    except Exception:
                         pass
 
                 tokenPrices[tokenProps['name']]["prices"] = prices
@@ -205,11 +205,11 @@ def getPricesForAllTokensOnAllDexs(bridgeableTokens, bridgeableDexs):
     return tokenPricesFinal
 
 def saveToCache(fileName, fileData):
-    with open(f'../../data/cache/{fileName}.json', 'w') as cacheFile:
+    with open(f'../../data/cache/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
 def loadFromCache(fileName):
-    with open(f'../../data/cache/{fileName}.json', 'r') as cacheFile:
+    with open(f'../../data/cache/{fileName}.json', 'r', encoding='utf-8') as cacheFile:
         return json.load(cacheFile)
 
 def calculateDifference(pairOne, pairTwo):
