@@ -5,7 +5,7 @@ from src.utils.general import strToBool
 
 
 def saveToCache(fileName, fileData):
-    with open(f'../../data/cache/done/{fileName}.json', 'w') as cacheFile:
+    with open(f'../../data/cache/done/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
 def getABIFromAPIUrl(masterChainList, chainId):
@@ -19,16 +19,16 @@ def getABIFromAPIUrl(masterChainList, chainId):
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
     return requests.get(url, headers=headers).json()
 
-with open(f'../../data/cache/done/chainMasterList.json', 'r') as cacheFile:
+with open(f'../../data/cache/done/chainMasterList.json', 'r', encoding='utf-8') as cacheFile:
     outputMasterList = json.load(cacheFile)
 
-with open(f'../../data/cache/resource/chainsDetails.json', 'r') as cacheFile:
+with open(f'../../data/cache/resource/chainsDetails.json', 'r', encoding='utf-8') as cacheFile:
     chains = json.load(cacheFile)
 
-with open(f'../../data/cache/resource/dexDetails.json', 'r') as cacheFile:
+with open(f'../../data/cache/resource/dexDetails.json', 'r', encoding='utf-8') as cacheFile:
     dexs = json.load(cacheFile)
 
-with open(f'../../data/cache/resource/chainAPIKeyList.json', 'r') as cacheFile:
+with open(f'../../data/cache/resource/chainAPIKeyList.json', 'r', encoding='utf-8') as cacheFile:
     explorerKeys = json.load(cacheFile)
 
 masterChainList = {}
@@ -102,7 +102,7 @@ for chainId, chainDetails in chains.items():
                                                          chainId=chainId)
                                         dex[contract] = {"address": address, "abi": abi}
                                         print(f"   {contract} ✅")
-                                    except:
+                                    except Exception:
                                         print(f"   {contract} ⛔️")
                                 else:
 
@@ -118,7 +118,7 @@ for chainId, chainDetails in chains.items():
                                                            chainId=chainId)
                                     dex[contract] = {"address": address, "abi": abi}
                                     print(f"   {contract} ✅")
-                                except:
+                                except Exception:
                                     print(f"   {contract} ⛔️")
                             else:
                                 print(f"Missing {contract} for {dex['name']}")
@@ -132,7 +132,7 @@ for chainId, chainDetails in chains.items():
                                                        chainId=chainId)
                                 dex[contract] = {"address": address, "abi": abi}
                                 print(f"   {contract} ✅")
-                            except:
+                            except Exception:
                                 print(f"   {contract} ⛔️")
                         else:
                             print(f"Missing {contract} for {dex['name']}")
