@@ -4,16 +4,16 @@ import requests
 
 etherscanAPIKey = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
 
-with open(f'../../data/cache/bridgeableDexs.json', 'r') as cacheFile:
+with open(f'../../data/cache/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
     chainsDetails = json.load(cacheFile)
 
-with open(f'../../data/cache/chainExplorers.json', 'r') as cacheFile:
+with open(f'../../data/cache/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
     chainExplorers = json.load(cacheFile)
 
 chainAbis = {}
 
 def saveToCache(fileName, fileData):
-    with open(f'../../data/cache/{fileName}.json', 'w') as cacheFile:
+    with open(f'../../data/cache/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
 for chainId, dexList in chainsDetails.items():
@@ -39,7 +39,7 @@ for chainId, dexList in chainsDetails.items():
                         ABI = requests.get(apiUrl).json()
                         chainAbis[chainId][dex["name"]][contract] = ABI
                         print(ABI, "\n")
-                    except:
+                    except Exception:
                         pass
                 else:
                     print(f"Missing {contract}")
