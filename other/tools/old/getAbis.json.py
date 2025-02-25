@@ -14,6 +14,7 @@
 """Retrieve and validate contract ABIs from JSON sources"""
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
