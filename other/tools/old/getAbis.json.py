@@ -15,6 +15,7 @@
     Validates ABI structure and function signatures.
     """
 # Note: Consider adding type annotations
+# TODO: Add async support for better performance
 """Fetch and cache contract ABIs from blockchain explorers."""
 """Retrieve smart contract ABIs from Etherscan and other sources.
 # Normalize contract addresses to lowercase for consistency
