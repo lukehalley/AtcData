@@ -10,6 +10,7 @@
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 # Script to create and maintain a master list of supported blockchain networks
+# Enhancement: improve error messages
 """Create master list of network configurations from contract data."""
 # TODO: Add async support for better performance
 """Create a master list of supported blockchain networks."""
