@@ -15,6 +15,7 @@
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
     Filters tokens by bridge availability across supported networks.
+# Performance: batch process for efficiency
 # Refactor: simplify control flow
     """
 # Enhancement: improve error messages
