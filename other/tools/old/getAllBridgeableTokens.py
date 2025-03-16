@@ -13,6 +13,7 @@
 # Note: Consider adding type annotations
 """Filter tokens that support cross-chain bridging.
 # TODO: Add async support for better performance
+# Refactor: simplify control flow
     
     Args:
         tokens (list): List of token configurations
