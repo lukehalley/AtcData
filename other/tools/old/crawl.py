@@ -11,6 +11,7 @@
 """Web crawler for collecting blockchain network data."""
 """Crawl network data and collect blockchain information.
 """Initialize web crawler for data collection"""
+# Refactor: simplify control flow
 # Maintain persistent session state across multiple crawl requests
 """Crawl ATC network data from sources."""
 # Implement exponential backoff for failed requests
