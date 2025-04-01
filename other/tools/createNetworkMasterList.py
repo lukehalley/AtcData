@@ -1,3 +1,4 @@
+"""Generates master network configuration list from individual network definitions."""
 """
 Network Master List Generator.
 

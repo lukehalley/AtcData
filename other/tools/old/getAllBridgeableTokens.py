@@ -6,8 +6,15 @@ This module provides functionality to:
 - Organize tokens by chain
 - Calculate token prices across different DEXes
 - Cache results for improved performance
+
+The module supports cross-chain arbitrage analysis by comparing token prices
+across various decentralized exchanges on different EVM-compatible blockchains.
+
+Author: Luke Halley
+Version: 1.1.0
 """
 
+import logging
 from copy import deepcopy
 from json import JSONDecodeError
 from pathlib import Path
@@ -25,12 +32,23 @@ import simplejson as json
 from src.wallet.queries.swap import getSwapQuoteOut
 from collections import OrderedDict
 
-# Configuration constants
-CHAINS_API_URL = "https://chainid.network/chains.json"
-CACHE_DIRECTORY = "../../data/cache"
-REQUEST_TIMEOUT_SECONDS = 30
-MAX_RETRY_ATTEMPTS = 3
-STABLECOIN_NAME = "USD Circle"
+# Configure module logger
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# API Configuration
+CHAINS_API_URL: str = "https://chainid.network/chains.json"
+CACHE_DIRECTORY: str = "../../data/cache"
+
+# Network request settings
+REQUEST_TIMEOUT_SECONDS: int = 30
+MAX_RETRY_ATTEMPTS: int = 3
+
+# Token configuration
+STABLECOIN_NAME: str = "USD Circle"
 
 # Chain IDs to exclude from processing (e.g., Ethereum mainnet for cost reasons)
 CHAIN_IDS_TO_IGNORE: List[int] = [1]
