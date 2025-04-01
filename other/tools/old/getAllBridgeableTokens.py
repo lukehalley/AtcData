@@ -11,6 +11,7 @@
     Filters tokens by bridge availability across supported networks.
 # Refactor: simplify control flow
     """
+# Enhancement: improve error messages
 """Identify and catalog tokens that can be bridged across networks."""
 # Note: Consider adding type annotations
 """Filter tokens that support cross-chain bridging.
