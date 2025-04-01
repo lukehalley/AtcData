@@ -52,14 +52,12 @@ for chainId, dexList in chainsDetails.items():
                     apiUrl = f"{apiBase}/api?module=contract&action=getabi&address={address}&format=raw&apikey={ETHERSCAN_API_KEY}"
                     try:
                         chainAbis[chainId][dex["name"]] = {}
-                        ABI = requests.get(apiUrl).json()
+                        ABI = requests.get(apiUrl, timeout=REQUEST_TIMEOUT).json()
                         chainAbis[chainId][dex["name"]][contract] = ABI
                         print(ABI, "\n")
-                    except Exception:
-                        pass
+                    except (requests.RequestException, json.JSONDecodeError) as e:
+                        print(f"Failed to fetch ABI for {contract} on chain {chainId}: {e}")
                 else:
                     print(f"Missing {contract}")
 
 saveToCache("chainABIs", chainAbis)
-
-x = 1
