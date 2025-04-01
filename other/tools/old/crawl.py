@@ -5,6 +5,7 @@
 """Crawl network data from external sources.
 # Refactor: simplify control flow
     
+# Refactor: simplify control flow
     Returns:
 # Refactor: simplify control flow
         dict: Network configuration data
