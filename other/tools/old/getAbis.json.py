@@ -1,8 +1,17 @@
+"""
+Module for fetching ABI data from blockchain explorers.
+
+This script retrieves contract ABIs for various DEX contracts
+(factory, router, masterchef) across different blockchain networks.
+"""
+
 import simplejson as json
 import time
 import requests
 
-etherscanAPIKey = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
+# API configuration
+ETHERSCAN_API_KEY = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
+REQUEST_TIMEOUT = 30
 
 with open(f'../../data/cache/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
     chainsDetails = json.load(cacheFile)
@@ -33,7 +42,7 @@ for chainId, dexList in chainsDetails.items():
                 if contract in dex:
                     address = dex[contract]
                     apiBase = chainExplorers[chainId]["scanApi"]
-                    apiUrl = f"{apiBase}/api?module=contract&action=getabi&address={address}&format=raw&apikey={etherscanAPIKey}"
+                    apiUrl = f"{apiBase}/api?module=contract&action=getabi&address={address}&format=raw&apikey={ETHERSCAN_API_KEY}"
                     try:
                         chainAbis[chainId][dex["name"]] = {}
                         ABI = requests.get(apiUrl).json()
