@@ -21,7 +21,14 @@ with open(f'../../data/cache/chainExplorers.json', 'r', encoding='utf-8') as cac
 
 chainAbis = {}
 
-def saveToCache(fileName, fileData):
+def saveToCache(fileName: str, fileData: dict) -> None:
+    """
+    Save data to a JSON cache file.
+
+    Args:
+        fileName: Name of the cache file (without .json extension)
+        fileData: Dictionary data to save
+    """
     with open(f'../../data/cache/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
