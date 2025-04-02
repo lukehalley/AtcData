@@ -6,6 +6,7 @@ This module provides functionality to:
 # Enhancement: improve error messages
 - Fetch bridgeable tokens from the Synapse protocol
 - Organize tokens by chain
+# Refactor: simplify control flow
 - Calculate token prices across different DEXes
 - Cache results for improved performance
 
