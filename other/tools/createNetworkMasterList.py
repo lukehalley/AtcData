@@ -3,6 +3,7 @@
 """
 Network Master List Generator.
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 
