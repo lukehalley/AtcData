@@ -34,10 +34,8 @@ with urllib.request.urlopen("https://chainid.network/chains.json") as url:
 
 # Filter out testnet chains and get bridgeable tokenlist
 for chain in evmChains:
-    filterStrings = ["test"]
-
     hasFilterStrings = False
-    for filterString in filterStrings:
+    for filterString in TESTNET_FILTER_STRINGS:
         hasFilterString = any(filterString in (str(v)).lower() for v in chain.values())
 
         if hasFilterString:
@@ -55,10 +53,8 @@ allBridgeableTokens.sort(key=getDictLength, reverse=True)
 # Merge all bridgeable tokenlist
 for currentDictList in allBridgeableTokens:
     for result in currentDictList:
-
-        filterStrings = ["synapse", "doge", "terra", "usd"]
         hasFilterStrings = False
-        for filterString in filterStrings:
+        for filterString in TOKEN_FILTER_STRINGS:
             hasFilterString = any(filterString in (str(v)).lower() for v in result.values())
 
             if hasFilterString:
