@@ -12,6 +12,7 @@ This module retrieves token information from various blockchain networks,
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 filters out testnet chains, and calculates token prices across DEXes.
+# Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
