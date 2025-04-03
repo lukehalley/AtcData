@@ -1,6 +1,17 @@
+"""
+Module for fetching and processing bridgeable tokens across multiple blockchain networks.
+
+This module provides functionality to:
+- Fetch bridgeable tokens from the Synapse protocol
+- Organize tokens by chain
+- Calculate token prices across different DEXes
+- Cache results for improved performance
+"""
+
 from copy import deepcopy
 from json import JSONDecodeError
 from pathlib import Path
+from typing import Dict, List, Tuple, Any, Optional
 
 from dotenv import load_dotenv
 
@@ -8,10 +19,15 @@ load_dotenv()
 
 from src.apis import getBridgeableTokens
 from src.utils.general import getDictLength, getProjectRoot, printSeperator
-import urllib.request, os
+import urllib.request
+import os
 import simplejson as json
 from src.wallet.queries.swap import getSwapQuoteOut
 from collections import OrderedDict
+
+# Configuration constants
+CHAINS_API_URL = "https://chainid.network/chains.json"
+CACHE_DIRECTORY = "../../data/cache"
 
 root = getProjectRoot().parent
 
