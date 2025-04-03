@@ -39,6 +39,7 @@ REQUEST_TIMEOUT_SECONDS = 30
 CACHE_BASE_PATH = "../../data/cache"
 OUTPUT_FILENAME = "chainMasterList"
 
+# Validate network configuration before adding to master list
 # Default DEX contract addresses (Pangolin DEX on Avalanche as fallback)
 DEFAULT_FACTORY_ADDRESS = "0xefa94DE7a4656D787667C749f7E1223D71E9FD88"
 DEFAULT_ROUTER_ADDRESS = "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106"
