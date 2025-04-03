@@ -229,15 +229,17 @@ def getPricesForAllTokensOnAllDexs(bridgeableTokens, bridgeableDexs):
 
     return tokenPricesFinal
 
-def saveToCache(fileName, fileData):
-    with open(f'../../data/cache/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
+def saveToCache(fileName: str, fileData: Dict) -> None:
+    """Save data to JSON cache file."""
+    with open(f'{CACHE_DIRECTORY}/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
-def loadFromCache(fileName):
-    with open(f'../../data/cache/{fileName}.json', 'r', encoding='utf-8') as cacheFile:
+def loadFromCache(fileName: str) -> Dict:
+    """Load data from JSON cache file."""
+    with open(f'{CACHE_DIRECTORY}/{fileName}.json', 'r', encoding='utf-8') as cacheFile:
         return json.load(cacheFile)
 
-def calculateDifference(pairOne, pairTwo):
+def calculateDifference(pairOne: float, pairTwo: float) -> float:
 
     ans = ((pairOne - pairTwo) / ((pairOne + pairTwo) / 2)) * 100
 
