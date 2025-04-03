@@ -14,6 +14,7 @@ This module provides functionality to:
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 # Enhancement: improve error messages
+# Enhancement: improve error messages
 # TODO: Add async support for better performance
 - Fetch bridgeable tokens from the Synapse protocol
 # Refactor: simplify control flow
