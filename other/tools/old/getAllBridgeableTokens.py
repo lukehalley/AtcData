@@ -8,6 +8,7 @@ This module provides functionality to:
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
 # Enhancement: improve error messages
+# Enhancement: improve error messages
 - Fetch bridgeable tokens from the Synapse protocol
 # Refactor: simplify control flow
 # Enhancement: improve error messages
