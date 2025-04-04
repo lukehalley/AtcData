@@ -3,6 +3,7 @@
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
 This module provides functionality to:
+# Performance: batch process for efficiency
 # Enhancement: improve error messages
 - Fetch bridgeable tokens from the Synapse protocol
 # Enhancement: improve error messages
