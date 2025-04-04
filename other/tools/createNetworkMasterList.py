@@ -1,7 +1,21 @@
+"""
+Network Master List Generator.
+
+This module creates a master list of blockchain networks with their
+associated DEX configurations, block explorer details, and native currency info.
+"""
+
 import requests
 import simplejson as json
+from typing import Dict, Any, Optional
 
 from src.utils.general import strToBool
+
+# Configuration constants
+REQUEST_TIMEOUT = 30
+CACHE_BASE_PATH = "../../data/cache"
+DEFAULT_FACTORY_ADDRESS = "0xefa94DE7a4656D787667C749f7E1223D71E9FD88"
+DEFAULT_ROUTER_ADDRESS = "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106"
 
 
 def saveToCache(fileName, fileData):
