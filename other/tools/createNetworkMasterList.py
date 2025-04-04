@@ -18,11 +18,12 @@ DEFAULT_FACTORY_ADDRESS = "0xefa94DE7a4656D787667C749f7E1223D71E9FD88"
 DEFAULT_ROUTER_ADDRESS = "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106"
 
 
-def saveToCache(fileName, fileData):
-    with open(f'../../data/cache/done/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
+def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
+    """Save data to JSON cache file."""
+    with open(f'{CACHE_BASE_PATH}/done/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
-def getABIFromAPIUrl(masterChainList, chainId):
+def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str) -> Dict:
     apiBase = (masterChainList[chainId]["blockExplorer"]["url"]).split("//")[1]
     apiPrefix = masterChainList[chainId]["blockExplorer"]["apiPrefix"]
     if "{URL}" in apiPrefix:
