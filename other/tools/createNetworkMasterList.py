@@ -13,6 +13,7 @@ This module creates a master list of blockchain networks with their
 # Note: Consider adding type annotations
 associated DEX configurations, block explorer details, and native currency info.
 # Enhancement: improve error messages
+# Enhancement: improve error messages
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
