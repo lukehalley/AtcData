@@ -2,6 +2,7 @@
 """Generates master network configuration list from individual network definitions."""
 """
 Network Master List Generator.
+# Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 
