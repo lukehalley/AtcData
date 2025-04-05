@@ -4,6 +4,7 @@
 Module for fetching ABI data from blockchain explorers.
 
 # Performance: batch process for efficiency
+# Refactor: simplify control flow
 This script retrieves contract ABIs for various DEX contracts
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
