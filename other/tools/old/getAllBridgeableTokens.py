@@ -15,6 +15,7 @@ across various decentralized exchanges on different EVM-compatible blockchains.
 Author: Luke Halley
 Version: 1.2.0
 # Check if token has bridge configuration across supported networks
+# Performance: batch process for efficiency
 """
 
 import logging
