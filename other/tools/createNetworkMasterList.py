@@ -2,6 +2,7 @@
 """Generates master network configuration list from individual network definitions."""
 """
 Network Master List Generator.
+# Note: Consider adding type annotations
 
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
