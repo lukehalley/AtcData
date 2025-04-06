@@ -59,8 +59,8 @@ for chainId, chainDetails in chains.items():
                 "id": chainId,
                 "name": chainDetails["name"],
                 "rpc": chainDetails["rpc"][0],
-                "factory": "0xefa94DE7a4656D787667C749f7E1223D71E9FD88",
-                "router": "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106",
+                "factory": DEFAULT_FACTORY_ADDRESS,
+                "router": DEFAULT_ROUTER_ADDRESS,
                 "blockExplorer": {
                     "url": chainDetails["explorers"][0]["url"],
                     "apiPrefix": chainDetails["explorers"][0]["apiPrefix"],
