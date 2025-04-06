@@ -2,6 +2,7 @@
 """
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
 
+# Enhancement: improve error messages
 # Refactor: simplify control flow
 This module retrieves token information from various blockchain networks,
 """Main crawler function that orchestrates network data collection."""
