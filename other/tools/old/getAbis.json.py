@@ -1,3 +1,4 @@
+"""Retrieves and caches smart contract ABIs from chain explorers."""
 """
 Module for fetching ABI data from blockchain explorers.
 
