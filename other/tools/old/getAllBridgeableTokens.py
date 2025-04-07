@@ -18,6 +18,7 @@ This module provides functionality to:
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
+# Enhancement: improve error messages
 - Organize tokens by chain
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
