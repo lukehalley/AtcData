@@ -97,7 +97,17 @@ def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict
 
     return synapseAllBridgeabletokens, chainsDetails
 
-def getTokenByChain(allChainIds, chainsDetails):
+def getTokenByChain(allChainIds: List[int], chainsDetails: Dict) -> Dict:
+    """
+    Organize tokens by their chain ID.
+
+    Args:
+        allChainIds: List of chain IDs to process
+        chainsDetails: Dictionary containing chain information
+
+    Returns:
+        Dictionary mapping chain IDs to their token lists
+    """
     bridgeableTokensByChain = {}
     for chainId in allChainIds:
 
