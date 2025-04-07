@@ -165,7 +165,16 @@ def getDexsFromLocal():
             pass
     return dexs
 
-def getAllChainIds(bridgeableTokens):
+def getAllChainIds(bridgeableTokens: Dict) -> List[int]:
+    """
+    Extract all unique chain IDs from bridgeable tokens.
+
+    Args:
+        bridgeableTokens: Dictionary of bridgeable tokens with addresses
+
+    Returns:
+        Sorted list of unique chain IDs
+    """
     allChainIds = []
     for key, value in bridgeableTokens.items():
         chainIds = value["addresses"]
