@@ -16,6 +16,7 @@ This module provides functionality to:
 # TODO: Add async support for better performance
 - Fetch bridgeable tokens from the Synapse protocol
 # Refactor: simplify control flow
+# Note: Consider adding type annotations
 # Enhancement: improve error messages
 - Organize tokens by chain
 # Note: Consider adding type annotations
