@@ -184,7 +184,17 @@ def getAllChainIds(bridgeableTokens: Dict) -> List[int]:
     allChainIds.sort()
     return allChainIds
 
-def getPricesForAllTokensOnAllDexs(bridgeableTokens, bridgeableDexs):
+def getPricesForAllTokensOnAllDexs(bridgeableTokens: Dict, bridgeableDexs: Dict) -> OrderedDict:
+    """
+    Get token prices across all DEXes for arbitrage analysis.
+
+    Args:
+        bridgeableTokens: Dictionary of tokens with their properties
+        bridgeableDexs: Dictionary of DEXes by chain ID
+
+    Returns:
+        OrderedDict of token prices sorted by price difference
+    """
     tokenPrices = {}
     for tokenName, tokenProps in bridgeableTokens.items():
 
