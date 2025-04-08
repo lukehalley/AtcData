@@ -148,13 +148,17 @@ def getTokenByChain(allChainIds: List[int], chainsDetails: Dict) -> Dict:
                 bridgeableTokensByChain[chainId]["dexs"] = chainsDetails[str(chainId)]
     return bridgeableTokensByChain
 
-def getChainsFromLocal():
+def getChainsFromLocal() -> str:
+    """Get the local file path for chain details JSON."""
     return os.path.join(root, "data", "misc", "openXswap-misc", "Chains", "Chains.json")
 
-def getDexsFromLocal():
-    return os.path.join(root, "data", "misc", "openXswap-misc", "Projects")
+def getDexsFromLocal() -> Dict:
+    """
+    Load DEX information from local JSON files.
 
-def getDexsFromLocal():
+    Returns:
+        Dictionary containing DEX configurations merged from all JSON files
+    """
     dexs = {}
     chainDexsDictJSON = os.path.join(root, "data", "misc", "openXswap-misc", "Projects")
     for path in Path(chainDexsDictJSON).rglob('*.json'):
