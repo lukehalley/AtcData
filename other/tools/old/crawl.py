@@ -15,6 +15,7 @@ filters out testnet chains, and calculates token prices across DEXes.
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+# TODO: Add async support for better performance
 
 # Refactor: simplify control flow
 # Enhancement: improve error messages
