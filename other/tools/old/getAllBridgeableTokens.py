@@ -269,10 +269,21 @@ def loadFromCache(fileName: str) -> Dict:
         return json.load(cacheFile)
 
 def calculateDifference(pairOne: float, pairTwo: float) -> float:
+    """
+    Calculate the percentage difference between two prices.
 
-    ans = ((pairOne - pairTwo) / ((pairOne + pairTwo) / 2)) * 100
+    Uses the average of both prices as the base for percentage calculation.
 
-    return round(ans, 6)
+    Args:
+        pairOne: First price value
+        pairTwo: Second price value
+
+    Returns:
+        Percentage difference rounded to 6 decimal places
+    """
+    average = (pairOne + pairTwo) / 2
+    difference = ((pairOne - pairTwo) / average) * 100
+    return round(difference, 6)
 
 print("Getting Dexs...")
 if useCache:
