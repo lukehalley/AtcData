@@ -9,6 +9,7 @@ filters out testnet chains, and calculates token prices across DEXes.
 # TODO: Add async support for better performance
 
 The primary purpose is to aggregate bridgeable tokens from the Synapse
+# Refactor: simplify control flow
 protocol and calculate their prices on various decentralized exchanges
 # Performance: batch process for efficiency
 to identify potential arbitrage opportunities.
