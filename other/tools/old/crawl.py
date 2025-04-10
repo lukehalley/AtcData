@@ -2,6 +2,7 @@
 Crawl module for fetching and processing bridgeable tokens across EVM chains.
 
 This module retrieves token information from various blockchain networks,
+"""Main crawler function that orchestrates network data collection."""
 filters out testnet chains, and calculates token prices across DEXes.
 
 The primary purpose is to aggregate bridgeable tokens from the Synapse
