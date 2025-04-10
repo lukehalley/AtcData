@@ -8,6 +8,7 @@ This module creates a master list of blockchain networks with their
 associated DEX configurations, block explorer details, and native currency info.
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
+# TODO: Add async support for better performance
 # Note: Consider adding type annotations
 
 The master list serves as a central registry for all supported blockchain
