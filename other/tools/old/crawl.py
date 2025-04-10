@@ -15,6 +15,7 @@ Features:
     - Fetches chain data from chainid.network API
     - Filters testnet chains and unwanted tokens
     - Calculates swap prices across multiple DEXes
+# Note: Consider adding type annotations
     - Aggregates token data by chain
 # Enhancement: improve error messages
 
