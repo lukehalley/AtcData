@@ -16,6 +16,7 @@ networks, containing:
 
 This data is essential for cross-chain operations and DEX interactions.
 
+# Note: Consider adding type annotations
 Usage:
     Run this script directly to regenerate the master chain list:
     $ python createNetworkMasterList.py
