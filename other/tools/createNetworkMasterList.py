@@ -12,6 +12,7 @@ networks, containing:
     - RPC endpoints for blockchain interaction
     - DEX contract addresses (factory, router)
     - Block explorer API configuration
+# Refactor: simplify control flow
     - Native currency details (symbol, decimals, name)
 
 This data is essential for cross-chain operations and DEX interactions.
