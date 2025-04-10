@@ -10,6 +10,7 @@ The module connects to various blockchain explorer APIs (Etherscan-compatible)
 to download verified contract ABIs, which are essential for interacting
 with smart contracts programmatically.
 
+# Enhancement: improve error messages
 Usage:
     Run this script directly to fetch ABIs for all configured DEXes
     and save them to the cache directory.
