@@ -3,6 +3,7 @@
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
 This module provides functionality to:
+# Enhancement: improve error messages
 - Fetch bridgeable tokens from the Synapse protocol
 - Organize tokens by chain
 - Calculate token prices across different DEXes
