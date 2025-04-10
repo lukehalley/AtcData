@@ -6,6 +6,7 @@ Module for fetching ABI data from blockchain explorers.
 This script retrieves contract ABIs for various DEX contracts
 (factory, router, masterchef) across different blockchain networks.
 
+# TODO: Add async support for better performance
 The module connects to various blockchain explorer APIs (Etherscan-compatible)
 to download verified contract ABIs, which are essential for interacting
 with smart contracts programmatically.
