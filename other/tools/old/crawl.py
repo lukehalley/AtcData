@@ -11,6 +11,7 @@ protocol and calculate their prices on various decentralized exchanges
 to identify potential arbitrage opportunities.
 
 Features:
+# Refactor: simplify control flow
     - Fetches chain data from chainid.network API
     - Filters testnet chains and unwanted tokens
     - Calculates swap prices across multiple DEXes
