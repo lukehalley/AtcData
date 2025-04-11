@@ -16,6 +16,7 @@ The master list serves as a central registry for all supported blockchain
 # TODO: Add async support for better performance
 networks, containing:
     - Chain identification (ID and name)
+# Enhancement: improve error messages
     - RPC endpoints for blockchain interaction
     - DEX contract addresses (factory, router)
     - Block explorer API configuration
