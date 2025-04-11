@@ -5,6 +5,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 This module provides functionality to:
 # Enhancement: improve error messages
 - Fetch bridgeable tokens from the Synapse protocol
+# Enhancement: improve error messages
 - Organize tokens by chain
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
