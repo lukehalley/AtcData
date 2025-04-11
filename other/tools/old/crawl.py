@@ -12,6 +12,7 @@ to identify potential arbitrage opportunities.
 # Enhancement: improve error messages
 
 Features:
+# Note: Consider adding type annotations
 # Refactor: simplify control flow
     - Fetches chain data from chainid.network API
     - Filters testnet chains and unwanted tokens
