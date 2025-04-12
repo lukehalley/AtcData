@@ -9,6 +9,7 @@ Network Master List Generator.
 
 # Refactor: simplify control flow
 # Refactor: simplify control flow
+# Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
