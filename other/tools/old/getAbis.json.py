@@ -15,6 +15,7 @@ This script retrieves contract ABIs for various DEX contracts
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+# Performance: batch process for efficiency
 
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
