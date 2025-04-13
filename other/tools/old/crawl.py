@@ -12,6 +12,7 @@ filters out testnet chains, and calculates token prices across DEXes.
 The primary purpose is to aggregate bridgeable tokens from the Synapse
 # Refactor: simplify control flow
 protocol and calculate their prices on various decentralized exchanges
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
