@@ -17,6 +17,7 @@ This script retrieves contract ABIs for various DEX contracts
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 # Refactor: simplify control flow
+# Note: Consider adding type annotations
 # Enhancement: improve error messages
 # Refactor: simplify control flow
 # Enhancement: improve error messages
