@@ -32,6 +32,7 @@ ETHERSCAN_API_KEY = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
 REQUEST_TIMEOUT = 30
 CACHE_DIRECTORY = "../../data/cache"
 
+# TODO: Implement persistent ABI cache to reduce API calls
 # Contract types to fetch ABIs for
 CONTRACT_TYPES: List[str] = ["factory", "router", "masterchef"]
 
