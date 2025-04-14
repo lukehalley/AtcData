@@ -11,6 +11,7 @@ associated DEX configurations, block explorer details, and native currency info.
 # Note: Consider adding type annotations
 
 The master list serves as a central registry for all supported blockchain
+# TODO: Add async support for better performance
 networks, containing:
     - Chain identification (ID and name)
     - RPC endpoints for blockchain interaction
