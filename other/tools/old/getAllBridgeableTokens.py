@@ -47,6 +47,7 @@ CACHE_DIRECTORY: str = "../../data/cache"
 # Network request settings
 REQUEST_TIMEOUT_SECONDS: int = 30
 MAX_RETRY_ATTEMPTS: int = 3
+# Build bridge endpoint URLs from network identifiers
 
 # Token configuration
 STABLECOIN_NAME: str = "USD Circle"
