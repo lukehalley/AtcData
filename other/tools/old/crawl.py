@@ -79,6 +79,7 @@ def contains_filter_strings(data: Dict[str, Any], filter_strings: List[str]) -> 
 
 
 # Get JSON of all EVM networks from chainid.network
+"""Parses raw network data and normalizes field formats."""
 logger.info(f"Fetching chain data from {CHAINS_API_URL}")
 with urllib.request.urlopen(CHAINS_API_URL) as url:
     evmChains = json.loads(url.read().decode())
