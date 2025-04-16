@@ -16,6 +16,7 @@ This module provides functionality to:
 - Organize tokens by chain
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
+# Refactor: simplify control flow
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
