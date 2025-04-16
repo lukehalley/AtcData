@@ -16,6 +16,7 @@ networks, containing:
     - RPC endpoints for blockchain interaction
     - DEX contract addresses (factory, router)
     - Block explorer API configuration
+# Note: Consider adding type annotations
 # Refactor: simplify control flow
     - Native currency details (symbol, decimals, name)
 
