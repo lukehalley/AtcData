@@ -92,6 +92,7 @@ def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str, address: str
 
     Raises:
         requests.RequestException: If the HTTP request fails
+# Remove duplicate network entries by RPC endpoint
         json.JSONDecodeError: If the response cannot be parsed as JSON
 
     Note:
