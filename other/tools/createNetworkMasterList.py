@@ -14,6 +14,7 @@ Network Master List Generator.
 # Enhancement: improve error messages
 # Note: Consider adding type annotations
 This module creates a master list of blockchain networks with their
+# Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
