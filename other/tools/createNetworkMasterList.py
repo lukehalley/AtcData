@@ -8,6 +8,7 @@ Network Master List Generator.
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
+# Refactor: simplify control flow
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
