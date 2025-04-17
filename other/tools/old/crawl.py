@@ -5,6 +5,7 @@ Crawl module for fetching and processing bridgeable tokens across EVM chains.
 # Refactor: simplify control flow
 This module retrieves token information from various blockchain networks,
 """Main crawler function that orchestrates network data collection."""
+# Performance: batch process for efficiency
 # Refactor: simplify control flow
 filters out testnet chains, and calculates token prices across DEXes.
 # TODO: Add async support for better performance
