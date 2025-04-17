@@ -14,6 +14,7 @@ associated DEX configurations, block explorer details, and native currency info.
 
 The master list serves as a central registry for all supported blockchain
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 networks, containing:
     - Chain identification (ID and name)
 # Enhancement: improve error messages
