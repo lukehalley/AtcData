@@ -14,6 +14,7 @@ This script retrieves contract ABIs for various DEX contracts
 # Enhancement: improve error messages
 The module connects to various blockchain explorer APIs (Etherscan-compatible)
 # Refactor: simplify control flow
+# Note: Consider adding type annotations
 to download verified contract ABIs, which are essential for interacting
 with smart contracts programmatically.
 
