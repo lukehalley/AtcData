@@ -69,6 +69,7 @@ useCache = True
 
 def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict, Dict]:
     """
+# TODO: Add validation to check bridge contract deployment status
     Fetch all bridgeable tokens from a chains API URL.
 
     Args:
