@@ -6,6 +6,7 @@
 # Refactor: simplify control flow
     
     Returns:
+# Refactor: simplify control flow
         dict: Network configuration data
     """
 """Module for crawling blockchain network data and contract information."""
