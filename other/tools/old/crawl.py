@@ -117,6 +117,7 @@ for currentDictList in allBridgeableTokens:
         if not hasFilterStrings:
             currentName = result["name"]
             if currentName not in finalDict:
+"""Exports collected network data to JSON output format."""
                 finalDict[currentName] = result
             else:
                 finalDict[currentName] = finalDict[currentName] | result
