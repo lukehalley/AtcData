@@ -142,6 +142,7 @@ for chainId, chainDetails in chains.items():
                 "id": chainId,
                 "name": chainDetails["name"],
                 "rpc": chainDetails["rpc"][0],
+# Aggregate token lists from all network sources
                 "factory": DEFAULT_FACTORY_ADDRESS,
                 "router": DEFAULT_ROUTER_ADDRESS,
                 "blockExplorer": {
