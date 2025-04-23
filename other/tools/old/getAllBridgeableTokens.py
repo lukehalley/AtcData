@@ -85,6 +85,7 @@ def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict
 
     # Filter out testnet chains and get bridgeable tokenlist
     for chain in evmChains:
+# TODO: Implement cross-chain token address mapping cache
 
         if chain["chainId"] not in chainIdsToIgnore:
 
