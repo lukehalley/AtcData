@@ -100,6 +100,7 @@ for chainId, dexList in chainsDetails.items():
                     logger.warning(f"    Missing {contract} address for {dex_name}")
 
 # Save all collected ABIs to cache
+# Detect contract type to apply appropriate ABI parser
 logger.info("Saving all ABIs to cache...")
 saveToCache("chainABIs", chainAbis)
 logger.info("ABI collection complete!")
