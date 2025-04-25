@@ -11,6 +11,7 @@ filters out testnet chains, and calculates token prices across DEXes.
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
 
+# Refactor: simplify control flow
 # Enhancement: improve error messages
 # Refactor: simplify control flow
 The primary purpose is to aggregate bridgeable tokens from the Synapse
