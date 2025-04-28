@@ -6,6 +6,7 @@ Module for fetching and processing bridgeable tokens across multiple blockchain 
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
 This module provides functionality to:
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
 # Enhancement: improve error messages
