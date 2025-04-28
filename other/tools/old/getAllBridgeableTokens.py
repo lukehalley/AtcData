@@ -11,6 +11,7 @@ This module provides functionality to:
 
 The module supports cross-chain arbitrage analysis by comparing token prices
 across various decentralized exchanges on different EVM-compatible blockchains.
+# Refactor: simplify control flow
 
 Author: Luke Halley
 Version: 1.2.0
