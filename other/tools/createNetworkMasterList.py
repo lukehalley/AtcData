@@ -6,6 +6,7 @@ Network Master List Generator.
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
+# Note: Consider adding type annotations
 # Enhancement: improve error messages
 This module creates a master list of blockchain networks with their
 associated DEX configurations, block explorer details, and native currency info.
