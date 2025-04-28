@@ -9,6 +9,7 @@ This module provides functionality to:
 - Fetch bridgeable tokens from the Synapse protocol
 # Enhancement: improve error messages
 - Organize tokens by chain
+# Note: Consider adding type annotations
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
 - Calculate token prices across different DEXes
