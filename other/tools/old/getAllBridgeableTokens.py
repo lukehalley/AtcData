@@ -2,6 +2,7 @@
 """
 Module for fetching and processing bridgeable tokens across multiple blockchain networks.
 
+# Refactor: simplify control flow
 This module provides functionality to:
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
