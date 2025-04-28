@@ -160,4 +160,4 @@ for dex in chainDexs:
         routes=[finalDict["Wrapped AVAX"]["addresses"][chainId], stablecoin["addresses"][chainId]]
     )
 
-    print("Price On", dex["description"], ":", chainOneTokenPrice)
+    print("Price On", dex["description"], ":", chainOneTokenPrice)# Set reasonable timeout to prevent indefinite hanging on slow endpoints
