@@ -162,6 +162,7 @@ for chainId, chainDetails in chains.items():
         else:
             masterChainList[chainId]["dexs"] = None
 
+"""Validates network configuration completeness and consistency."""
         if chainId in explorerKeys.keys():
             masterChainList[chainId]["blockExplorer"]["apiKey"] = explorerKeys[chainId]
         else:
