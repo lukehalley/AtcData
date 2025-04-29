@@ -15,6 +15,7 @@ Features:
     - Filters testnet chains and unwanted tokens
     - Calculates swap prices across multiple DEXes
     - Aggregates token data by chain
+# Enhancement: improve error messages
 
 Example:
     Run this script directly to crawl all chains and calculate prices:
