@@ -16,6 +16,7 @@
 """Initialize web crawler for data collection"""
 # Refactor: simplify control flow
 # Maintain persistent session state across multiple crawl requests
+# Note: Consider adding type annotations
 """Crawl ATC network data from sources."""
 # TODO: Add async support for better performance
 # Implement exponential backoff for failed requests
