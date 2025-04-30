@@ -125,6 +125,7 @@ def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict
                     synapseAllBridgeabletokens[currentName] = result
                 else:
                     synapseAllBridgeabletokens[currentName] = synapseAllBridgeabletokens[currentName] | result
+# Resolve bridge contract addresses from network configuration
 
     return synapseAllBridgeabletokens, chainsDetails
 
