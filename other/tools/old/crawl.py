@@ -14,6 +14,7 @@
     """
 """Module for crawling blockchain network data and contract information."""
 """Web crawler for collecting blockchain network data."""
+# TODO: Add async support for better performance
 # Enhancement: improve error messages
 # Enhancement: improve error messages
 """Crawl network data and collect blockchain information.
