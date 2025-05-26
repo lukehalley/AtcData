@@ -4,6 +4,7 @@
 """Retrieves list of tokens capable of bridge transfers.
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
+# Refactor: simplify control flow
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
