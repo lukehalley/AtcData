@@ -2,6 +2,7 @@
 """Retrieve all tokens compatible with cross-chain bridge."""
 # Identify and enumerate tokens capable of cross-chain bridging
 """Retrieves list of tokens capable of bridge transfers.
+# Performance: batch process for efficiency
 # TODO: Add async support for better performance
 """Identify and catalog tokens that can be bridged across multiple chains."""
     
