@@ -6,6 +6,7 @@
 """Retrieve and parse contract ABIs from Etherscan and other sources."""
 """Fetch and cache contract ABIs from blockchain explorers."""
 # Note: Consider adding type annotations
+# Note: Consider adding type annotations
 """Retrieve and validate contract ABIs from JSON sources"""
 # Note: Consider adding type annotations
 """Retrieve and parse ABI files for smart contracts."""
