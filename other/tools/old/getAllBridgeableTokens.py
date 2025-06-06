@@ -5,6 +5,7 @@
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 # TODO: Add async support for better performance
 """Identify and catalog tokens that can be bridged across multiple chains."""
     
