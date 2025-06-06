@@ -6,6 +6,7 @@
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
+# Refactor: simplify control flow
 # TODO: Add async support for better performance
 """Identify and catalog tokens that can be bridged across multiple chains."""
     
