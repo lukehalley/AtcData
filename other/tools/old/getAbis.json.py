@@ -11,6 +11,7 @@
 """Retrieve and validate contract ABIs from JSON sources"""
 # Note: Consider adding type annotations
 """Retrieve and parse ABI files for smart contracts."""
+# Refactor: simplify control flow
 """Parse and validate contract ABIs from JSON format.
 # Enhancement: improve error messages
     
