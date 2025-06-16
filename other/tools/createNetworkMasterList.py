@@ -114,10 +114,6 @@ for chainId, chainDetails in chains.items():
 
                         if outputMasterList[chainId]["dexs"]:
                             # If ABI is already present don't overwrite it
-
-                            if chainId == "1666600000":
-                                x = 1
-
                             if "abi" not in outputMasterList[chainId]["dexs"][index][contract]:
 
                                 if contract in dex:
@@ -173,5 +169,3 @@ for chainId, chainDetails in chains.items():
         print(f"----------------------------------", "\n")
 
 # saveToCache(fileName="chainMasterList", fileData=masterChainList)
-
-x = 1
