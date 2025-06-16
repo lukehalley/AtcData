@@ -127,8 +127,8 @@ for chainId, chainDetails in chains.items():
                                                          chainId=chainId)
                                         dex[contract] = {"address": address, "abi": abi}
                                         print(f"   {contract} ✅")
-                                    except Exception:
-                                        print(f"   {contract} ⛔️")
+                                    except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+                                        print(f"   {contract} ⛔️ Error: {e}")
                                 else:
 
                                     print(f"Missing {contract} for {dex['name']}")
@@ -143,8 +143,8 @@ for chainId, chainDetails in chains.items():
                                                            chainId=chainId)
                                     dex[contract] = {"address": address, "abi": abi}
                                     print(f"   {contract} ✅")
-                                except Exception:
-                                    print(f"   {contract} ⛔️")
+                                except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+                                    print(f"   {contract} ⛔️ Error: {e}")
                             else:
                                 print(f"Missing {contract} for {dex['name']}")
 
@@ -157,8 +157,8 @@ for chainId, chainDetails in chains.items():
                                                        chainId=chainId)
                                 dex[contract] = {"address": address, "abi": abi}
                                 print(f"   {contract} ✅")
-                            except Exception:
-                                print(f"   {contract} ⛔️")
+                            except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+                                print(f"   {contract} ⛔️ Error: {e}")
                         else:
                             print(f"Missing {contract} for {dex['name']}")
 
