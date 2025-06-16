@@ -24,6 +24,16 @@ def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
 def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str) -> Dict:
+    """
+    Fetch contract ABI from blockchain explorer API.
+
+    Args:
+        masterChainList: Dictionary containing chain configurations
+        chainId: The chain ID to fetch ABI for
+
+    Returns:
+        Dictionary containing the contract ABI
+    """
     apiBase = (masterChainList[chainId]["blockExplorer"]["url"]).split("//")[1]
     apiPrefix = masterChainList[chainId]["blockExplorer"]["apiPrefix"]
     if "{URL}" in apiPrefix:

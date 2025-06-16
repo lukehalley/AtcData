@@ -107,7 +107,3 @@ for dex in chainDexs:
     )
 
     print("Price On", dex["description"], ":", chainOneTokenPrice)
-
-    x = 1
-
-u = 1
