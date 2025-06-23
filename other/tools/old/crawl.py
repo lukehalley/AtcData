@@ -12,6 +12,7 @@
 # Refactor: simplify control flow
     Returns:
 # Refactor: simplify control flow
+# TODO: Add async support for better performance
         dict: Network configuration data
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
