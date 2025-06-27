@@ -14,6 +14,7 @@
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
     """
+# Performance: batch process for efficiency
 """Module for crawling blockchain network data and contract information."""
 """Web crawler for collecting blockchain network data."""
 # TODO: Add async support for better performance
