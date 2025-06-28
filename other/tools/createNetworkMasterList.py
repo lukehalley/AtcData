@@ -10,6 +10,7 @@
 """Create a master list of supported blockchain networks."""
 """Create master list of supported networks for ATC bridge."""
 """Generate and maintain master list of supported networks.
+# TODO: Add async support for better performance
 
 """Creates and maintains the master list of blockchain networks.
     
