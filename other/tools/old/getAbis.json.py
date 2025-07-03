@@ -3,61 +3,100 @@ Module for fetching ABI data from blockchain explorers.
 
 This script retrieves contract ABIs for various DEX contracts
 (factory, router, masterchef) across different blockchain networks.
+
+The module connects to various blockchain explorer APIs (Etherscan-compatible)
+to download verified contract ABIs, which are essential for interacting
+with smart contracts programmatically.
+
+Usage:
+    Run this script directly to fetch ABIs for all configured DEXes
+    and save them to the cache directory.
 """
 
+import logging
 import simplejson as json
 import time
 import requests
+from typing import Dict, Any, Optional, List
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 # API configuration
 ETHERSCAN_API_KEY = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
 REQUEST_TIMEOUT = 30
+CACHE_DIRECTORY = "../../data/cache"
 
-with open(f'../../data/cache/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
+# Contract types to fetch ABIs for
+CONTRACT_TYPES: List[str] = ["factory", "router", "masterchef"]
+
+with open(f'{CACHE_DIRECTORY}/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
     chainsDetails = json.load(cacheFile)
 
-with open(f'../../data/cache/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
+with open(f'{CACHE_DIRECTORY}/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
     chainExplorers = json.load(cacheFile)
 
-chainAbis = {}
+chainAbis: Dict[str, Dict[str, Any]] = {}
 
-def saveToCache(fileName: str, fileData: dict) -> None:
+
+def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
     """
     Save data to a JSON cache file.
+
+    Writes the provided dictionary to a JSON file in the cache directory,
+    using pretty-printing with 4-space indentation for readability.
 
     Args:
         fileName: Name of the cache file (without .json extension)
         fileData: Dictionary data to save
+
+    Raises:
+        IOError: If the file cannot be written
     """
-    with open(f'../../data/cache/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
+    cache_path = f'{CACHE_DIRECTORY}/{fileName}.json'
+    logger.info(f"Saving data to cache: {cache_path}")
+    with open(cache_path, 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
+# Main execution: iterate through all chains and DEXes to fetch ABIs
 for chainId, dexList in chainsDetails.items():
 
+    # Only process chains that have explorer API configured
     if chainId in chainExplorers.keys():
 
         chainAbis[chainId] = {}
-
-        print(chainId)
+        logger.info(f"Processing chain: {chainId}")
 
         for dex in dexList:
+            dex_name = dex.get("name", "Unknown DEX")
+            logger.info(f"  Fetching ABIs for DEX: {dex_name}")
 
-            contractsToGet = ["factory", "router", "masterchef"]
-
-            for contract in contractsToGet:
+            # Iterate through each contract type (factory, router, masterchef)
+            for contract in CONTRACT_TYPES:
 
                 if contract in dex:
                     address = dex[contract]
                     apiBase = chainExplorers[chainId]["scanApi"]
                     apiUrl = f"{apiBase}/api?module=contract&action=getabi&address={address}&format=raw&apikey={ETHERSCAN_API_KEY}"
-                    try:
-                        chainAbis[chainId][dex["name"]] = {}
-                        ABI = requests.get(apiUrl, timeout=REQUEST_TIMEOUT).json()
-                        chainAbis[chainId][dex["name"]][contract] = ABI
-                        print(ABI, "\n")
-                    except (requests.RequestException, json.JSONDecodeError) as e:
-                        print(f"Failed to fetch ABI for {contract} on chain {chainId}: {e}")
-                else:
-                    print(f"Missing {contract}")
 
+                    try:
+                        chainAbis[chainId][dex_name] = {}
+                        ABI = requests.get(apiUrl, timeout=REQUEST_TIMEOUT).json()
+                        chainAbis[chainId][dex_name][contract] = ABI
+                        logger.info(f"    Successfully fetched {contract} ABI")
+                        logger.debug(f"    ABI: {ABI}")
+                    except requests.RequestException as e:
+                        logger.error(f"    Network error fetching {contract} ABI on chain {chainId}: {e}")
+                    except json.JSONDecodeError as e:
+                        logger.error(f"    JSON decode error for {contract} ABI on chain {chainId}: {e}")
+                else:
+                    logger.warning(f"    Missing {contract} address for {dex_name}")
+
+# Save all collected ABIs to cache
+logger.info("Saving all ABIs to cache...")
 saveToCache("chainABIs", chainAbis)
+logger.info("ABI collection complete!")
