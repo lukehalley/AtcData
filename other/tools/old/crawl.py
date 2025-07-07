@@ -3,11 +3,29 @@ Crawl module for fetching and processing bridgeable tokens across EVM chains.
 
 This module retrieves token information from various blockchain networks,
 filters out testnet chains, and calculates token prices across DEXes.
+
+The primary purpose is to aggregate bridgeable tokens from the Synapse
+protocol and calculate their prices on various decentralized exchanges
+to identify potential arbitrage opportunities.
+
+Features:
+    - Fetches chain data from chainid.network API
+    - Filters testnet chains and unwanted tokens
+    - Calculates swap prices across multiple DEXes
+    - Aggregates token data by chain
+
+Example:
+    Run this script directly to crawl all chains and calculate prices:
+    $ python crawl.py
 """
 
+import json
+import logging
+import os
+import urllib.request
 from json import JSONDecodeError
 from pathlib import Path
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 
 from dotenv import load_dotenv
 
@@ -16,24 +34,53 @@ load_dotenv()
 from src.utils.general import getDictLength, getProjectRoot
 from src.apis import getBridgeableTokens
 from src.wallet.queries.swap import getSwapQuoteOut
-import urllib.request
-import json
-import os
+
+# Configure logging for the crawl module
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 # Configuration constants
 CHAINS_API_URL = "https://chainid.network/chains.json"
+REQUEST_TIMEOUT_SECONDS = 30
 
-# Filter strings to exclude testnet chains
-TESTNET_FILTER_STRINGS = ["test"]
-TOKEN_FILTER_STRINGS = ["synapse", "doge", "terra", "usd"]
+# Filter strings to exclude testnet chains (case-insensitive matching)
+TESTNET_FILTER_STRINGS: List[str] = ["test"]
 
-finalDict = {}
-allBridgeableTokens = []
-filteredChains = []
+# Token name filter strings - tokens containing these will be excluded
+TOKEN_FILTER_STRINGS: List[str] = ["synapse", "doge", "terra", "usd"]
 
-# Get JSON of loads of networks
+finalDict: Dict[str, Any] = {}
+allBridgeableTokens: List[List[Dict]] = []
+filteredChains: List[Dict] = []
+
+
+def contains_filter_strings(data: Dict[str, Any], filter_strings: List[str]) -> bool:
+    """
+    Check if any value in a dictionary contains any of the filter strings.
+
+    Performs case-insensitive matching against all string values in the dict.
+
+    Args:
+        data: Dictionary to search through
+        filter_strings: List of strings to search for
+
+    Returns:
+        True if any filter string is found in any value, False otherwise
+    """
+    for filter_string in filter_strings:
+        if any(filter_string in str(v).lower() for v in data.values()):
+            return True
+    return False
+
+
+# Get JSON of all EVM networks from chainid.network
+logger.info(f"Fetching chain data from {CHAINS_API_URL}")
 with urllib.request.urlopen(CHAINS_API_URL) as url:
     evmChains = json.loads(url.read().decode())
+logger.info(f"Received data for {len(evmChains)} chains")
 
 # Filter out testnet chains and get bridgeable tokenlist
 for chain in evmChains:
