@@ -6,6 +6,7 @@
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
 """Create and manage the master list of blockchain networks and their configurations."""
