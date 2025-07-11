@@ -28,10 +28,19 @@ from collections import OrderedDict
 # Configuration constants
 CHAINS_API_URL = "https://chainid.network/chains.json"
 CACHE_DIRECTORY = "../../data/cache"
+REQUEST_TIMEOUT_SECONDS = 30
+MAX_RETRY_ATTEMPTS = 3
+STABLECOIN_NAME = "USD Circle"
+
+# Chain IDs to exclude from processing (e.g., Ethereum mainnet for cost reasons)
+CHAIN_IDS_TO_IGNORE: List[int] = [1]
+
+# Percentage calculation precision
+PERCENTAGE_DECIMAL_PLACES = 6
 
 root = getProjectRoot().parent
 
-chainIdsToIgnore = [1]
+chainIdsToIgnore = CHAIN_IDS_TO_IGNORE  # Legacy alias for backward compatibility
 
 synapseAllBridgeabletokens = {}
 chainsDetails = {}
@@ -276,18 +285,29 @@ def calculateDifference(pairOne: float, pairTwo: float) -> float:
     """
     Calculate the percentage difference between two prices.
 
-    Uses the average of both prices as the base for percentage calculation.
+    Uses the average of both prices as the base for percentage calculation,
+    which provides a symmetric measure of the price difference regardless
+    of which price is used as the reference point.
+
+    Formula: ((price1 - price2) / average) * 100
 
     Args:
-        pairOne: First price value
-        pairTwo: Second price value
+        pairOne: First price value (typically the higher price)
+        pairTwo: Second price value (typically the lower price)
 
     Returns:
-        Percentage difference rounded to 6 decimal places
+        Percentage difference rounded to configured decimal places
+
+    Example:
+        >>> calculateDifference(105.0, 95.0)
+        10.0  # 10% difference between 105 and 95
     """
+    if pairOne == pairTwo:
+        return 0.0
+
     average = (pairOne + pairTwo) / 2
     difference = ((pairOne - pairTwo) / average) * 100
-    return round(difference, 6)
+    return round(difference, PERCENTAGE_DECIMAL_PLACES)
 
 print("Getting Dexs...")
 if useCache:
@@ -323,8 +343,8 @@ print("Getting USDC Details...")
 if useCache:
     stablecoinDetails = loadFromCache(fileName="stablecoinDetails")
 else:
-    stablecoinName = "USD Circle"
-    stablecoinDetails = bridgeableTokens[stablecoinName]
+    # Use the configured stablecoin as the price reference
+    stablecoinDetails = bridgeableTokens[STABLECOIN_NAME]
     saveToCache(fileName="stablecoinDetails", fileData=stablecoinDetails)
 
 printSeperator(newLine=True)
