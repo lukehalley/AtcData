@@ -3,46 +3,115 @@ Network Master List Generator.
 
 This module creates a master list of blockchain networks with their
 associated DEX configurations, block explorer details, and native currency info.
+
+The master list serves as a central registry for all supported blockchain
+networks, containing:
+    - Chain identification (ID and name)
+    - RPC endpoints for blockchain interaction
+    - DEX contract addresses (factory, router)
+    - Block explorer API configuration
+    - Native currency details (symbol, decimals, name)
+
+This data is essential for cross-chain operations and DEX interactions.
+
+Usage:
+    Run this script directly to regenerate the master chain list:
+    $ python createNetworkMasterList.py
 """
 
+import logging
 import requests
 import simplejson as json
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 
 from src.utils.general import strToBool
 
-# Configuration constants
-REQUEST_TIMEOUT = 30
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# API and network configuration
+REQUEST_TIMEOUT_SECONDS = 30
 CACHE_BASE_PATH = "../../data/cache"
+OUTPUT_FILENAME = "chainMasterList"
+
+# Default DEX contract addresses (Pangolin DEX on Avalanche as fallback)
 DEFAULT_FACTORY_ADDRESS = "0xefa94DE7a4656D787667C749f7E1223D71E9FD88"
 DEFAULT_ROUTER_ADDRESS = "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106"
 
+# Contract types to fetch ABIs for
+CONTRACT_TYPES_TO_FETCH: List[str] = ["factory", "router"]
+
+# User agent for API requests (mimics browser to avoid rate limiting)
+DEFAULT_USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+
 
 def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
-    """Save data to JSON cache file."""
-    with open(f'{CACHE_BASE_PATH}/done/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
-        json.dump(fileData, cacheFile, indent=4, use_decimal=True)
+    """
+    Save dictionary data to a JSON cache file.
 
-def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str) -> Dict:
+    Writes the provided data to a JSON file in the cache directory
+    with pretty-printing for human readability.
+
+    Args:
+        fileName: Name of the cache file (without .json extension)
+        fileData: Dictionary data to be serialized and saved
+
+    Raises:
+        IOError: If the file cannot be written to disk
+        json.JSONEncodeError: If the data cannot be serialized
+    """
+    cache_file_path = f'{CACHE_BASE_PATH}/done/{fileName}.json'
+    logger.info(f"Saving cache to: {cache_file_path}")
+    with open(cache_file_path, 'w', encoding='utf-8') as cacheFile:
+        json.dump(fileData, cacheFile, indent=4, use_decimal=True)
+    logger.info(f"Successfully saved {len(fileData)} entries to cache")
+
+def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str, address: str, apiKey: str) -> Dict:
     """
     Fetch contract ABI from blockchain explorer API.
+
+    Constructs the appropriate API URL based on the chain's block explorer
+    configuration and retrieves the verified contract ABI. The ABI is
+    essential for programmatically interacting with smart contracts.
 
     Args:
         masterChainList: Dictionary containing chain configurations
         chainId: The chain ID to fetch ABI for
+        address: The smart contract address to fetch ABI for
+        apiKey: API key for the block explorer service
 
     Returns:
-        Dictionary containing the contract ABI
+        Dictionary containing the contract ABI as returned by the explorer
+
+    Raises:
+        requests.RequestException: If the HTTP request fails
+        json.JSONDecodeError: If the response cannot be parsed as JSON
+
+    Note:
+        Different block explorers may have different API URL formats.
+        The {URL} placeholder in apiPrefix is replaced with the base URL.
     """
+    # Extract base URL (domain) from the explorer URL
     apiBase = (masterChainList[chainId]["blockExplorer"]["url"]).split("//")[1]
     apiPrefix = masterChainList[chainId]["blockExplorer"]["apiPrefix"]
+
+    # Some explorers use a template pattern - replace placeholder if present
     if "{URL}" in apiPrefix:
         apiPrefix = apiPrefix.replace("{URL}", apiBase)
-    url = f"https://{apiPrefix}/apis?module=contract&action=getabi&address={address}&format=raw&apikey={apiKey}"
-    print(url)
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-    return requests.get(url, headers=headers, timeout=30).json()
+
+    # Construct the full API URL for the getabi endpoint
+    url = f"https://{apiPrefix}/api?module=contract&action=getabi&address={address}&format=raw&apikey={apiKey}"
+    logger.debug(f"Fetching ABI from: {url}")
+
+    # Use browser-like headers to avoid potential rate limiting
+    headers = {'User-Agent': DEFAULT_USER_AGENT}
+
+    response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT_SECONDS)
+    return response.json()
 
 with open(f'../../data/cache/done/chainMasterList.json', 'r', encoding='utf-8') as cacheFile:
     outputMasterList = json.load(cacheFile)
