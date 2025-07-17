@@ -106,27 +106,41 @@ def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict
 
     return synapseAllBridgeabletokens, chainsDetails
 
-def getTokenByChain(allChainIds: List[int], chainsDetails: Dict) -> Dict:
+def getTokenByChain(allChainIds: List[int], chainsDetails: Dict) -> Dict[int, Dict[str, Any]]:
     """
-    Organize tokens by their chain ID.
+    Organize tokens by their chain ID for easier chain-specific lookups.
+
+    This function restructures the global bridgeable tokens dictionary to be
+    indexed by chain ID rather than token name. For each chain, it extracts:
+    - The token's address on that specific chain
+    - The token's decimals on that chain
+    - Any wrapper addresses (for wrapped tokens)
+    - Sibling chains where the token is also available (for bridging)
 
     Args:
         allChainIds: List of chain IDs to process
-        chainsDetails: Dictionary containing chain information
+        chainsDetails: Dictionary containing chain information (RPC, name, etc.)
 
     Returns:
-        Dictionary mapping chain IDs to their token lists
+        Dictionary mapping chain IDs to objects containing:
+        - tokenlist: List of token details for that chain
+        - chain: Chain metadata from chainsDetails
+        - dexs: Available DEXes on that chain (if any)
+
+    Note:
+        Uses deepcopy to avoid mutating the original token data when
+        adding chain-specific fields like 'address' and 'siblingChains'.
     """
-    bridgeableTokensByChain = {}
+    bridgeableTokensByChain: Dict[int, Dict[str, Any]] = {}
+
     for chainId in allChainIds:
+        chainTokens: List[Dict[str, Any]] = []
 
-        chainTokens = []
-
-        if chainId not in bridgeableTokensByChain.keys():
+        # Initialize chain entry if not present
+        if chainId not in bridgeableTokensByChain:
             bridgeableTokensByChain[chainId] = {}
-        else:
-            x = 1
 
+        # Process each token to extract chain-specific information
         for key, value in synapseAllBridgeabletokens.items():
 
             details = deepcopy(value)
@@ -158,23 +172,43 @@ def getTokenByChain(allChainIds: List[int], chainsDetails: Dict) -> Dict:
     return bridgeableTokensByChain
 
 def getChainsFromLocal() -> str:
-    """Get the local file path for chain details JSON."""
+    """
+    Get the local file path for chain details JSON.
+
+    Returns:
+        Absolute path to the Chains.json file containing network metadata
+    """
     return os.path.join(root, "data", "misc", "openXswap-misc", "Chains", "Chains.json")
 
-def getDexsFromLocal() -> Dict:
+
+def getDexsFromLocal() -> Dict[str, List[Dict[str, Any]]]:
     """
     Load DEX information from local JSON files.
 
+    Scans the Projects directory recursively for all JSON files and merges
+    them into a single dictionary. Each JSON file typically contains DEX
+    configurations for one or more blockchain networks.
+
     Returns:
-        Dictionary containing DEX configurations merged from all JSON files
+        Dictionary mapping chain IDs to lists of DEX configurations.
+        Each DEX config includes router address, factory address, and name.
+
+    Note:
+        Invalid JSON files are silently skipped to allow partial data loading.
+        Uses Python 3.9+ dictionary merge operator (|) for combining data.
     """
-    dexs = {}
+    dexs: Dict[str, List[Dict[str, Any]]] = {}
     chainDexsDictJSON = os.path.join(root, "data", "misc", "openXswap-misc", "Projects")
+
+    # Recursively find all JSON files in the Projects directory
     for path in Path(chainDexsDictJSON).rglob('*.json'):
         try:
-            currentJSON = json.load(open(path, encoding='utf-8'))
+            with open(path, encoding='utf-8') as f:
+                currentJSON = json.load(f)
+            # Merge current file's data into the main dictionary
             dexs = dexs | currentJSON
         except JSONDecodeError:
+            # Skip invalid JSON files silently
             pass
     return dexs
 
