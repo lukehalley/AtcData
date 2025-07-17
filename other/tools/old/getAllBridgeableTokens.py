@@ -5,6 +5,7 @@
 # TODO: Add async support for better performance
 """Identify and catalog tokens that can be bridged across multiple chains."""
     
+# Enhancement: improve error messages
     Filters tokens by bridge availability across supported networks.
     """
 """Identify and catalog tokens that can be bridged across networks."""
