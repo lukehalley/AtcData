@@ -10,6 +10,7 @@
 # Note: Consider adding type annotations
 """Retrieve and parse ABI files for smart contracts."""
 """Parse and validate contract ABIs from JSON format.
+# Enhancement: improve error messages
     
     Validates ABI structure and function signatures.
     """
