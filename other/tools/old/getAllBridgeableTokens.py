@@ -212,37 +212,65 @@ def getDexsFromLocal() -> Dict[str, List[Dict[str, Any]]]:
             pass
     return dexs
 
-def getAllChainIds(bridgeableTokens: Dict) -> List[int]:
+def getAllChainIds(bridgeableTokens: Dict[str, Any]) -> List[int]:
     """
     Extract all unique chain IDs from bridgeable tokens.
 
+    Iterates through all tokens and collects the unique chain IDs where
+    each token has an address deployed. Chains in the ignore list are
+    excluded from the results.
+
     Args:
         bridgeableTokens: Dictionary of bridgeable tokens with addresses
+            keyed by token name
 
     Returns:
-        Sorted list of unique chain IDs
+        Sorted list of unique chain IDs (ascending order)
+
+    Example:
+        >>> tokens = {"USDC": {"addresses": {"1": "0x...", "137": "0x..."}}}
+        >>> getAllChainIds(tokens)
+        [137]  # Chain 1 (Ethereum) is in ignore list
     """
-    allChainIds = []
+    allChainIds: List[int] = []
     for key, value in bridgeableTokens.items():
         chainIds = value["addresses"]
         for chainId in chainIds:
-            if int(chainId) not in allChainIds and int(chainId) not in chainIdsToIgnore:
-                allChainIds.append(int(chainId))
+            chain_id_int = int(chainId)
+            # Skip chains in the ignore list and avoid duplicates
+            if chain_id_int not in allChainIds and chain_id_int not in chainIdsToIgnore:
+                allChainIds.append(chain_id_int)
     allChainIds.sort()
     return allChainIds
 
-def getPricesForAllTokensOnAllDexs(bridgeableTokens: Dict, bridgeableDexs: Dict) -> OrderedDict:
+
+def getPricesForAllTokensOnAllDexs(bridgeableTokens: Dict[str, Any], bridgeableDexs: Dict[str, List]) -> OrderedDict:
     """
     Get token prices across all DEXes for arbitrage analysis.
 
+    This is the core arbitrage detection function. It queries each DEX on each
+    chain to get the current swap price for each bridgeable token against a
+    stablecoin (USDC). The results are sorted by price difference to highlight
+    the best arbitrage opportunities.
+
     Args:
-        bridgeableTokens: Dictionary of tokens with their properties
-        bridgeableDexs: Dictionary of DEXes by chain ID
+        bridgeableTokens: Dictionary of tokens with their properties including
+            addresses and decimals per chain
+        bridgeableDexs: Dictionary mapping chain IDs to lists of DEX configurations
 
     Returns:
-        OrderedDict of token prices sorted by price difference
+        OrderedDict of token prices sorted by price difference (descending).
+        Each entry contains:
+        - prices: List of price objects from different DEXes
+        - recipe: Object with tokenOne (highest price), tokenTwo (lowest price),
+          and difference (percentage spread)
+
+    Note:
+        - Uses global stablecoinDetails for price denomination
+        - Swap failures are silently ignored to continue processing
+        - Zero prices are filtered out from the final results
     """
-    tokenPrices = {}
+    tokenPrices: Dict[str, Dict[str, Any]] = {}
     for tokenName, tokenProps in bridgeableTokens.items():
 
         tokenPrices[tokenProps['name']] = {}
