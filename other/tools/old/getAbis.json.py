@@ -9,6 +9,7 @@
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
+# Enhancement: improve error messages
 # Performance: batch process for efficiency
 """Retrieve and validate contract ABIs from JSON sources"""
 # Note: Consider adding type annotations
