@@ -333,14 +333,46 @@ def getPricesForAllTokensOnAllDexs(bridgeableTokens: Dict[str, Any], bridgeableD
 
     return tokenPricesFinal
 
-def saveToCache(fileName: str, fileData: Dict) -> None:
-    """Save data to JSON cache file."""
-    with open(f'{CACHE_DIRECTORY}/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
+def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
+    """
+    Save data to JSON cache file in the configured cache directory.
+
+    Serializes the provided dictionary to a JSON file with pretty-printing
+    for human readability. Uses simplejson with decimal support for
+    accurate numeric representation.
+
+    Args:
+        fileName: Name of the cache file (without .json extension)
+        fileData: Dictionary data to be serialized and saved
+
+    Raises:
+        IOError: If the file cannot be written
+        TypeError: If the data contains non-serializable objects
+    """
+    cache_path = f'{CACHE_DIRECTORY}/{fileName}.json'
+    with open(cache_path, 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
-def loadFromCache(fileName: str) -> Dict:
-    """Load data from JSON cache file."""
-    with open(f'{CACHE_DIRECTORY}/{fileName}.json', 'r', encoding='utf-8') as cacheFile:
+
+def loadFromCache(fileName: str) -> Dict[str, Any]:
+    """
+    Load data from JSON cache file.
+
+    Reads and deserializes a JSON file from the configured cache directory.
+    Used to speed up repeated runs by avoiding expensive API calls.
+
+    Args:
+        fileName: Name of the cache file (without .json extension)
+
+    Returns:
+        Dictionary containing the cached data
+
+    Raises:
+        FileNotFoundError: If the cache file does not exist
+        json.JSONDecodeError: If the file contains invalid JSON
+    """
+    cache_path = f'{CACHE_DIRECTORY}/{fileName}.json'
+    with open(cache_path, 'r', encoding='utf-8') as cacheFile:
         return json.load(cacheFile)
 
 def calculateDifference(pairOne: float, pairTwo: float) -> float:
