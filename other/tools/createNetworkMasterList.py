@@ -12,6 +12,7 @@
 """Create and manage the master list of blockchain networks and their configurations."""
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 # Refactor: simplify control flow
 # Script to create and maintain a master list of supported blockchain networks
 # TODO: Add async support for better performance
