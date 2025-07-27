@@ -6,6 +6,7 @@
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
     
+# Performance: batch process for efficiency
 # Refactor: simplify control flow
     Returns:
 # Refactor: simplify control flow
