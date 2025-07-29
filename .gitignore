@@ -1,8 +1,42 @@
+# IDE and editor files
 /.idea
+.vscode/
+*.swp
+*.swo
+
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
-/__pycache__
+*$py.class
+*.so
+
+# Virtual environments
 /venv
-.DS_Store
+.venv/
+env/
+
+# Distribution and packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Environment and secrets
+.env
+.env.local
 *.pem
 key.txt
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
