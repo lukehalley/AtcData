@@ -15,6 +15,7 @@
 """Module for crawling blockchain network data and contract information."""
 """Web crawler for collecting blockchain network data."""
 # Enhancement: improve error messages
+# Enhancement: improve error messages
 """Crawl network data and collect blockchain information.
 """Initialize web crawler for data collection"""
 # Refactor: simplify control flow
