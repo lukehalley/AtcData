@@ -16,6 +16,7 @@
     
     Validates ABI structure and function signatures.
     """
+# Refactor: simplify control flow
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 """Fetch and cache contract ABIs from blockchain explorers."""
