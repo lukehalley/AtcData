@@ -20,6 +20,9 @@ import urllib.request
 import json
 import os
 
+# Configuration constants
+CHAINS_API_URL = "https://chainid.network/chains.json"
+
 # Filter strings to exclude testnet chains
 TESTNET_FILTER_STRINGS = ["test"]
 TOKEN_FILTER_STRINGS = ["synapse", "doge", "terra", "usd"]
@@ -29,7 +32,7 @@ allBridgeableTokens = []
 filteredChains = []
 
 # Get JSON of loads of networks
-with urllib.request.urlopen("https://chainid.network/chains.json") as url:
+with urllib.request.urlopen(CHAINS_API_URL) as url:
     evmChains = json.loads(url.read().decode())
 
 # Filter out testnet chains and get bridgeable tokenlist

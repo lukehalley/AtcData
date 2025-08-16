@@ -1,23 +1,53 @@
+"""
+Network Master List Generator (Legacy Version).
+
+This module creates a master list of blockchain networks with their
+associated DEX configurations, block explorer details, and native currency info.
+"""
+
 import requests
 import simplejson as json
+from typing import Dict, Any
 
 from src.utils.general import strToBool
 
+# Configuration constants
+REQUEST_TIMEOUT = 30
+CACHE_BASE_PATH = "../../data/cache"
+DEFAULT_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
 
-def saveToCache(fileName, fileData):
-    with open(f'../../data/cache/done/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
+
+def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
+    """
+    Save data to a JSON cache file.
+
+    Args:
+        fileName: Name of the cache file (without extension)
+        fileData: Dictionary data to save
+    """
+    with open(f'{CACHE_BASE_PATH}/done/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
-def getABIFromAPIUrl(masterChainList, chainId):
+
+def getABIFromAPIUrl(masterChainList: Dict[str, Any], chainId: str) -> Dict:
+    """
+    Fetch contract ABI from blockchain explorer API.
+
+    Args:
+        masterChainList: Dictionary containing chain configurations
+        chainId: The chain ID to fetch ABI for
+
+    Returns:
+        Dictionary containing the contract ABI
+    """
     apiBase = (masterChainList[chainId]["blockExplorer"]["url"]).split("//")[1]
     apiPrefix = masterChainList[chainId]["blockExplorer"]["apiPrefix"]
     if "{URL}" in apiPrefix:
         apiPrefix = apiPrefix.replace("{URL}", apiBase)
     url = f"https://{apiPrefix}/apis?module=contract&action=getabi&address={address}&format=raw&apikey={apiKey}"
     print(url)
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-    return requests.get(url, headers=headers).json()
+    headers = {'User-Agent': DEFAULT_USER_AGENT}
+    return requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT).json()
 
 with open(f'../../data/cache/done/chainMasterList.json', 'r', encoding='utf-8') as cacheFile:
     outputMasterList = json.load(cacheFile)
