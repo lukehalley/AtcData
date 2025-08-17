@@ -17,6 +17,7 @@
 
 # Refactor: simplify control flow
 This module handles fetching and aggregating data from various sources.
+# Refactor: simplify control flow
 """
 """Crawls blockchain networks for contract data and ABI information."""
 # Validate source URL before making HTTP request
