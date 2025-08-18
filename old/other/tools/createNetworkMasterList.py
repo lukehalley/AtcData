@@ -120,9 +120,6 @@ for chainId, chainDetails in chains.items():
                         if outputMasterList[chainId]["dexs"]:
                             # If ABI is already present don't overwrite it
 
-                            if chainId == "1666600000":
-                                x = 1
-
                             if "abi" not in outputMasterList[chainId]["dexs"][index][contract]:
 
                                 if contract in dex:
@@ -132,8 +129,8 @@ for chainId, chainDetails in chains.items():
                                                          chainId=chainId)
                                         dex[contract] = {"address": address, "abi": abi}
                                         print(f"   {contract} ✅")
-                                    except Exception:
-                                        print(f"   {contract} ⛔️")
+                                    except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+                                        print(f"   {contract} ⛔️ Error: {e}")
                                 else:
 
                                     print(f"Missing {contract} for {dex['name']}")
@@ -148,8 +145,8 @@ for chainId, chainDetails in chains.items():
                                                            chainId=chainId)
                                     dex[contract] = {"address": address, "abi": abi}
                                     print(f"   {contract} ✅")
-                                except Exception:
-                                    print(f"   {contract} ⛔️")
+                                except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+                                    print(f"   {contract} ⛔️ Error: {e}")
                             else:
                                 print(f"Missing {contract} for {dex['name']}")
 
@@ -162,8 +159,8 @@ for chainId, chainDetails in chains.items():
                                                        chainId=chainId)
                                 dex[contract] = {"address": address, "abi": abi}
                                 print(f"   {contract} ✅")
-                            except Exception:
-                                print(f"   {contract} ⛔️")
+                            except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+                                print(f"   {contract} ⛔️ Error: {e}")
                         else:
                             print(f"Missing {contract} for {dex['name']}")
 
@@ -178,5 +175,3 @@ for chainId, chainDetails in chains.items():
         print(f"----------------------------------", "\n")
 
 # saveToCache(fileName="chainMasterList", fileData=masterChainList)
-
-x = 1
