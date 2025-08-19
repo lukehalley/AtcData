@@ -37,7 +37,16 @@ chainsDetails = {}
 
 useCache = True
 
-def getAllBridgeableTokensFromURL(chainsURL="https://chainid.network/chains.json"):
+def getAllBridgeableTokensFromURL(chainsURL: str = CHAINS_API_URL) -> Tuple[Dict, Dict]:
+    """
+    Fetch all bridgeable tokens from a chains API URL.
+
+    Args:
+        chainsURL: URL to fetch chain information from
+
+    Returns:
+        Tuple containing bridgeable tokens dict and chain details dict
+    """
     bridgeableTokens = []
 
     with urllib.request.urlopen(chainsURL) as url:
@@ -46,7 +55,7 @@ def getAllBridgeableTokensFromURL(chainsURL="https://chainid.network/chains.json
     # Filter out testnet chains and get bridgeable tokenlist
     for chain in evmChains:
 
-        if chain["chainId"] not in chainIdsToIgnore:
+        if chain["chainId"] not in CHAIN_IDS_TO_IGNORE:
 
             filterStrings = ["test"]
 
