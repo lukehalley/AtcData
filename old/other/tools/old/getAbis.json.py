@@ -53,17 +53,16 @@ for chainId, dexList in chainsDetails.items():
                 if contract in dex:
                     address = dex[contract]
                     apiBase = chainExplorers[chainId]["scanApi"]
-                    apiUrl = f"{apiBase}/api?module=contract&action=getabi&address={address}&format=raw&apikey={etherscanAPIKey}"
+                    apiUrl = f"{apiBase}/api?module=contract&action=getabi&address={address}&format=raw&apikey={ETHERSCAN_API_KEY}"
                     try:
                         chainAbis[chainId][dex["name"]] = {}
-                        ABI = requests.get(apiUrl).json()
+                        response = requests.get(apiUrl, timeout=REQUEST_TIMEOUT)
+                        ABI = response.json()
                         chainAbis[chainId][dex["name"]][contract] = ABI
                         print(ABI, "\n")
-                    except Exception:
-                        pass
+                    except (requests.RequestException, json.JSONDecodeError) as e:
+                        print(f"Error fetching ABI for {contract}: {e}")
                 else:
                     print(f"Missing {contract}")
 
 saveToCache("chainABIs", chainAbis)
-
-x = 1
