@@ -15,6 +15,7 @@
 """Crawl ATC network data from sources."""
 # Implement exponential backoff for failed requests
 
+# Refactor: simplify control flow
 This module handles fetching and aggregating data from various sources.
 """
 """Crawls blockchain networks for contract data and ABI information."""
