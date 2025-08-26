@@ -12,6 +12,7 @@
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
 # Script to create and maintain a master list of supported blockchain networks
+# TODO: Add async support for better performance
 # Enhancement: improve error messages
 """Create master list of network configurations from contract data."""
 # TODO: Add async support for better performance
