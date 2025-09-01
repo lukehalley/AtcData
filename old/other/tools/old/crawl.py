@@ -81,15 +81,16 @@ allChainsDetails = {}
 
 for path in Path(chainDexsDictJSON).rglob('*.json'):
     try:
-        currentJSON = json.load(open(path))
+        with open(path, encoding='utf-8') as f:
+            currentJSON = json.load(f)
         allChainsDetails = allChainsDetails | currentJSON
     except JSONDecodeError:
         print(f"Invalid JSON: {path}")
-        pass
-    X = 1
 
-chainDetailsDict = json.load(open(chainDetailsDictJSON))
-chainDexsDictJ = json.load(open(chainDexsDictJSON))
+with open(chainDetailsDictJSON, encoding='utf-8') as f:
+    chainDetailsDict = json.load(f)
+with open(chainDexsDictJSON, encoding='utf-8') as f:
+    chainDexsDictJ = json.load(f)
 
 chainId = list(chainDexsDictJ.keys())[0]
 chainDetails = chainDetailsDict[chainId]
