@@ -8,6 +8,7 @@ and calculate token prices across different decentralized exchanges.
 
 from json import JSONDecodeError
 from pathlib import Path
+from typing import Dict, List, Any
 
 from dotenv import load_dotenv
 
@@ -21,13 +22,13 @@ import json
 import os
 
 # Configuration constants
-CHAINS_API_URL = "https://chainid.network/chains.json"
-TESTNET_FILTER_STRINGS = ["test"]
-TOKEN_FILTER_STRINGS = ["synapse", "doge", "terra", "usd"]
+CHAINS_API_URL: str = "https://chainid.network/chains.json"
+TESTNET_FILTER_STRINGS: List[str] = ["test"]
+TOKEN_FILTER_STRINGS: List[str] = ["synapse", "doge", "terra", "usd"]
 
-finalDict = {}
-allBridgeableTokens = []
-filteredChains = []
+finalDict: Dict[str, Any] = {}
+allBridgeableTokens: List[Any] = []
+filteredChains: List[Any] = []
 
 # Get JSON of loads of networks
 with urllib.request.urlopen(CHAINS_API_URL) as url:
