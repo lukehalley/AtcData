@@ -1,3 +1,11 @@
+"""
+Crawl module for blockchain token data.
+
+This module provides functionality to fetch and process bridgeable tokens
+from various EVM-compatible blockchain networks, filter out testnet chains,
+and calculate token prices across different decentralized exchanges.
+"""
+
 from json import JSONDecodeError
 from pathlib import Path
 
@@ -8,7 +16,9 @@ load_dotenv()
 from src.utils.general import getDictLength, getProjectRoot
 from src.apis import getBridgeableTokens
 from src.wallet.queries.swap import getSwapQuoteOut
-import urllib.request, json, os
+import urllib.request
+import json
+import os
 
 finalDict = {}
 allBridgeableTokens = []
