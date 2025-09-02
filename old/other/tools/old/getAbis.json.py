@@ -1,19 +1,39 @@
+"""
+ABI Fetcher Module.
+
+This module retrieves contract ABIs from blockchain explorer APIs
+for various DEX contracts (factory, router, masterchef) across
+multiple blockchain networks.
+"""
+
 import simplejson as json
 import time
 import requests
+from typing import Dict, Any
 
-etherscanAPIKey = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
+# Configuration constants
+ETHERSCAN_API_KEY: str = "P9V56281GVUXJB7V7D5TQPI6HF9TPNGUJ6"
+REQUEST_TIMEOUT: int = 30
+CACHE_BASE_PATH: str = "../../data/cache"
 
-with open(f'../../data/cache/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
-    chainsDetails = json.load(cacheFile)
+with open(f'{CACHE_BASE_PATH}/bridgeableDexs.json', 'r', encoding='utf-8') as cacheFile:
+    chainsDetails: Dict[str, Any] = json.load(cacheFile)
 
-with open(f'../../data/cache/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
-    chainExplorers = json.load(cacheFile)
+with open(f'{CACHE_BASE_PATH}/chainExplorers.json', 'r', encoding='utf-8') as cacheFile:
+    chainExplorers: Dict[str, Any] = json.load(cacheFile)
 
-chainAbis = {}
+chainAbis: Dict[str, Dict] = {}
 
-def saveToCache(fileName, fileData):
-    with open(f'../../data/cache/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
+
+def saveToCache(fileName: str, fileData: Dict[str, Any]) -> None:
+    """
+    Save data to a JSON cache file.
+
+    Args:
+        fileName: Name of the cache file (without extension)
+        fileData: Dictionary data to serialize and save
+    """
+    with open(f'{CACHE_BASE_PATH}/{fileName}.json', 'w', encoding='utf-8') as cacheFile:
         json.dump(fileData, cacheFile, indent=4, use_decimal=True)
 
 for chainId, dexList in chainsDetails.items():
