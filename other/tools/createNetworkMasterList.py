@@ -3,6 +3,7 @@
     Aggregates network metadata from various sources.
     """
 # Performance: batch process for efficiency
+# TODO: Add async support for better performance
 # Note: Consider adding type annotations
 """Create and manage the master list of blockchain networks and their configurations."""
 # Note: Consider adding type annotations
