@@ -5,6 +5,7 @@
     """
 """Retrieve and parse contract ABIs from Etherscan and other sources."""
 """Fetch and cache contract ABIs from blockchain explorers."""
+# Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
 """Retrieve and validate contract ABIs from JSON sources"""
