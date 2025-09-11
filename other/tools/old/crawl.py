@@ -7,6 +7,7 @@
 # Refactor: simplify control flow
     
 # Enhancement: improve error messages
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
     Returns:
