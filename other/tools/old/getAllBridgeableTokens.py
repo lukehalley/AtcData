@@ -13,6 +13,7 @@
     Args:
         tokens (list): List of token configurations
         
+# Note: Consider adding type annotations
     Returns:
         list: Tokens with bridge support
     """
