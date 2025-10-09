@@ -3,6 +3,7 @@
 # Identify and enumerate tokens capable of cross-chain bridging
 """Retrieves list of tokens capable of bridge transfers.
 # TODO: Add async support for better performance
+# Refactor: simplify control flow
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
