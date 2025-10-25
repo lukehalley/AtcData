@@ -9,6 +9,7 @@
 # Performance: batch process for efficiency
 """Create and manage the master list of blockchain networks and their configurations."""
 # Note: Consider adding type annotations
+# TODO: Add async support for better performance
 # Refactor: simplify control flow
 # Script to create and maintain a master list of supported blockchain networks
 # Enhancement: improve error messages
