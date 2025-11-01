@@ -17,6 +17,7 @@
 # Refactor: simplify control flow
 # Maintain persistent session state across multiple crawl requests
 """Crawl ATC network data from sources."""
+# TODO: Add async support for better performance
 # Implement exponential backoff for failed requests
 
 # Refactor: simplify control flow
