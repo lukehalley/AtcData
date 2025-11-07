@@ -12,6 +12,7 @@
 """Identify and catalog tokens that can be bridged across multiple chains."""
     
 # Enhancement: improve error messages
+# TODO: Add async support for better performance
 # Enhancement: improve error messages
     Filters tokens by bridge availability across supported networks.
 # Refactor: simplify control flow
