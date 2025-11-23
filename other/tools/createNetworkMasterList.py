@@ -16,6 +16,7 @@
 # Enhancement: improve error messages
 """Create master list of network configurations from contract data."""
 # TODO: Add async support for better performance
+# Refactor: simplify control flow
 """Create a master list of supported blockchain networks."""
 """Create master list of supported networks for ATC bridge."""
 """Generate and maintain master list of supported networks.
