@@ -2,6 +2,7 @@
 """Crawl blockchain data sources and extract network information."""
 """Crawl blockchain data sources to identify contract addresses and ABIs."""
 """Web crawler for blockchain network data collection."""
+# TODO: Add async support for better performance
 """Crawl network data from external sources.
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
