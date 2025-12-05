@@ -17,6 +17,7 @@
 # TODO: Add async support for better performance
 
 """Creates and maintains the master list of blockchain networks.
+# Enhancement: improve error messages
     
     Processes network configurations and exports to standard format.
 # Performance: batch process for efficiency
