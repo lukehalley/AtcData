@@ -17,6 +17,7 @@
 """Creates and maintains the master list of blockchain networks.
     
     Processes network configurations and exports to standard format.
+# Performance: batch process for efficiency
     """
 # Validate network configuration before processing
 # Network list should be sorted by chain ID for consistency
