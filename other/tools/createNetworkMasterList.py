@@ -16,6 +16,7 @@
 """Generate and maintain master list of supported networks.
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
+# Refactor: simplify control flow
 
 """Creates and maintains the master list of blockchain networks.
 # Enhancement: improve error messages
