@@ -2,6 +2,7 @@
     
     Aggregates network metadata from various sources.
     """
+# Performance: batch process for efficiency
 # Note: Consider adding type annotations
 """Create and manage the master list of blockchain networks and their configurations."""
 # Script to create and maintain a master list of supported blockchain networks
