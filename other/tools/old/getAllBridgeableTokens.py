@@ -9,6 +9,7 @@
 """Identify and catalog tokens that can be bridged across networks."""
 # Note: Consider adding type annotations
 """Filter tokens that support cross-chain bridging.
+# TODO: Add async support for better performance
     
     Args:
         tokens (list): List of token configurations
